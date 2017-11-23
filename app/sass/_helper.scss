@@ -1,0 +1,464 @@
+/*
+		_helper.scss	
+*/
+
+
+
+
+@for $i from 0 through 10 {
+	.box-#{10*$i} { 
+		width: 10*$i+%;
+	}
+}
+
+//-----------------------------PADD
+@for $i from 0 through 24 {
+	.p-h-#{5*$i} { 
+		padding-left: 5*$i+px;
+		padding-right: 5*$i+px;}}
+
+@for $i from 0 through 30 {
+	.p-v-#{5*$i} { 
+		padding-top: 5*$i+px;
+		padding-bottom: 5*$i+px;}}
+
+@for $i from 0 through 30 {
+	.p-t-#{5*$i} { 
+		padding-top: 5*$i+px;}}
+
+@for $i from 0 through 30 {
+	.p-b-#{5*$i} { 
+		padding-bottom: 5*$i+px;}}
+
+@for $i from 0 through 30 {
+	.p-l-#{5*$i} { 
+		padding-left: 5*$i+px;}}
+
+@for $i from 0 through 30 {
+	.p-r-#{5*$i} { 
+		padding-right: 5*$i+px;}}
+
+//------------------------MARG
+@for $i from 0 through 30 {
+	.m-h-#{5*$i} { 
+		margin-left: 5*$i+px;
+		margin-right: 5*$i+px;}}
+
+@for $i from 0 through 30 {
+	.m-v-#{5*$i} { 
+		margin-top: 5*$i+px;
+		margin-bottom: 5*$i+px;}}
+
+@for $i from 0 through 30 {
+	.m-t-#{5*$i} { 
+		margin-top: 5*$i+px;}}
+
+@for $i from 0 through 30 {
+	.m-b-#{5*$i} { 
+		margin-bottom: 5*$i+px;}}
+
+@for $i from 0 through 30 {
+	.m-l-#{5*$i} { 
+		margin-left: 5*$i+px;}}
+
+@for $i from 0 through 30 {
+	.m-r-#{5*$i}) { 
+		margin-right: 5*$i+px;}}
+
+.m-auto{
+	margin: auto;
+}
+/* [class*="m-h"], [class*="m-v"]{
+	overflow: hidden;	
+} */
+
+//--------------------Parag-MARGIN
+@for $i from 0 through 12 {
+	.parag-m-t-#{5*$i} { 
+		p{
+			margin-top: 5*$i+px;
+		}
+	}
+}
+@for $i from 0 through 12 {
+	.parag-m-b-#{5*$i} { 
+		p{
+			margin-bottom: 5*$i+px;
+		}
+	}
+}
+
+@for $i from 0 through 12 {
+	.parag-m-l-#{5*$i} { 
+		p{
+			margin-left: 5*$i+px;
+		}
+	}
+}
+@for $i from 0 through 12 {
+	.parag-m-r-#{5*$i} { 
+		p{
+			margin-right: 5*$i+px;
+		}
+	}
+}
+
+
+
+@for $i from 0 through 12 {
+	.parag-m-h-#{5*$i} { 
+		p{
+			margin-left: 5*$i+px;
+			margin-right: 5*$i+px;
+		}
+	}
+}
+@for $i from 0 through 12 {
+	.parag-m-v-#{5*$i} { 
+		p{
+			margin-top: 5*$i+px;
+			margin-bottom: 5*$i+px;
+		}
+	}
+}
+
+
+//------------------Parag-PADDING
+@for $i from 0 through 12 {
+	.parag-p-t-#{5*$i} { 
+		p{
+			padding-top: 5*$i+px;
+		}
+	}
+}
+@for $i from 0 through 12 {
+	.parag-p-b-#{5*$i} { 
+		p{
+			padding-bottom: 5*$i+px;
+		}
+	}
+}
+
+@for $i from 0 through 12 {
+	.parag-p-l-#{5*$i} { 
+		p{
+			padding-left: 5*$i+px;
+		}
+	}
+}
+@for $i from 0 through 12 {
+	.parag-p-r-#{5*$i} { 
+		p{
+			padding-right: 5*$i+px;
+		}
+	}
+}
+
+@for $i from 0 through 12 {
+	.parag-p-h-#{5*$i} { 
+		p{
+			padding-right: 5*$i+px;
+			padding-left: 5*$i+px;
+		}
+	}
+}
+
+
+
+
+
+.m-0{
+	margin: 0;
+	
+}
+.p-0{
+	padding: 0;
+}
+
+//--------------------Figure-MARGIN
+@for $i from 0 through 12 {
+	.figure-m-t-#{5*$i} { 
+
+		figure{
+			margin-top: 5*$i+px;
+		}
+	 	
+	}
+}
+@for $i from 0 through 12 {
+	.figure-m-b-#{5*$i} { 
+		figure{
+			margin-bottom: 5*$i+px;
+		}
+	 	
+	}
+}
+
+@for $i from 0 through 12 {
+	.figure-m-l-#{5*$i} { 
+
+		figure{
+			margin-left: 5*$i+px;
+		}
+	 	
+	}
+}
+@for $i from 0 through 12 {
+	.figure-m-r-#{5*$i} { 
+	figure{
+			margin-right: 5*$i+px;
+		}
+	 	
+	}
+}
+
+@for $i from 0 through 12 {
+	.figure-m-t-#{5*$i} { 
+
+		figure{
+			margin-top: 5*$i+px;
+		}
+	 	
+	}
+}
+@for $i from 0 through 12 {
+	.figure-m-b-#{5*$i} { 
+	figure{
+			margin-bottom: 5*$i+px;
+		}
+	 	
+	}
+}
+
+@for $i from 0 through 12 {
+	.figure-m-v-#{5*$i} { 
+
+		figure{
+			margin-top: 5*$i+px;
+			margin-bottom: 5*$i+px;
+		}
+	 	
+	}
+}
+@for $i from 0 through 12 {
+	.figure-m-h-#{5*$i} { 
+	figure{
+			margin-left: 5*$i+px;
+			margin-right: 5*$i+px;
+		}
+	 	
+	}
+}
+
+
+
+
+
+
+.align-center{
+	text-align: center;
+}
+.align-left{
+	text-align: left;
+}
+.align-right{
+	text-align: right;
+}
+
+.align-center-impt{
+	text-align: center !important;
+}
+.align-left-impt{
+	text-align: left !important;
+}
+.align-right-impt{
+	text-align: right !important;
+}
+
+
+
+
+.float-center{
+	float: center;
+}
+.float-left{
+	float: left;
+}
+.float-right{
+	float: right;
+}
+
+
+
+
+@for $i from 0 through 9 {
+	.font-w-#{100*$i} { 
+		font-weight: 100*$i;
+	}
+}
+.font-w-bold{
+	font-weight: bold;
+}
+.font-w-bolded{
+	font-weight: bolder;
+}
+
+
+
+
+.display-block{
+	display: block;
+}
+.display-none{
+	display: none;
+}
+
+
+
+.bg-center{
+	background-position: center center;
+}
+
+
+.text-uppercase{
+	text-transform: uppercase;
+}
+.text-capitalize{
+	text-transform: capitalize;
+}
+.text-lowercase{
+	text-transform: lowercase;
+}
+.text-none{
+	text-transform: none;
+}
+
+
+
+@media (max-width: 991px){
+
+
+	.float-left-sm{
+		float: left;
+	}
+	.float-none-sm{
+		float: none;
+	}
+	.float-right-sm{
+		float: right;
+	}
+	.float-none-sm-impt{
+		float: none !important;
+	}
+	.float-left-sm-impt{
+		float: left !important;
+	}
+	.float-right-sm-impt{
+		float: right !important;
+	}
+
+
+	.align-left-sm{
+		text-align: left ;
+	}
+	.align-center-sm{
+		text-align: center ;
+	}
+	.align-right-sm{
+		text-align: right ;
+	}
+
+	.align-left-sm-impt{
+		text-align: left !important;
+	}
+	.align-center-sm-impt{
+		text-align: center !important;
+	}
+	.align-right-sm-impt{
+		text-align: right !important;
+	}
+
+
+}
+
+
+@media (min-width: 992px){
+
+	.float-left-md{
+		float: left;
+	}
+	.float-none-md{
+		float: none;
+	}
+	.float-right-md{
+		float: right;
+	}
+	.float-none-md-impt{
+		float: none !important;
+	}
+	.float-left-md-impt{
+		float: left !important;
+	}
+
+	.float-right-md-impt{
+		float: right !important;
+	}
+
+
+	.align-left-md{
+		text-align: left ;
+	}
+	.align-center-md{
+		text-align: center ;
+	}
+	.align-right-md{
+		text-align: right ;
+	}
+	.align-left-md-impt{
+		text-align: left !important;
+	}
+	.align-center-md-impt{
+		text-align: center !important;
+	}
+	.align-right-md-impt{
+		text-align: right !important;
+	}
+	
+
+	@for $i from 12 through 1 {
+
+		.col-md-offset-left-#{$i} { 
+			margin-left: 100/12*$i+%;
+		}
+
+	}
+	@for $i from 1 through 12 {
+
+		.col-md-offset-right-#{$i} { 
+			margin-right: 100/12*$i+%;
+		}
+
+	}
+
+
+}
+@media (min-width: 767px){
+
+
+	@for $i from 12 through 1 {
+
+		.col-sm-offset-left-#{$i} { 
+			margin-left: 100/12*$i+%;
+		}
+
+	}
+	@for $i from 1 through 12 {
+
+		.col-sm-offset-right-#{$i} { 
+			margin-right: 100/12*$i+%;
+		}
+
+	}
+
+
+}

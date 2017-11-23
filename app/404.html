@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		
+	  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+   	<link rel="stylesheet" href="css/main.css">
+
+
+		<script src="js/scripts.min.js"></script>
+		<script src="js/main.js"></script>
+
+    <title>Title</title>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+<body>
+	<noscript class="align-center-impt padd-ver-60 marg-ver-60">
+		<p>
+			Ваш браузер не поддерживает скрипты!<br/> 
+			Пожалуйста подключите в настройках браузера
+			<font size="5" color="navy">Javascript</font>
+		</p>
+	</noscript> 
+	<!-- HEADER -->
+	
+	<div class="header-hidden"></div>
+
+	<header id="header" class="header-scroll">
+		<div class="container">
+			<div class="header-navbar">
+		    <!-- LOGOTYPE -->
+	      <div class="logo">
+	      	<a  href="index.html" ><img src="img/logo.png"/></a>
+	      </div>
+	      <!-- MENU TOGGLE BUTTON -->
+		     <button class="menu-toggle collapsed" type="button" data-toggle="modal" data-target="#menuModal">
+		       <span class="icon-bar"></span>
+		       <span class="icon-bar"></span>
+		       <span class="icon-bar"></span>
+		    </button>
+		  </div>
+      <!-- NAVBAR -->
+	  	<nav class="main-navbar">
+
+	  		<div class="nav-feedback">
+		  		<button class="btn-blue-1" type="button" data-toggle="modal" data-target="#feedback-modal">
+		  				<b class="clc">Связаться с нами</b>
+		  		</button>
+		  	</div>
+
+
+        <!-- MENU -->
+       	<div class="nav-menu">
+	       	<div class="nav-header">
+
+
+          <ul class="menu-list">
+						<li><a href="about.html">О нас</a></li>
+						<li><a href="services.html">Услуги</a></li>
+						<li><a href="ourcars.html">Наше авто</a></li>
+						<li><a href="reviews.html">Отзывы</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+          </ul>
+					
+					<div class="dropdown-lang">
+					  <div tabindex="1" role="button" class="dropbtn">
+					  	<span>Ру</span><i class="fa fa-angle-down"></i>
+					  </div>
+					  <div class="dropdown-content">
+					    <a href="ru">Ру</a>
+					    <a href="uz">Уз</a>
+					    <a href="en">Англ</a>
+					  </div>
+					</div>
+
+      	</div>
+
+	  	</nav>
+
+		</div><!-- ./CONTAINER -->
+	</header>
+
+
+
+	<!-- MIN MENU MODAL -->
+  <div class="min-menu-modal modal scale a-minMenu" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="min-menu">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	    	
+	    	<button type="button" class="btn" data-dismiss="modal">
+	    		<span class="icon-bar"></span>
+	    		<span class="icon-bar"></span>
+	    	</button>
+
+	      <div class="modal-body min-navbar">
+	      	<!-- js append menu -->
+	      </div>
+	      
+	    </div>
+	  </div>
+	</div>
+
+
+
+
+
+
+	<!-- FEEDBACK MODAL-->
+	<div class="feedback-modal modal  slideInUp animated" id="feedback-modal" tabindex="-1" role="dialog" aria-labelledby="feedback">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+
+	    	<button type="button" class="btn" data-dismiss="modal">
+	    		<span class="icon-bar"></span>
+	    		<span class="icon-bar"></span>
+	    	</button>
+
+	      <div class="modal-body">
+
+
+					<div class="col-md-12 success-info">
+						<div id="success-message"></div>
+						<div id="fail-message"></div>
+					</div>
+					<h2>Связаться с нами</h2>
+	      	<form id="feedback" method="post" action="feedback.php" class="contact-form">
+
+
+
+						<label>Ваше имя</label>
+						<input class="form-control" 
+									 type="text" 
+									 name="name" 
+									 placeholder="Имя" autocomplete="off" required="required"
+									 data-toggle="popover" 
+									 data-trigger="focus"
+									 data-content="Введите своё имя"/>
+
+
+
+						<label>Электронная почта</label>
+						<input class="form-control" 
+									 type="email" 
+									 name="email" 
+									 placeholder="email" autocomplete="off" required="required"
+									 data-toggle="popover" 
+									 data-trigger="focus"
+									 data-content="Укажите электронную почту"/>
+
+
+						<label>Номер телефона</label>
+						<input class="form-control" type="tel" 
+									 name="phone" 
+									 placeholder="+998 (xx) xxx-xx-xx" autocomplete="off" required="required"
+									 minlength="14"
+									 data-toggle="popover" 
+									 data-trigger="focus"
+									 data-content="Укажите номер телефона"/>
+
+
+
+						<textarea class="form-control" 
+									 name="message" 
+									 placeholder="Сообщение"></textarea>
+						
+	      	</form>
+			      <div class="modal-footer">
+			      	<button type="submit" class="align-right btn-opacity" form="feedback" autofocus="autofocus">Отправить</button>
+			      </div>
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- MAIN -->
+	<main class="container-fluid align-center">
+
+
+
+
+
+		<!-- BANNER -->
+		<div id="banner" class="row" style="background-image: url('img/slider/slide-1.jpg');" >
+			<div class="banner-shadow" 
+								data-aos="fade"
+								data-aos-duration="1000"
+								data-aos-delay="200">
+			</div>
+				<div class="container">
+
+					<div class="banner-content">
+
+						<h1 data-aos="fade-right"
+								data-aos-duration="1000"
+								data-aos-delay="300">
+								404</h1>
+
+					</div>
+
+				</div> <!-- ./CONTEINER -->
+		</div><!-- ./BANNER -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="p-v-60 m-v-60 bg-color-white">
+
+			<h1 class="wow animation">
+				<font size="7" face="cursive" color="navy">
+					<sup>4</sup>0<sup>4</sup>
+				</font>
+			</h1>
+
+			<h3 class="wow animation">Страница не найдена</h3>
+			<p class="wow animation">
+				<strong>Вероятные причины:</strong><br>
+				Была допущена ошибка при наборе адреса.<br>
+				Вы нажали на устаревшую ссылку.
+			</p>
+			<p class="wow animation">
+				<a href="index.html"><u>Перейти на главную</u></a>
+			</p>
+		</div>
+
+
+
+
+
+
+
+
+
+	</main><!-- ./MAIN -->
+
+
+
+
+
+
+
+
+
+
+
+	<!-- FOOTER -->
+	<footer id="footer" class="container-fluid">
+		<div class="skin-1">
+			<div class="container">
+
+				<div class="col-xs-12 footer-menu hidden-xs">
+					<ul>
+						<li><a href="about.html">О нас</a></li>
+						<li><a href="services.html">Услуги</a></li>
+						<li><a href="ourcars.html">Наше авто</a></li>
+						<li><a href="reviews.html">Отзывы</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</div>
+
+				<div class="col-xs-12 footer-logo">
+					<div class="f-logo">
+						<img src="img/footer-logo.png" />
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+
+
+		<div class="skin-2">
+			<div class="container">
+
+				<div class="col-xs-12 footer-info">
+					<div class="col-md-6 copyright">
+
+						<p>
+							<a href="https://www.life-style.uz" 
+									title="Создание и продвижение сайтов в Ташкенте"
+									style="text-decoration: underline;">Создание сайтов</a> 
+
+									<em><font color="skyblue">Life</font></em>
+
+									<font color="ghostwhite">Style</font>
+						</p>
+					</div>
+				
+					<div class="col-md-6 social">
+						<ul>
+							<li><a href=""><i class="fa fa-facebook"></i></a></li>
+							<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+							<li><a href=""><i class="fa fa-instagram"></i></a></li>
+							<li><a href=""><i class="fa fa-telegram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

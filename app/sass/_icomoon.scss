@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?pcceay');
+  src:  url('../fonts/icomoon.eot?pcceay#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?pcceay') format('truetype'),
+    url('../fonts/icomoon.woff?pcceay') format('woff'),
+    url('../fonts/icomoon.svg?pcceay#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-architecture:before {
+  content: "\e900";
+}
+.icon-blueprint:before {
+  content: "\e901";
+}
+.icon-brickwall:before {
+  content: "\e902";
+}
+.icon-building:before {
+  content: "\e903";
+}
+.icon-chimney:before {
+  content: "\e904";
+}
+.icon-facebook:before {
+  content: "\e905";
+}
+.icon-ferris:before {
+  content: "\e906";
+}
+.icon-house-sketch:before {
+  content: "\e907";
+}
+.icon-instagram:before {
+  content: "\e908";
+}
+.icon-pattern:before {
+  content: "\e909";
+}
+.icon-phone-call:before {
+  content: "\e90a";
+}
+.icon-sofa:before {
+  content: "\e90b";
+}
+.icon-telegram:before {
+  content: "\e90c";
+}
