@@ -776,6 +776,17 @@ $header-height: 80px;
 
 
 
+@keyframes menulist {
+  from {
+    box-shadow: 0 -20px 80px 10px $color_1;
+  }
+  50%{
+  	box-shadow: 0 -20px 80px 15px $color_1
+  }
+  to {
+		box-shadow: 0 -20px 80px 10px $color_1;
+  }
+}
 
 .nav-menu:not(.min){
 	width: 60%;
@@ -798,15 +809,46 @@ $header-height: 80px;
 		& > li {
 			transition: all 0.3s ease-in-out;
 			position: relative;
+			//overflow: hidden;
 	    display: inline-block;
 	    border-left: 1px outset transparent;
+	    &:before, &:after{
+	    	transition: all 0.4s ease-in-out;
+	    	width: 0%;
+	    	margin: 0 0%;
+	    	height: 5%;
+	    	box-shadow: 0px 0px 0px 0px #00b3ce;
+	    }
+	    &:before{
+	    	@extend .claf;
+	    	background-color: $color_1;
+		    top: initial;
+		    bottom: 0;
+		    transform: matrix(1, 0, 0, 1, 0, 0);
+	    }
+	    &:after{
+	    	@extend .claf;
+	    	background-color: $color_1;
+		   // width: 50%;
+		    left: initial;
+		    top: initial;
+		    right: 0;
+		    bottom: 0;
+		    transform: matrix(1, 0, 0, 1, 0, 0);
+	    }
+
 	    &:hover, &:focus{
-	    	border-color: $color_1;
-    		border-radius: 12px;
-				& > a{
-					//transform: scale(1.05);
-					color: $color;
-				}
+
+		    &:before, &:after{
+		    	width: 40%;
+		    	margin: 0 10%;
+		    	height: 5%;
+		    	transform: matrix(1, 0, 0, 1, 0, 0);
+		    	//box-shadow: 0 -20px 80px 10px $color_1;
+		    	animation: menulist 4s ease-in-out infinite;
+		    }
+
+
 				.sub-menu-1{
 					visibility: visible;
 					opacity: 1;
@@ -1509,14 +1551,17 @@ main{
 	
 	//margin-left: -80px !important;
 	.bullet{
-		width: 16px !important;
+		width: 20px !important;
+		transform: scale(0.8);
+		transition: transform 0.3s ease-in-out;
 		background-size: cover !important;
-		height: 16px !important;
-		margin-left: 15px !important;
-		opacity: 1 !important;
-		margin-right: 15px !important;
+		height: 20px !important;
+		//margin-left: 15px !important;
+		//opacity: 1 !important;
+		//margin-right: 15px !important;
 		&.selected{
-			opacity: 1 !important;			
+			opacity: 1 ;	
+			transform: scale(1);		
 		}
 	}
 
@@ -1604,6 +1649,187 @@ main{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//------------- SHORT-ABOUT
+
+
+.short-about{
+	position: relative;
+	overflow: hidden;
+}
+
+//VERTICAL-TABS
+.ver-tabs{
+	overflow: hidden;
+	position: relative;
+	height: 100%;
+
+}
+.ver-tabs-img{
+	position: relative;
+	float: left;
+	img{
+		width: 100%;
+	}
+}
+.ver-tab-nav{
+	//height: 100%;
+	width: 25%;
+	float: left;
+	border-right: 1px solid #dfdfdf;
+			svg{
+			width: 50px;
+			height: 50px;
+			left: 50%;
+			top: 50%;
+			margin-top: -25px;
+			margin-left: -25px;
+			circle{
+		    transition: all 0.3s ease-in-out;
+		    stroke-dashoffset: 600;
+		    stroke-dasharray: 200;
+		    fill: rgba(0, 0, 0, 0);
+		    stroke: $color_1;
+		    stroke-width: 30px;
+		    r: 10;
+		    cx: 25;
+		    cy: 25;
+			}
+			position: absolute;
+		}
+	li{
+		position: relative;
+		a{
+			padding-right: 60px;
+			font-size: em(17, 16);
+			position: relative;
+			color: black;
+			display: block;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+/* 		&:before{
+			@extend .claf;
+			top: 100%;
+			margin-top: -25px;
+			width: 50px;
+			content:  attr(role);
+			font-size: 20px;
+			text-align: center;
+			padding: 12.5px;
+			height: 50px;
+			margin-left: -25px;
+			left: 100%;
+			background-color: #333;
+			border-radius: 50%;
+		} */
+		&.active{
+			circle{
+				stroke-dasharray: 242;
+				fill: $color_1;
+			}
+			&:before{
+				background-color: $color_1;
+			}
+			a{
+				text-decoration: none;
+				color: $color_1;
+			}
+
+		}
+		&:not(:first-child){
+			margin-top: 75%;
+		}
+		&:first-child:before{
+			margin-top: 5px;
+			top: 0;
+		}
+
+		float: initial;
+	}
+
+
+
+
+}
+.hr-v{
+	height: 1px;
+	background-color: $color_1;
+}
+.ver-tab-content{
+	@extend .tab-content;
+	overflow: auto;
+	height: 400px;
+	float: left;
+	font-size: em(14, 16);
+	width: 75%;
+	position: relative;
+	padding: 0 30px;
+	&::-webkit-scrollbar{
+		width:5px;
+	}
+	&::-webkit-scrollbar-thumb{
+	 	border-radius: 5px;
+		background-color: lighten($color_2, 5%);
+	}
+}
+@media only screen and (max-width: 991px){
+	.ver-tab-nav, .ver-tab-content{
+		width: 100%;
+	}
+	.ver-tab-content{
+    height: initial;
+	}
+	.ver-tab-nav{
+		border: 1px solid $color_gray_1;
+		li{
+			margin: 0!important;
+			display: inline-block;
+			width: 100%;
+			text-align: center;
+			&.active{
+				border: 1px solid $color_4;
+			}
+			&:before{
+				display: none;
+			}
+			a{
+				padding: 15px 30px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.ver-tab-img{
+		width: 100%;
+	}
+}
 
 
 
