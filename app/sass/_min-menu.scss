@@ -2,7 +2,7 @@
   @for $i from 1 through 50 {
     &:nth-child(#{$i}) {
       //transition: transform 1s #{$i * .08}s cubic-bezier(.29,1.4,.44,.96);
-      transition: transform 1.2s  cubic-bezier(.29,1.4,.44,.96);
+      transition: transform 0.4s  ease-in #{$i * .0}s;
     }
   }
 }
@@ -74,7 +74,9 @@ $contrast: darken($main, 10%);
   padding-top: 125px;
   transition: width 475ms ease-out, transform 450ms ease, border-radius .8s .1s ease;
   //border-bottom-left-radius: 100vw;
-  @include alpha-attribute('background-color', rgba(black, 0.8), white);
+  //@include alpha-attribute('background-color', rgba(black, 0.8), white);
+  //@include alpha-attribute('background-color', rgba($main, 0.8), white);
+  background: linear-gradient(to bottom, black, rgba( $main, 0.8) );
   @media (min-width: 768px) {
     width: 40vw;
   }

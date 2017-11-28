@@ -172,20 +172,11 @@ $(function(){
 
 	}
 
-
-
-
-
-
-
-
-		$("body").on("mousemove", function(e){
-		$("#dust-content").css("left", (10 + (-e.pageX/100)))
-					 .css("bottom", (300 + (e.pageY/100)));
-		});
-
-
-
+	$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+	  e.target // newly activated tab
+	  e.relatedTarget // previous active tab
+	  console.log( e.target, e.relatedTarget )
+	})
 
 //canvasDust
 
