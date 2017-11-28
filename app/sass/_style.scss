@@ -1455,7 +1455,11 @@ main{
 }
 
 
+// ---- test
 
+header, .index-slider{
+	display: none;
+}
 
 
 
@@ -1682,13 +1686,72 @@ main{
 	overflow: hidden;
 }
 
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.svg-tab-circle{
+	width: 50px;
+	height: 50px;
+	left: 100%;
+	top: 50%;
+	margin-top: -25px;
+	margin-left: -25px;
+	position: absolute;
+	circle{
+    //transition: all 0.35s linear;
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 1000;
+    fill: #333;
+    stroke: #333;
+    stroke-width: 0;
+    r: 25;
+    cx: 25;
+    cy: 25;
+	}
+}
+.svg-tab-line{
+	width: 3px;
+	position: absolute;
+	//height: 400px;
+	
+	//z-index: 400;
+	line{
+		stroke: violet;
+		stroke-width: 5;
+		stroke-dasharray: 1000;
+		stroke-dashoffset: 50;
+		//animation: dash 5s linear alternate infinite;
+	}
+}
+
+
+
 //VERTICAL-TABS
 .ver-tabs{
 	overflow: hidden;
 	position: relative;
 	height: 100%;
 
+
 }
+
+
+.sec-1{
+	padding: 50px 0;
+}
+.sec-2{
+	padding: 50px 0;	
+}
+
+
+
+
+
 .ver-tabs-img{
 	position: relative;
 	float: left;
@@ -1696,35 +1759,20 @@ main{
 		width: 100%;
 	}
 }
+
+
+
+
 .ver-tab-nav{
 	//height: 100%;
-	width: 25%;
-	float: left;
-	border-right: 1px solid #dfdfdf;
-			svg{
-			width: 50px;
-			height: 50px;
-			left: 50%;
-			top: 50%;
-			margin-top: -25px;
-			margin-left: -25px;
-			circle{
-		    transition: all 0.3s ease-in-out;
-		    stroke-dashoffset: 600;
-		    stroke-dasharray: 200;
-		    fill: rgba(0, 0, 0, 0);
-		    stroke: $color_1;
-		    stroke-width: 30px;
-		    r: 10;
-		    cx: 25;
-		    cy: 25;
-			}
-			position: absolute;
-		}
+
+	ul{
+		width: 25%;
+		float: left;
+	}
 	li{
 		position: relative;
 		a{
-			padding-right: 60px;
 			font-size: em(17, 16);
 			position: relative;
 			color: black;
@@ -1733,26 +1781,16 @@ main{
 				text-decoration: none;
 			}
 		}
-/* 		&:before{
-			@extend .claf;
-			top: 100%;
-			margin-top: -25px;
-			width: 50px;
-			content:  attr(role);
-			font-size: 20px;
-			text-align: center;
-			padding: 12.5px;
-			height: 50px;
-			margin-left: -25px;
-			left: 100%;
-			background-color: #333;
-			border-radius: 50%;
-		} */
+
 		&.active{
 			circle{
-				stroke-dasharray: 242;
+				stroke-dasharray: 1100;
 				fill: $color_1;
+				stroke: $color_1;
+				stroke-width: 20px;
+				r: 15;
 			}
+
 			&:before{
 				background-color: $color_1;
 			}
@@ -1760,16 +1798,10 @@ main{
 				text-decoration: none;
 				color: $color_1;
 			}
-
 		}
 		&:not(:first-child){
-			margin-top: 75%;
+			margin-top: 150px;
 		}
-		&:first-child:before{
-			margin-top: 5px;
-			top: 0;
-		}
-
 		float: initial;
 	}
 
@@ -1777,26 +1809,19 @@ main{
 
 
 }
-.hr-v{
-	height: 1px;
-	background-color: $color_1;
-}
+
+
+
 .ver-tab-content{
 	@extend .tab-content;
+	color: black;
 	overflow: auto;
-	height: 400px;
+	//height: 400px;
 	float: left;
 	font-size: em(14, 16);
 	width: 75%;
 	position: relative;
 	padding: 0 30px;
-	&::-webkit-scrollbar{
-		width:5px;
-	}
-	&::-webkit-scrollbar-thumb{
-	 	border-radius: 5px;
-		background-color: lighten($color_2, 5%);
-	}
 }
 @media only screen and (max-width: 991px){
 	.ver-tab-nav, .ver-tab-content{

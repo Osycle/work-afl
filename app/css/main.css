@@ -17223,6 +17223,9 @@ main {
   font-size: 2em;
   vertical-align: middle; }
 
+header, .index-slider {
+  display: none; }
+
 .index-slider {
   z-index: 1;
   position: relative; }
@@ -17361,10 +17364,55 @@ main {
   position: relative;
   overflow: hidden; }
 
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 1000; }
+  to {
+    stroke-dashoffset: 0; } }
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000; }
+  to {
+    stroke-dashoffset: 0; } }
+
+.svg-tab-circle {
+  width: 50px;
+  height: 50px;
+  left: 100%;
+  top: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+  position: absolute; }
+  .svg-tab-circle circle {
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 1000;
+    fill: #333;
+    stroke: #333;
+    stroke-width: 0;
+    r: 25;
+    cx: 25;
+    cy: 25; }
+
+.svg-tab-line {
+  width: 3px;
+  position: absolute; }
+  .svg-tab-line line {
+    stroke: violet;
+    stroke-width: 5;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 50; }
+
 .ver-tabs {
   overflow: hidden;
   position: relative;
   height: 100%; }
+
+.sec-1 {
+  padding: 50px 0; }
+
+.sec-2 {
+  padding: 50px 0; }
 
 .ver-tabs-img {
   position: relative;
@@ -17372,88 +17420,42 @@ main {
   .ver-tabs-img img {
     width: 100%; }
 
-.ver-tab-nav {
+.ver-tab-nav ul {
   width: 25%;
-  float: left;
-  border-right: 1px solid #dfdfdf; }
-  .ver-tab-nav svg {
-    width: 50px;
-    height: 50px;
-    left: 50%;
-    top: 50%;
-    margin-top: -25px;
-    margin-left: -25px;
-    position: absolute; }
-    .ver-tab-nav svg circle {
-      -webkit-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out;
-      stroke-dashoffset: 600;
-      stroke-dasharray: 200;
-      fill: transparent;
-      stroke: #00b3ce;
-      stroke-width: 30px;
-      r: 10;
-      cx: 25;
-      cy: 25; }
-  .ver-tab-nav li {
-    position: relative;
-    /* 		&:before{
-			@extend .claf;
-			top: 100%;
-			margin-top: -25px;
-			width: 50px;
-			content:  attr(role);
-			font-size: 20px;
-			text-align: center;
-			padding: 12.5px;
-			height: 50px;
-			margin-left: -25px;
-			left: 100%;
-			background-color: #333;
-			border-radius: 50%;
-		} */
-    float: initial; }
-    .ver-tab-nav li a {
-      padding-right: 60px;
-      font-size: 1.0625em;
-      position: relative;
-      color: black;
-      display: block; }
-      .ver-tab-nav li a:hover {
-        text-decoration: none; }
-    .ver-tab-nav li.active circle {
-      stroke-dasharray: 242;
-      fill: #00b3ce; }
-    .ver-tab-nav li.active:before {
-      background-color: #00b3ce; }
-    .ver-tab-nav li.active a {
-      text-decoration: none;
-      color: #00b3ce; }
-    .ver-tab-nav li:not(:first-child) {
-      margin-top: 75%; }
-    .ver-tab-nav li:first-child:before {
-      margin-top: 5px;
-      top: 0; }
+  float: left; }
 
-.hr-v {
-  height: 1px;
-  background-color: #00b3ce; }
+.ver-tab-nav li {
+  position: relative;
+  float: initial; }
+  .ver-tab-nav li a {
+    font-size: 1.0625em;
+    position: relative;
+    color: black;
+    display: block; }
+    .ver-tab-nav li a:hover {
+      text-decoration: none; }
+  .ver-tab-nav li.active circle {
+    stroke-dasharray: 1100;
+    fill: #00b3ce;
+    stroke: #00b3ce;
+    stroke-width: 20px;
+    r: 15; }
+  .ver-tab-nav li.active:before {
+    background-color: #00b3ce; }
+  .ver-tab-nav li.active a {
+    text-decoration: none;
+    color: #00b3ce; }
+  .ver-tab-nav li:not(:first-child) {
+    margin-top: 150px; }
 
 .ver-tab-content {
+  color: black;
   overflow: auto;
-  height: 400px;
   float: left;
   font-size: 0.875em;
   width: 75%;
   position: relative;
   padding: 0 30px; }
-  .ver-tab-content::-webkit-scrollbar {
-    width: 5px; }
-  .ver-tab-content::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    background-color: #1e1e85; }
 
 @media only screen and (max-width: 991px) {
   .ver-tab-nav, .ver-tab-content {
