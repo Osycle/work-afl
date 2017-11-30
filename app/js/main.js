@@ -165,7 +165,7 @@ $(function(){
 		if ( imagesLoadedCount >= imagesTotalCount )
 
 			setTimeout( function (){
-				$(".preloader").slideToggle();
+				//$(".preloader").slideToggle();
 				$( "body" ).css("overflow-y", "auto");
 				scroll(0, 0);
 			}, 600)
@@ -179,100 +179,6 @@ $(function(){
 	})
 
 //canvasDust
-
-  window.canvasDust = {
-
-  	circle: {
-  		elements : [],
-  		firstElPos: [],
-  		pos: []
-  	},
-
-  	stepCheck: function (posx, posy, radius){
-  		var arr = {
-									x: posx,
-									y: posy,
-									radius: radius
-								};
-
-			canvasDust.circle.pos.push(arr);
-
-			return arr;
-  	},
-
-  	circleAnimate : function ( canvasObj, x, y, i ){
-
-			var tl = new TimelineMax({
-				repeat: -1,
-				yoyo: true
-			});
-
-			tl
-				.to(canvasObj, getRandomIntFloat(2, 5), {
-		      konva: canvasDust.stepCheck( getRandomInt( x, x+200 ), 
-		      														 getRandomInt( y, y+100 ),
-		      														 getRandomInt( 0, 3 ), )})
-				.to(canvasObj, getRandomIntFloat(2, 5), {
-		      konva: canvasDust.stepCheck( getRandomInt( x, x+200 ), 
-		      														 getRandomInt( y, y+100 ),
-		      														 getRandomInt( 0, 3 ), )})
-				.to(canvasObj, getRandomIntFloat(2, 5), {
-		      konva: canvasDust.stepCheck( getRandomInt( x, x+200 ), 
-		      														 getRandomInt( y, y+100 ),
-		      														 getRandomInt( 0, 3 ), )})
-				.to(canvasObj, getRandomIntFloat(2, 5), {
-		      konva: canvasDust.stepCheck( getRandomInt( x, x+200 ), 
-		      														 getRandomInt( y, y+100 ),
-		      														 getRandomInt( 0, 3 ), )})
-				.to(canvasObj, getRandomIntFloat(2, 5), {
-		      konva: canvasDust.stepCheck( getRandomInt( x, x+200 ), 
-		      														 getRandomInt( y, y+100 ),
-		      														 getRandomInt( 0, 3 ), )})
-
-		}
-  }
-
-	var width = window.innerWidth;
-	var height = 450;
-
-	var stage = new Konva.Stage({
-
-		container: 'dust-content',
-		width: width,
-		height: height
-
-	});
-
-	var layer = new Konva.Layer();
-
-
-	for ( var i = 0 ; i < 80 ; i++ ){
-
-		var firstElPosX = getRandomInt( 0, width );
-		var firstElPosY = getRandomInt( 0, height );
-
-		canvasDust.circle.firstElPos[i] = {
-			x: firstElPosX,
-			y: firstElPosY
-		}
-
-		canvasDust.circle.elements[i] = new Konva.Circle({
-			x: firstElPosX,
-			y: firstElPosY,
-			opacity: 0.3,
-			radius: 1,
-			fill: 'white',
-			strokeWidth: 4
-		});
-
-		layer.add( canvasDust.circle.elements[i] );
-
-		canvasDust.circleAnimate( canvasDust.circle.elements[i], firstElPosX, firstElPosY, i );
-		
-	}
-
-	stage.add(layer);
-
 
 
 	});

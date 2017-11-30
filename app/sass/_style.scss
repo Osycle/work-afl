@@ -383,7 +383,6 @@ button:hover, button:focus{
 		@extend .claf;
 		width: 100%;
 		height: 100%;
-		border-radius: 15px;
 		//background-color: black;
 		position: absolute;
 		left: 0;
@@ -478,7 +477,7 @@ button:hover, button:focus{
 		top: initial;
 		height: 1px;
 		a{
-			color: black;
+			//color: black;
 			//font-weight: 500;
 		}
 	}
@@ -503,9 +502,10 @@ button:hover, button:focus{
 	@extend .btn-res;	
 	white-space: nowrap;
 	text-transform: uppercase;
-	border-radius: 12.5px;
+	//border-radius: 12.5px;
 	font-family: $font-family-1;
-	a, .clc{
+	a, .clc, span{
+		font-weight: bold;
 		line-height: normal;
 		padding: 10px 25px;
 		display: block;
@@ -524,7 +524,10 @@ button:hover, button:focus{
 	@extend .btn-style;
 	@extend .btn-anima;
 	background-color: $color_1;
-
+	color: white;
+	&:hover{
+		color: inherit;
+	}
 }
 .btn-opacity{
 	@extend .btn-style;
@@ -1319,11 +1322,11 @@ $header-height: 80px;
 */
 h1{
 	position: relative;
-	font-weight: 600;
+	font-weight: 700;
 	font-size: em(30, 16);
 	text-transform: uppercase;
 	padding-bottom: 10px;
-	color: black;
+	color: #333;
 	&.center{
 		text-align: center;
 	}
@@ -1461,9 +1464,9 @@ main{
 
 // ---- test
 
-/* header, .index-slider{
+.preloader, header{
 	display: none;
-} */
+}
 
 
 
@@ -1715,8 +1718,8 @@ main{
     transition: all 0.35s linear;
     stroke-dashoffset: 1000;
     stroke-dasharray: 1000;
-    fill: #333;
-    stroke: #333;
+    fill: #474747;
+    stroke: #474747;
     stroke-width: 0;
     r: 25;
     cx: 25;
@@ -1745,12 +1748,10 @@ main{
 	
 	//z-index: 400;
 	line{
-		//animation: dash 5s linear ;
 		stroke: $color_gray_2;
 		stroke-width: 5;
 		stroke-dasharray: 360;
 		stroke-dashoffset: 0;
-		//animation: dash 5s linear alternate infinite;
 	}
 }
 
@@ -1790,8 +1791,8 @@ main{
 }
 
 .ver-tab-nav li {
-		&.active{
 
+		&.active{
 			circle{
 				stroke-dasharray: 1094;
 				fill: $color_1;
@@ -1825,12 +1826,16 @@ main{
 		}
 
 		&:not(:first-child){
-			margin-top: 50px;
+			margin-top: 85px;
 		}
 		float: initial;
 	}
 
-
+	@media only screen and (max-width: 991px){
+		ul{
+			text-align: center;
+		}
+	}
 }
 
 
@@ -1889,6 +1894,30 @@ main{
 
 
 
+//------------- SHORT-FEEDBACK
+
+
+
+
+
+.short-feedback{
+	background-color: $color_gray_2;
+	padding: 60px 0;
+	padding-top: 50px;
+	form{
+		input, button{
+			border-radius: 0;
+			margin: 15px 0;
+			height: 50px;
+		}
+		button{
+			width: 100%;
+		}
+	}
+	.img-content{
+
+	}
+}
 
 
 
@@ -1899,14 +1928,127 @@ main{
 
 
 
+//------------- SHORT-ADVANTAGE
+
+.svg-content{
+	position: relative;
+	display: block;
+}
+.ball{
+	position: relative;
+}
+.stick{
+	position: relative;
+	.svg-content{
+		text-align: center;
+	}
+}
+.svg-advantage-line{
+	width: 5px;
+}
+.svg-advantage-circle-1{
+	text-align: center;
+	width: 200px;
+	height: 200px;
+	//left: 50%;
+	//top: 50%;
+	//margin-top: -100px;
+	//margin-left: -100px;
+	position: relative;
+  z-index: 1;;
+	circle{
+    transition: all 0.35s linear;
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 1565;
+    fill: transparent;
+    stroke: #454545;
+    stroke-width: 3px;
+    r: (156/2);
+    cx: 100;
+    cy: 100;
+	}
+}
+.svg-advantage-circle-2, .icon-percent, .svg-advantage-line{
+	text-align: center;
+	width: 150px;
+	height: 150px;
+	left: 50%;
+	top: 50%;
+	margin-top: -75px;
+	margin-left: -75px;
+	position: absolute;
+  z-index: 1;;
+	circle{
+    transition: all 0.35s linear;
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 1565;
+    fill: #454545;
+    //stroke: #454545;
+    //stroke-width: 5px;
+    r: (109/2);
+    cx: 75;
+    cy: 75;
+	}
+}
+
+
+.svg-advantage-line{
+	top: 100%;
+	line{
+		//animation: dash 5s linear ;
+		stroke: white;
+		stroke-width: 2;
+		stroke-dasharray: 360;
+		stroke-dashoffset: 0;
+		//animation: dash 5s linear alternate infinite;
+	}
+
+}
 
 
 
+.short-advantage{
+	padding: 60px 0;
+	position: relative;
+	background-color: rgba($color_gray_1, 1);
+	&:before{
+		@extend .claf;
+		display: block;
+		opacity: 0.05;
+		background-image: url("../img/bg-short-advantage.jpg");		
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	h1{
+		color: white;
+		text-align: center;
+	}
+	h4{
+		text-align: center;
+
+	}
+	[class*='icon']{
+		color: white;
+		font-size: 5em;
+	}
+
+	.icon-percent{
+		font-size: 47px;
+		&:before{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -23.5px;
+			margin-left: -23.5px;
 
 
+		}
+	}
 
-
-
+	.desc-content{
+		margin-top: 120px;
+	}
+}
 
 
 
