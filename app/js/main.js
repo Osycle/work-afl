@@ -31,45 +31,21 @@ $(function(){
 		setTimeout( function(){ skr.refresh() }, 10 )
 	}
 
-	//Owl.Carousel
-	if( $(".index-carousel").length != 0 )
-	$(".index-carousel").owlCarousel({
-	    animateOut: 'fadeOut',
-	    animateIn: 'fadeIn',
-	    //autoWidth: true,
-	    //rewind: true,
-	    mergeFit: true,
-	    center: true,
-	    loop: true,
-	    items:1,
-	    //margin:30,
-	    //mouseDrag: false,
-	    autoplay: true,
-	    autoplayTimeout: 6000,
-	    smartSpeed:450
-	});
-
   // Flikity Carousel
-  	var arrowStyle = { 
-		  x0: 10,
-		  x1: 60, y1: 50,
-		  x2: 70, y2: 40,
-		  x3: 30
-		}
-  // PARTNERS
+
 	var carouselPartners = $('.carousel-partners .carousel-content').flickity({
-		autoPlay: 2000,
-		arrowShape: arrowStyle,
-		//imagesLoaded: true,
-		//prevNextButtons: false,
-		wrapAround: true,
+		arrowShape: { 
+		  x0: 10,
+		  x1: 65, y1: 50,
+		  x2: 65, y2: 0,
+		  x3: 55
+		},
+		prevNextButtons: false,
 		adaptiveHeight: true,
-		//selectedAttraction: 0.2,
-		//friction: 0.2,
-		//rightToLeft: true,
+		initialIndex: 2,
+		//draggable: !checkView(991),
 		pageDots: false,
-		//contain: true,
-		//percentPosition: true,
+		contain: true,
 		cellAlign: 'center'
 	});
 

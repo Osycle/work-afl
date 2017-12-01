@@ -20,6 +20,7 @@ $color_footer: #0071BC;
 $color_gray_1: #373435;
 $color_gray_2: #F1F1F1;
 $color_gray_3: #AEAEAE;
+$color_gray_4: #474747;
 
 @function em($pixels, $context: $browser-context) {
   @return #{$pixels/$context}em;
@@ -1341,12 +1342,13 @@ h2{
 }
 h3{
 	text-transform: uppercase;
-	font-size: em(22, 16);
+	font-size: em(21, 16);
 	font-weight: 600;
 }
 h4{
-	font-size: em(18, 16);
-	font-weight: 600;
+	font-size: em(16, 16);
+	font-weight: 700;
+	text-transform: uppercase;
 }
 h5{
 	font-size: inherit;
@@ -1707,6 +1709,7 @@ main{
 .svg-tab-circle{
 	width: 50px;
 	height: 50px;
+	//overflow: visible !important;
 	left: 100%;
 	top: 50%;
 	margin-top: -25px;
@@ -1716,14 +1719,11 @@ main{
   //filter: drop-shadow( 0 0 20px rgba(#333, 0.5) );
 	circle{
     transition: all 0.35s linear;
-    stroke-dashoffset: 1000;
-    stroke-dasharray: 1000;
-    fill: #474747;
-    stroke: #474747;
+    fill: $color_gray_4;
+    stroke: $color_gray_4;
+    stroke-dasharray: 30;
+		stroke-dashoffset: 0;
     stroke-width: 0;
-    r: 25;
-    cx: 25;
-    cy: 25;
 	}
 }
 .tab-number{
@@ -1744,9 +1744,6 @@ main{
 	width: 3px;
 	position: absolute;
 	height: calc( 100% - 100px);
-	//height: 400px;
-	
-	//z-index: 400;
 	line{
 		stroke: $color_gray_2;
 		stroke-width: 5;
@@ -1794,13 +1791,11 @@ main{
 
 		&.active{
 			circle{
-				stroke-dasharray: 1094;
+				stroke-dasharray: 130;
 				fill: $color_1;
-				stroke: $color_1;
-				stroke-width: 20px;
-				r: 15;
+				stroke: rgba($color_1, 0.8);
+				stroke-width: 8px;
 			}
-
 			&:before{
 				background-color: $color_1;
 			}
@@ -1928,82 +1923,96 @@ main{
 
 
 
+
 //------------- SHORT-ADVANTAGE
 
-.svg-content{
+.drib{
 	position: relative;
 	display: block;
-}
-.ball{
-	position: relative;
-}
-.stick{
-	position: relative;
-	.svg-content{
-		text-align: center;
+	width: 160px;
+	height: 160px;
+	margin: auto;
+
+	[class*='icon']{
+		color: white;
+		font-size: 5em;
+		font-size: 40px;
+		&:before{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -20px;
+			margin-left: -20px;
+		}
+
 	}
+
 }
-.svg-advantage-line{
-	width: 5px;
-}
-.svg-advantage-circle-1{
-	text-align: center;
-	width: 200px;
-	height: 200px;
-	//left: 50%;
-	//top: 50%;
-	//margin-top: -100px;
-	//margin-left: -100px;
+.drib-circle{
+	width: 100%;
+	overflow: visible !important;
+	height: 100%;
 	position: relative;
-  z-index: 1;;
-	circle{
-    transition: all 0.35s linear;
-    stroke-dashoffset: 1000;
-    stroke-dasharray: 1565;
-    fill: transparent;
-    stroke: #454545;
-    stroke-width: 3px;
-    r: (156/2);
-    cx: 100;
-    cy: 100;
+	.circle-1{
+    stroke: $color_gray_4;
+    stroke-width: 2px;
+    fill: none;
 	}
+	.circle-2{
+    fill:  $color_gray_4;
+    stroke:  $color_gray_4;
+	}
+
+
 }
-.svg-advantage-circle-2, .icon-percent, .svg-advantage-line{
-	text-align: center;
-	width: 150px;
-	height: 150px;
-	left: 50%;
-	top: 50%;
-	margin-top: -75px;
-	margin-left: -75px;
+.drib-poligon{
 	position: absolute;
-  z-index: 1;;
-	circle{
-    transition: all 0.35s linear;
-    stroke-dashoffset: 1000;
-    stroke-dasharray: 1565;
-    fill: #454545;
-    //stroke: #454545;
-    //stroke-width: 5px;
-    r: (109/2);
-    cx: 75;
-    cy: 75;
+	display: block;
+	width: 25px;
+	height: 50px;
+	top: 50%;
+	left: 50%;
+	margin-top: -27px;
+	margin-left: -12.5px;
+}
+.drib-poligon-style{
+	fill: $color_gray_4;
+	left: 80%;
+}
+
+
+.drib-line{
+	top: 72%;
+	width: 100%;
+	position: absolute;
+	use{
+		stroke: rgba($color_gray_2, 0.5);
+		fill: rgba($color_gray_2, 0.5);
+		stroke-width: 0.5px;
+	}
+
+}
+
+
+.drib-style-1{
+
+	.circle-1{
+		stroke: $color_1;
+		fill: none;
+	}
+	.circle-2{
+    fill:  $color_1;
+    stroke:  $color_1;
+	}
+	.drib-poligon-style{
+		fill: $color_1;
 	}
 }
 
 
-.svg-advantage-line{
-	top: 100%;
-	line{
-		//animation: dash 5s linear ;
-		stroke: white;
-		stroke-width: 2;
-		stroke-dasharray: 360;
-		stroke-dashoffset: 0;
-		//animation: dash 5s linear alternate infinite;
-	}
 
-}
+
+
 
 
 
@@ -2011,6 +2020,7 @@ main{
 	padding: 60px 0;
 	position: relative;
 	background-color: rgba($color_gray_1, 1);
+
 	&:before{
 		@extend .claf;
 		display: block;
@@ -2020,35 +2030,81 @@ main{
 		background-position: center center;
 	}
 	h1{
-		color: white;
+		color: inherit;
+	}
+	h1, h4, p{
 		text-align: center;
 	}
 	h4{
-		text-align: center;
-
+		font-size: 0.9em;
 	}
-	[class*='icon']{
-		color: white;
-		font-size: 5em;
+	p{
+		padding: 0 5% ;
+		font-size: em( 14, 16 );
 	}
 
-	.icon-percent{
-		font-size: 47px;
-		&:before{
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			margin-top: -23.5px;
-			margin-left: -23.5px;
 
 
-		}
-	}
 
 	.desc-content{
 		margin-top: 120px;
 	}
 }
+
+.short-advantage-items{
+
+	figure{
+		position: relative;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//----------- SHORT-PARTNERS
+
+.short-partners{
+	//background-color: brown;
+}
+.carousel-partners .carousel-cell{
+	  margin: 0 2%;
+    width: 170px;
+    height: 120px;
+    .img-content{
+
+			text-align: center;
+			display: inherit;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2076,7 +2132,7 @@ main{
 }
 #map{
 	display: block;
-	height: 650px;
+	height: 290px;
 	z-index: 1;
 	color: $color_3;
 
@@ -2221,22 +2277,12 @@ main{
 
 #footer{
 	position: relative;
-	.bg{
-		background: $bg-image-1 no-repeat center -650px;
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		transform: scaleY(-1);
-	}
 	font-size: em(15, 16);
+	background-color: $color_gray_1;
 	p, address{
 		line-height: 170%;
 	}
 	.footer-content{
-		@extend .container;
-		padding: 0;
-		min-width: 280px;
-		@include table-celling(350px);
 	}
 	.footer-email{
 		margin-top: 25px;
@@ -2249,95 +2295,49 @@ main{
 			
 		}
 	}
-	.footer-menu-list{
-		text-transform: uppercase;
+	.footer-menu{
+		text-align: center;
 		li{
-			margin: 7.5px 0;
+			display: inline-block;
+			margin: 0 20px;
+		}
+		a{
+			padding: 20px 0;
+			display: block;
 		}
 	}
-	.footer-social{
-		ul{
-			li{
-				display: inline-block;
-				margin: 0 5px;
-				font-size: 1.4em;
-			}
-		}
+	.footer-logo{
+		text-align: center;
+		padding: 30px 0;
 	}
-	.footer-search{
-		color: white;
-		//overflow: hidden;
-		button[type="submit"]{
-			float: right;
-			font-size: 1.5em;
-			padding: 5px 15px;
-			color: $color_1;
-			z-index: 2;
-    	position: relative;
-		}
-		.span-search{
-			border-radius: 10px ;
-			border: 1px solid rgba(white, 0.75);
-			width: 100%;
-			margin-left: 0;
-			margin-right:0 ;
-			height: 35px;
-			input{
-				top: -100%;
-				&:focus{
-					&~label {
-						padding: 20px 20px 5px;
-						span{
-							color: $color_1;
-						}
-					}
-				}
-			}
-			label, input{
-				padding-left: 15px;
-				padding-right: 15px;
-			}
-			label{
-				transition: all 0.2s ease-in-out;
-				padding: 11px 25px 5px;
-				&:after{
-					border-radius: 15px;
-					height: 100%;
-					background: transparent;//$color_1
-					left: 0;
-					top: 0;
-				}
-			}
 
-			span{
-				transition: all 0.3s ease-in-out;
-				text-transform: uppercase;
-				font-size: 0.7em;
-				//font-weight: 300;
-				color: rgba($color_gray_1, 0.8);
-			}
+	.footer-contacts{
+			overflow: hidden;
+		.phone-style{
+			width: (50/3)+%;
+		}
+		.footer-copy,address{
+			width: 24.5%;
+		}
 
-		}
-		.input--filled{
-			input:not(:focus){
-				&~label{
-					span{
-						padding: 11px 0 10px;
-					}
-				}
+		.phone-style, .footer-copy, address{
+			@include table-celling(100px);
+			padding-left: 15px;
+			padding-right: 15px;
+			@media only screen and( max-width: 991px ){
+				display: block;
+				width: 100%;
+				margin: 15px 0;
+				height: initial;
 			}
+		}
 
-		}
-		[class*="input__label-"]{
-			&:after{
-				background: $color_1;
-			}
-		}
-		label{
-			font-size: 1.2em;
-			color: white;
-		}
+
+
 	}
+
+
+
 }
 
 
