@@ -998,6 +998,35 @@ $header-height: 80px;
 .min-menu{
 	 z-index: 2100;
 	 position: relative;
+	 i{
+
+
+	 	
+	 	//filter: drop-shadow(0 0px 5px white) drop-shadow(0 0px 10px white);
+	 }
+
+
+	 label.hamburger{
+
+	 	height: 45px;
+    width: 45px;
+
+	 	& > i{
+	 		&, &:before, &:after{
+	 			//filter: drop-shadow(0 0px 5px $color_1) drop-shadow(0 0px 10px $color_1);
+	 			height: 3px;
+	 			background-color: $color_1;
+	 		}
+	 	}
+
+	 }
+	 input.hamburger:checked ~ label > i{
+	 	filter: drop-shadow(0 0px 5px $color_1) drop-shadow(0 0px 10px $color_1);
+		 	&:before, &:after{
+		 		background-color: white;
+		 	}
+	 }
+
 }
 
 
@@ -1031,22 +1060,27 @@ $header-height: 80px;
 		height: 50px;
 		right: -1px;
     top: -1px;
-    border-radius: 0 5px;
+    z-index: 1;
   	&:active{
   		outline: none;
-			box-shadow: inset 0 0 8px;
+			//box-shadow: inset 0 0 8px $color_1;
+			.icon-bar{
+				background-color: $color_1;
+			}
 		}
 
 	}
 
 	.icon-bar{
-		background-color: white;
-
+    background-color: white;
+    width: 30px;
+    display: inline-block;
+    height: 2px;
    	&:nth-child(1){
-   		transform: rotate(138deg) translate(4px, -2px);
+   		transform: rotate(-135deg) translate(0, 4px);
    	}
    	&:nth-child(2){
-   		transform: rotate(-138deg) translate(4px, 2px);
+    	transform: rotate(135deg) translate(20px, 24px);
    		
    	}
 
@@ -1096,8 +1130,6 @@ $header-height: 80px;
 .feedback-modal{
 
 	form{
-		//width: 90%;
-		//margin: auto;
 		margin-bottom: 30px;
 		label{
 			font-size: 0.9em;
@@ -1115,7 +1147,7 @@ $header-height: 80px;
 			margin-bottom: 5px;
 			padding-top: 3em;
 			padding-bottom: 0;
-			border-radius: 5px;
+			//border-radius: 5px;
 			input{
 				&:focus{
 					&~label{
@@ -1134,7 +1166,7 @@ $header-height: 80px;
 
 		}
 		.input--nariko{
-			//padding-top: 0.2em;
+		
 		}
 		.input__field--nariko{
 			color: black;
@@ -1146,26 +1178,25 @@ $header-height: 80px;
 			textarea{
 				padding: 0.5em;
 				border-top: 5px solid $color_1;
-				border-radius:  0 0 8px 8px;
 				transition: all 0.3s ease-in-out;
 				height: 60px;
 				&:focus{
 					//height: 60px;
 				}
 			}
+
 			*{
 				width: 100%;
 				&:focus{
 					outline: none;
 				}
 			}
-		}//textarea
-
-
+		}
 
 	}
 
 	.modal-content{
+
 		color: $color_1;
 		@include modal-center(400px, 5%);
 		margin-top: 15px;
@@ -1178,13 +1209,32 @@ $header-height: 80px;
 			@include modal-center(300px, 5%);
 		}
 
-
+		button{
+			color: white;
+		}
 	}
 	.modal-body{
 		padding: 0 30px;
 	}
 
 }
+
+
+.feedback-main{
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // PRELODER
@@ -1367,7 +1417,7 @@ p{
 
 main{
 	overflow: hidden;
-	margin: 30px 0;
+	//margin: 30px 0;
 	position: relative;
 	
 	min-height: 600px;
@@ -1391,12 +1441,6 @@ main{
 
 }
 
-.desc-content{
-	p{
-		margin-top: 10px;
-		line-height: 150%;
-	}
-}
 
 
 
@@ -1466,7 +1510,7 @@ main{
 
 // ---- test
 
-.preloader, header{
+.preloader{
 	display: none;
 }
 
@@ -1893,8 +1937,6 @@ main{
 
 
 
-
-
 .short-feedback{
 	background-color: $color_gray_2;
 	padding: 60px 0;
@@ -1909,10 +1951,20 @@ main{
 			width: 100%;
 		}
 	}
+	input{
+		&:focus{
+			border-color: $color_1;
+    	outline: 0;
+    	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba($color_1, 0.6);
+    	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba($color_1, 0.6);
+		}
+	}
 	.img-content{
 
 	}
 }
+
+
 
 
 
@@ -1933,7 +1985,7 @@ main{
 	height: 160px;
 	margin: auto;
 
-	[class*='icon']{
+	[class*='icon'], .incircle{
 		color: white;
 		font-size: 5em;
 		font-size: 40px;
@@ -1949,17 +2001,15 @@ main{
 
 }
 .drib-circle{
-	width: 100%;
-	overflow: visible !important;
-	height: 100%;
-	position: relative;
+	@extend .svg-max;
 	.circle-1{
     stroke: $color_gray_4;
     stroke-width: 2px;
     fill: none;
 	}
 	.circle-2{
-    fill:  $color_gray_4;
+   	fill: $color_gray_4;
+   	stroke-width: 50px;
     stroke:  $color_gray_4;
 	}
 
@@ -1972,7 +2022,7 @@ main{
 	height: 50px;
 	top: 50%;
 	left: 50%;
-	margin-top: -27px;
+	margin-top: -25px;
 	margin-left: -12.5px;
 }
 .drib-poligon-style{
@@ -2001,7 +2051,7 @@ main{
 		fill: none;
 	}
 	.circle-2{
-    fill:  $color_1;
+   fill: $color_1;
     stroke:  $color_1;
 	}
 	.drib-poligon-style{
@@ -2014,7 +2064,7 @@ main{
 
 
 
-
+// --------------- SHORT-ADVANTAGE
 
 .short-advantage{
 	padding: 60px 0;
@@ -2051,13 +2101,99 @@ main{
 	}
 }
 
-.short-advantage-items{
 
+
+
+
+
+
+@keyframes advanAnimate-1 {
+  from {
+ 		transform: translateX(-80px);
+  }
+  50%{
+		transform: translateX(-40px);
+  }
+  to {
+		transform: translateX(0);
+  }
+}
+@keyframes advanAnimate-2 {
+	from{
+		stroke: white;
+		stroke-width: 0;
+		stroke-dasharray: 302; 
+		stroke-dashoffset: 302;
+	}
+  to {
+  	stroke-width: 55px;
+		stroke-dasharray: 302; 
+		stroke-dashoffset: 0;
+  }
+}
+@keyframes advanAnimate-3 {
+	from{
+		stroke: white;
+		stroke-width: 60px;
+		stroke-dasharray: 481.76; 
+		stroke-dashoffset: 481.76;
+	}
+  to {
+  	stroke-width: 2px;
+		stroke-dasharray: 481.76; 
+		stroke-dashoffset: 0;
+  }
+}
+@keyframes advanAnimate-4 {
+	from{
+		transform: scale(0);
+	}
+  to {
+		transform: scale(1);
+  }
+}
+
+.short-advantage-items.aos-animate{
+	figure{
+		.circle-1{animation: advanAnimate-3 4s ease-in-out};
+		.circle-2{animation: advanAnimate-2 4s ease-in-out};
+		span:before{animation: advanAnimate-4 4s ease-in-out;}
+		polygon{animation: advanAnimate-1 4s ease-in-out;}
+	}
+}
+.short-advantage-items{
+	svg{
+		display: block;
+	}
 	figure{
 		position: relative;
+		.circle-1, .circle-2, polygon{
+			stroke-dashoffset: 0;
+		}
+		.circle-1{
+			stroke-dasharray: 481.76;
+		}
+		.circle-2{
+			stroke-dasharray: 302; 
+		}
+		polygon{
+			stroke-width: 5px;
+			stroke-dasharray: 302; 
+		}
+
+		circle, polygon{
+			transition: all 0.3s ease-in-out;
+		}
 	}
 
 }
+
+
+
+
+
+
+
 
 
 
@@ -2103,6 +2239,460 @@ main{
 
 
 
+//----------- SHORT-SERVICES
+
+
+.short-services{
+
+	.short-services-content{
+		@include table-celling( 800px );
+		text-align: center;
+		width: 1%;
+	}
+
+}
+
+
+
+
+.svg-max{
+	width: 100%;
+	overflow: visible !important;
+	height: 100%;
+	position: relative;
+}
+
+
+.sun{
+	position: relative;
+	display: block;
+	width: 300px;
+	height: 300px;
+	margin: auto;
+	color: black;
+	font-size: 1.2em;
+	svg{
+		display: block;
+		overflow: visible;
+	}
+	[class*='icon']{
+		font-size: 5em;
+		font-size: 40px;
+		&:before{
+			border-radius: 50%;
+			padding: 10px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -30px;
+			margin-left: -30px;
+		}
+	}
+	.circle-in{
+		$width: 250px;
+		$height: 150px;
+		width: $width;
+		height: $height;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: +-($height / 2);
+		margin-left: +-($width / 2);
+	}
+	h4{
+		font-size: 1.2em;
+		line-height: 100%;
+		margin: 0;
+	}
+	p{
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+	.desc-content{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+	}
+}
+
+
+.sun-petals{
+	@extend .svg-max;
+	position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto;
+  transform-origin: center;
+}
+
+.sun-petal{
+	position: absolute;
+  display: block;
+  width: 120px;
+  height: 120px;
+  left: 0;
+  top: 0;
+  transform-origin: 150px 150px;
+ 
+  [class*="circle"]{
+  	fill: none;
+  }
+  span:before{
+		box-shadow: inset 0px 8px 14px -6px black;
+  }
+  b{
+  	width: 230px;
+    position: absolute;
+    transform-origin: center center;
+  }
+  .circle-1, .circle-2{
+  	stroke-width: 30px;
+  }
+  .circle-3, .circle-4{
+  	transform: translateY(100px);
+  }
+
+  .circle-1{
+  	stroke: $color_gray_4;
+  }
+  .circle-2{
+		stroke: white;
+  }
+  .circle-3{
+		stroke: white;
+		stroke-width: 12px;
+		
+  }
+	.circle-4{
+		stroke-width: 5px;
+		fill: none;
+  }
+
+
+
+  @for $i from 0 through 6 {
+		&.style-#{$i} { 
+			transform: rotate( (($i*60)-60)+deg ) translateY(-160%) translateX(75%);
+			 span:before{
+	  		transform: rotate( -+(($i*60)-60)+deg  );
+	  	}
+  		
+  	}
+	}
+	&.style-1, &.style-4{
+		.circle-1, .circle-4, span{
+  		stroke: $color_1;
+  		color: $color_1;
+  	}
+  	.circle-3, polygon{
+  		fill: $color_1;
+  	}
+
+	}
+	&.style-2, &.style-5{
+  	.circle-1, .circle-4, span{
+  		stroke: $color_gray_3;
+  		color: $color_gray_3;
+  	}
+  	.circle-3, polygon{
+  		fill: $color_gray_3;
+  	}
+	}
+	&.style-3, &.style-6{
+  	.circle-1, .circle-4, span{
+  		stroke: $color_gray_4;
+  		color: $color_gray_4;
+  	}
+  	.circle-3, polygon{
+  		fill: $color_gray_4;
+  	}
+	}
+
+  &.style-1{b{transform: rotate( 0deg) translateY(-165px) translateX(-110px);}}
+  &.style-2{b{transform: rotate(-60deg) translateY(-230px) translateX(15px);}}
+  &.style-3{b{transform: rotate(-120deg) translateY(30px) translateX(120px);}}
+ 	&.style-4{b{transform: rotate(-180deg) translateY(165px) translateX(120px)}}
+ 	&.style-5{b{transform: rotate(-240deg) translateY(230px) translateX(-15px);}}
+ 	&.style-6{b{transform: rotate(-300deg) translateY(-30px) translateX(-120px);}}
+}
+
+
+.petal-circle{
+	@extend .svg-max;
+}
+.petal-polygon{	
+	position: absolute;
+	overflow: hidden;
+	display: block;
+	width: 40px;
+	height: 50px;
+	top: 100%;
+	margin-top: -25px;
+	margin-left: -20px;
+	left: 50%;
+	//transform-origin: -100%;
+	//transform: rotate(90deg);
+	polygon{
+		fill: $color_gray_4;
+		transform: rotate(0deg);
+		transform-origin: -100%;
+		position: absolute;
+  	
+	}
+}
+
+.sun-circle{
+	width: 100%;
+	overflow: visible !important;
+	height: 100%;
+	position: relative;
+	box-shadow: 5px 5px 60px -5px $color_gray_3;
+	border-radius: 50%;
+	.circle-1{
+    stroke: $color_gray_3;
+    stroke-width: 5px;
+    fill: white;
+	}
+	.circle-2{
+    fill:  $color_gray_4;
+    stroke:  $color_gray_4;
+	}
+	[class*="path"]{
+		fill:none;
+		transition: all 0.3s ease-out;
+		stroke-width: 10px;
+		stroke: $color_1;
+		stroke-dashoffset: 0;//162.4
+		stroke-dasharray: 162.4;
+		transform-origin: 150px 150px;
+	}
+	.path-1, .path-4{
+		stroke: $color_1;
+	}
+	.path-2, .path-5{
+		stroke: $color_gray_3;
+	}
+	.path-3, .path-6{
+		stroke: $color_gray_4;
+	}
+
+	@for $i from 0 through 6 {
+		.path-#{$i} { 
+			transform: rotate(-90+60*$i+deg);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes servAnimatePath {
+	from{
+		//stroke: white;
+		//stroke-width: 60px;
+		stroke-dasharray: 163; 
+		stroke-dashoffset: 163;
+	}
+	50%{
+		//stroke-dasharray: 600; 
+	}
+  to {
+  	stroke-width: 10px;
+		stroke-dasharray: 163; 
+		stroke-dashoffset: 0;
+  }
+}
+@keyframes servAnimateCirlce-1 {
+	from{
+		stroke-width: 0px;
+		stroke-dasharray : 50;
+		stroke-dashoffset: 50;
+	}
+	50%{
+		stroke-width: 30px;
+		stroke-dasharray: 100; 
+	}
+  to {
+  	stroke-width: 33px;
+  	stroke-dasharray : 226;
+  	stroke-dashoffset: 0;
+  }
+}
+@keyframes servAnimateCirlce-4 {
+	from{
+
+		stroke-width: 0px;
+		stroke-dasharray : 163;
+		stroke-dashoffset: 163;
+	}
+	80%{
+		stroke-width: 15px;
+	}
+  to {
+  	stroke-dasharray : 163;
+  	stroke-dashoffset: 0;
+  }
+}
+@keyframes servAnimatePolygon {
+  from {
+ 		transform: translateY(-50px);
+  }
+  80% {
+  	transform: translateY(-20px);
+  }
+  to {
+		transform: translateY(0);
+  }
+}
+@keyframes servAnimateIcon {
+  from {
+ 		opacity: 0;
+ 		
+  }
+  80%{
+  	opacity: 0;
+  }
+  to {
+		opacity: 1;
+  }
+}
+
+@keyframes servAnimateSunPetal-1 {from{transform: rotate(-60deg) translateY(-160%) translateX(75%);}}
+@keyframes servAnimateSunPetal-2 {from{transform: rotate(0deg) translateY(-160%) translateX(75%);}}
+@keyframes servAnimateSunPetal-3 {from{transform: rotate(60deg) translateY(-160%) translateX(75%);}}
+@keyframes servAnimateSunPetal-4 {from{transform: rotate(120deg) translateY(-160%) translateX(75%);}}
+@keyframes servAnimateSunPetal-5 {from{transform: rotate(180deg) translateY(-160%) translateX(75%);}}
+@keyframes servAnimateSunPetal-6 {from{transform: rotate(240deg) translateY(-160%) translateX(75%);}}
+
+//SERVICE-ANIMATION
+.short-services-content.aos-animate{
+	[class*="path"]{
+		animation: servAnimatePath 4s linear 0.25s;
+	}
+	.petal-circle{
+		.circle-4{
+			animation: servAnimateCirlce-4 4.5s linear;
+		}
+		.circle-1{
+			animation: servAnimateCirlce-1 4s linear;
+		}
+	}
+	.petal-polygon{
+		overflow: hidden;
+		polygon{
+			animation: servAnimatePolygon 4s linear;
+		}
+	}
+	[class*="icon"]:before{
+		animation: servAnimateIcon 4s linear;
+	}
+	@for $i from 0 through 6{
+		.sun-petal.style-#{$i}{
+			animation: servAnimateSunPetal-#{$i} 4s linear;
+		}
+	}
+}
+.sun-circle{
+	//path 162
+	[class*="path"]{
+		//stroke-dasharray : 162;
+		//stroke-dashoffset: 0;
+		
+		//animation: servAnimatePath 4s linear infinite 0.25s;
+	}
+
+}
+
+
+.sun-petals{
+	b{
+		opacity: 0;
+	}
+
+	.circle-4{
+		stroke-dasharray : 113;
+		stroke-dashoffset: 0;
+		//animation: servAnimateCirlce-4 4s linear infinite;
+	}
+	.circle-1{
+		//stroke-dasharray : 226;
+		//stroke-dashoffset: 0;
+		//animation: servAnimateCirlce-1 6s linear infinite;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// INDEX-SOC-MAP
+.soc-map-content{
+	background-color: $color_gray_1;
+	.fb-widget{
+		@include table-celling(290px);
+		width: 35%;
+	}
+	#map{
+		display: block;
+		height: 290px;
+		z-index: 1;
+		color: $color_3;
+		h1{
+			margin-top: 0;
+			margin-left: 10px;
+			display: inline-block;
+			&:before{
+				left: 50px;
+			}
+		}
+		img{
+			vertical-align: text-bottom;
+		}
+		p{
+			color: white;
+			text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
+			margin-left: 10px;
+		}
+		@media only screen and ( max-width: 991px ){
+			height: 350px;
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2135,7 +2725,6 @@ main{
 	height: 290px;
 	z-index: 1;
 	color: $color_3;
-
 	h1{
 		margin-top: 0;
 		margin-left: 10px;
@@ -2145,7 +2734,7 @@ main{
 		}
 	}
 	img{
-			vertical-align: text-bottom;
+		vertical-align: text-bottom;
 	}
 	p{
 		color: white;
@@ -2157,10 +2746,12 @@ main{
 	}
 }
 
-.map-content{
-  border-radius: 15px;
-  overflow: hidden;
+.gm-content{
+
 }
+
+
+
 
 
 
@@ -2194,7 +2785,7 @@ main{
 
 
 
-.feedback-contacts{
+#feedback-contacts{
 
 	input, textarea,{
 		width: 80%;
@@ -2212,11 +2803,9 @@ main{
 		font-weight: 800;
 		border-radius: 5px;
 		padding: 10px 15px;
-/* 		&:hover{
-			border-color: transparent;
-			color: black;
-		} */
 	}
+	*{
+		color: white;}
 	textarea{
 		height: 100px;
 	}
@@ -2282,11 +2871,7 @@ main{
 	p, address{
 		line-height: 170%;
 	}
-	.footer-content{
-	}
-	.footer-email{
-		margin-top: 25px;
-	}
+
 	a{
 		color: white;
 		&:hover{
@@ -2295,49 +2880,61 @@ main{
 			
 		}
 	}
-	.footer-menu{
+}
+
+
+.footer-contacts{
+	overflow: hidden;
+	address{
+		width: 26%;
+	}
+	.footer-copy{ 
+		//width: 20.5%;
+	}
+	.phone-content{
 		text-align: center;
-		li{
-			display: inline-block;
-			margin: 0 20px;
+		width: 55%;
+		span{
+			border: 1px solid $color_gray_4;
+			border-radius: 15px;
+			padding: 10px 15px;
+			margin: 0 1%;
 		}
-		a{
-			padding: 20px 0;
+	}
+	.phone-content, .footer-copy, address{
+		@include table-celling(100px);
+		padding-left: 15px;
+		padding-right: 15px;
+		@media only screen and( max-width: 991px ){
 			display: block;
+			width: 100%;
+			margin: 15px auto;
+			height: initial;
 		}
 	}
-	.footer-logo{
-		text-align: center;
-		padding: 30px 0;
+
+
+}
+.footer-menu{
+	text-align: center;
+	li{
+		display: inline-block;
+		margin: 0 20px;
 	}
-
-	.footer-contacts{
-			overflow: hidden;
-		.phone-style{
-			width: (50/3)+%;
-		}
-		.footer-copy,address{
-			width: 24.5%;
-		}
-
-		.phone-style, .footer-copy, address{
-			@include table-celling(100px);
-			padding-left: 15px;
-			padding-right: 15px;
-			@media only screen and( max-width: 991px ){
-				display: block;
-				width: 100%;
-				margin: 15px 0;
-				height: initial;
-			}
-		}
-
-
-
+	a{
+		padding: 20px 0;
+		display: block;
 	}
+}
+.footer-logo{
+	text-align: center;
+	padding: 30px 0;
+}
+.footer-content{
+}
 
-
-
+.footer-bottom{
+	border-top: 1px solid $color_gray_4;
 }
 
 

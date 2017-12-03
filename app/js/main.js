@@ -15,15 +15,23 @@ $(function(){
 			transitionEffect: "zoom-in-out"
 		});
 
+
 	//WOW
 	new WOW({
 		offset: 30
 	}).init();
 
+		// AOS
+	AOS.init({
+	  offset: 0,
+	  duration: 2000,
+	  once: true,
+	  delay: 100
+	});
+	setTimeout(function(){AOS.refresh()}, 100)
 
 	// SKROLLR
 	if( !isMobile ){
-
 		var skr = skrollr.init({
 			smoothScrolling: true,
 			mobileDeceleration: 0.004
@@ -102,12 +110,41 @@ $(function(){
 	//SCROLL
 	var header_status = false;
 	$( window ).on("scroll", function(e){
+
 		if($(window).scrollTop() > 300 && header_status == false){
 			header_status = true; 
 		}else if($(window).scrollTop() < 300 && header_status == true){
 			header_status = false;
 		}
+		lsTextReplaceCheck( $("[data-ls-text]") );
+
 	});
+
+	if ( $("[data-ls-text]").length )
+	$("[data-ls-text]").map( function(i, el){
+		$(el).attr( "data-ls-text", $(el).text() ).text("");
+	} )
+	function lsTextReplaceCheck (el) {
+		for ( var i = 0; i < el.length ; i++)
+			if( scrolledDiv( el[i] ) && !el[i].hasAttribute("text-replaced") )
+				lsTextReplace( el[i], $(el[i]).attr("data-ls-text") )
+		
+	}
+	function lsTextReplace(el, textValue) {
+		TweenMax.to( el, 3, {
+			text: {
+				padSpace: true,
+				ease:Power2.easeIn,
+				value: textValue
+			}
+		} );
+		$(el).attr("text-replaced", "true");
+	}
+
+
+
+
+
 
 
 
@@ -117,7 +154,6 @@ $(function(){
 			imagesTotalCount = 			images.length,
 			imagesLoadedCount = 		0,
 			preloadPercent = 		 $(".percent");
-
 	for ( var i = 0; i < imagesTotalCount ; i++ ) {
 		var image_clone = new Image();
 				image_clone.onload = 		image_loaded;
@@ -125,7 +161,6 @@ $(function(){
 				image_clone.src = 			images[i].src;
 
 	}
-
 	function image_loaded (){
 		imagesLoadedCount++;
 
@@ -143,7 +178,6 @@ $(function(){
 			setTimeout( function (){
 				//$(".preloader").slideToggle();
 				$( "body" ).css("overflow-y", "auto");
-				scroll(0, 0);
 			}, 600)
 
 	}
@@ -154,7 +188,7 @@ $(function(){
 	  console.log( e.target, e.relatedTarget )
 	})
 
-//canvasDust
+
 
 
 	});

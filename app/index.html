@@ -123,7 +123,7 @@
 
 			<span class="img-content">
 				<svg>
-				     <circle class="logo-circle-1"/>
+					<circle class="logo-circle-1"/>
 				</svg>
 				<img src="img/logo.png"/>
 			</span>
@@ -157,14 +157,14 @@
 						<div id="fail-message"></div>
 					</div>
 					<h3>Связаться с нами</h3>
-					<form id="feedback-contacts" method="post" action="" class="contact-form">
+					<form id="feedback-main" method="post" action="" class="contact-form">
 
 
 
 						<!-- NAME -->
 						<span class="input input--nariko input-name">
 							<input class="input__field input__field--nariko" 
-										 form="feedback-contacts"
+										 form="feedback-main"
 										 type="text" 
 										 id="input-1" 
 										 name="name"
@@ -181,7 +181,7 @@
 						<span class="input input--nariko input-email">
 
 							<input class="input__field input__field--nariko" 
-										 form="feedback-contacts"
+										 form="feedback-main"
 										 type="email" 
 										 id="input-2" 
 										 name="email"
@@ -199,7 +199,7 @@
 						<span class="input input--nariko input-phone">
 
 							<input class="input__field input__field--nariko" 
-										 form="feedback-contacts"
+										 form="feedback-main"
 										 type="tel" 
 										 id="input-3" 
 										 name="tel"
@@ -220,7 +220,7 @@
 							<textarea class="" 
 										 style="resize: none;"
 										 id="textarea-4"
-										 form="feedback-contacts"
+										 form="feedback-main"
 										 type="text" 
 										 name="message"
 										 autocomplete="off" 
@@ -231,7 +231,7 @@
 						</span>
 
 						<div class="form-footer">
-			      	<button type="submit" class="align-right btn-default submit" form="feedback-contacts" autofocus="autofocus">
+			      	<button type="submit" class="align-right btn-default submit" form="feedback-main">
 			      		<b>Отправить</b>
 			      	</button>
 			      </div>
@@ -288,18 +288,34 @@
 									 data-start="800" 
 									 data-easing="easeOutBack">
 
-									<h3 class="tp-caption randomrotate start" >
+									<h3 class="tp-caption start customin customout splitted" 
+										  data-speed="1000"
+										  data-elementdelay="0.05"
+										  data-endelementdelay="0.8"
+										  data-customin="x:-50;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:center center;"
+										  data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+										  data-splitin="chars" 
+									 	  data-splitout="chars" 
+										  data-start="800" 
+										  data-easing="easeInOut">
 										Спецтехника
 									</h3>
 
-									<h1 class="tp-caption randomrotate start" 
-											data-speed="1000"
-											data-start="900">
+									<h1 class="tp-caption start customin customout splitted" 
+										  data-speed="1000"
+										  data-elementdelay="0.08"
+										  data-endelementdelay="0.8"
+										  data-customin="x:150;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:center center;"
+										  data-customout="x:-150;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:center center;"
+										  data-splitin="chars" 
+									 	  data-splitout="chars" 
+										  data-start="800" 
+										  data-easing="easeInOut">
 											В лизинг
 									</h1>
 
 
-<!-- 
+
 									<div class="intro-car-choice hidden-sm hidden-xs">
 										<div class="intro-choice">
 											<a href="">
@@ -333,14 +349,173 @@
 												</span>
 											</a>
 										</div>
-									</div> -->
+									</div>
 
 							</div>
 
+					</li>
 
+					<li class="slide-2" 
+							data-transition="fade"
+							data-masterspeed="2000">
+
+						<img src="img/slider/slide-2.jpg">
+
+							<div class="caption slide-header" 
+									 data-x="center" 
+									 data-y="center"
+									 data-speed="1300"
+									 data-start="800" 
+									 data-easing="easeOutBack">
+
+									<h3 class="tp-caption start customin customout splitted" 
+										  data-speed="1000"
+										  data-elementdelay="0.05"
+										  data-endelementdelay="0.8"
+										  data-customin="x:-50;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:center center;"
+										  data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+										  data-splitin="chars" 
+									 	  data-splitout="chars" 
+										  data-start="800" 
+										  data-easing="easeInOut">
+										Недвижимость в лизинг
+									</h3>
+
+									<h1 class="tp-caption start customin customout splitted" 
+										  data-speed="1000"
+										  data-elementdelay="0.08"
+										  data-endelementdelay="0.8"
+										  data-customin="x:150;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:center center;"
+										  data-customout="x:-150;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:center center;"
+										  data-splitin="chars" 
+									 	  data-splitout="chars" 
+										  data-start="800" 
+										  data-easing="easeInOut">
+											В лизинг
+									</h1>
+
+
+
+									<div class="intro-car-choice hidden-sm hidden-xs">
+										<div class="intro-choice">
+											<a href="">
+												<span class="desc">
+													Иномарки
+												</span>
+												<span class="route-icon">
+													<i class="fa fa-caret-right"></i>
+												</span>
+											</a>
+										</div>
+
+										<div class="intro-choice">
+											<a href="">
+												<span class="desc">
+													Б/У
+												</span>
+												<span class="route-icon">
+													<i class="fa fa-caret-right"></i>
+												</span>
+											</a>
+										</div>
+										
+										<div class="intro-choice">
+											<a href="">
+												<span class="desc">
+													Отечественные
+												</span>
+												<span class="route-icon">
+													<i class="fa fa-caret-right"></i>
+												</span>
+											</a>
+										</div>
+									</div>
+
+							</div>
+
+					</li>
+
+					<li class="slide-3" 
+							data-transition="fade"
+							data-masterspeed="2000">
+
+						<img src="img/slider/slide-3.jpg">
+
+							<div class="caption slide-header" 
+									 data-x="center" 
+									 data-y="center"
+									 data-speed="1300"
+									 data-start="800" 
+									 data-easing="easeOutBack">
+
+									<h3 class="tp-caption start customin customout splitted" 
+										  data-speed="1000"
+										  data-elementdelay="0.05"
+										  data-endelementdelay="0.8"
+										  data-customin="x:-50;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:center center;"
+										  data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+										  data-splitin="chars" 
+									 	  data-splitout="chars" 
+										  data-start="800" 
+										  data-easing="easeInOut">
+										Легковые автомобили
+									</h3>
+
+									<h1 class="tp-caption start customin customout splitted" 
+										  data-speed="1000"
+										  data-elementdelay="0.08"
+										  data-endelementdelay="0.8"
+										  data-customin="x:150;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:center center;"
+										  data-customout="x:-150;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:center center;"
+										  data-splitin="chars" 
+									 	  data-splitout="chars" 
+										  data-start="800" 
+										  data-easing="easeInOut">
+											В лизинг
+									</h1>
+
+
+
+									<div class="intro-car-choice hidden-sm hidden-xs">
+										<div class="intro-choice">
+											<a href="">
+												<span class="desc">
+													Иномарки
+												</span>
+												<span class="route-icon">
+													<i class="fa fa-caret-right"></i>
+												</span>
+											</a>
+										</div>
+
+										<div class="intro-choice">
+											<a href="">
+												<span class="desc">
+													Б/У
+												</span>
+												<span class="route-icon">
+													<i class="fa fa-caret-right"></i>
+												</span>
+											</a>
+										</div>
+										
+										<div class="intro-choice">
+											<a href="">
+												<span class="desc">
+													Отечественные
+												</span>
+												<span class="route-icon">
+													<i class="fa fa-caret-right"></i>
+												</span>
+											</a>
+										</div>
+									</div>
+
+							</div>
 
 					</li>
 					
+			
 					
 
 				</ul>
@@ -488,6 +663,21 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		<!-- SHORT-FEEDBACK -->
 		<div class="row short-feedback m-v-60">
 			<div class="container">
@@ -518,16 +708,35 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		<!-- SHORT-ADVANTAGE -->
 		<div class="row short-advantage m-v-60">
 
 			<div class="container">
 
-				<h1>Преимущества валютного лизинга</h1>
+				<h1 data-ls-text>Преимущества валютного лизинга</h1>
 
 
 				<svg class="hide">
-					<symbol id="line-style-1">
+					<symbol id="line-style">
 						<circle r="3" cx="50%" cy="10%"></circle>
 						<circle r="3" cx="50%" cy="90%"></circle>
 						<line x1="50%" y1="10%" x2="50%" y2="90%"></line>
@@ -535,25 +744,23 @@
 				</svg>
 
 
-				<div class="short-advantage-items inlineble-4">
+				<div class="short-advantage-items inlineble-4" data-aos="fade-down">
 
 					<figure>
 						<div class="drib">
 							<svg class="drib-circle">
 							    <circle class="circle-1" r="48%" cx="50%" cy="50%"/>
-							    <circle class="circle-2" r="30%" cx="50%" cy="50%" />
-							    <span><polygon points="0,100 25,75 0,50"/></span>
+							    <circle class="circle-2" r="15%" cx="50%" cy="50%" />
 							</svg>
 							<svg class="drib-poligon drib-poligon-style">
 							   <polygon points="0,0 25,25 0,50"/>
 							</svg>
 							<svg class="drib-line">
-								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#line-style-1"  >
-								</use>
+								<use xlink:href="#line-style"></use>
 							</svg>
 							<span class="icon-percent"></span>
 						</div>
-						<div class="desc-content">
+						<div class="desc-content" data-aos="zoom-in">
 							<h4>12% в год</h4>
 						</div>
 					</figure>
@@ -562,19 +769,17 @@
 						<div class="drib drib-style-1">
 							<svg class="drib-circle">
 							    <circle class="circle-1 stroke-style-1" r="48%" cx="50%" cy="50%"/>
-							    <circle class="circle-2" r="30%" cx="50%" cy="50%" />
-							    <span><polygon points="0,100 25,75 0,50"/></span>
+							    <circle class="circle-2" r="15%" cx="50%" cy="50%" />
 							</svg>
 							<svg class="drib-poligon drib-poligon-style">
 							   <polygon points="0,0 25,25 0,50"/>
 							</svg>
 							<svg class="drib-line">
-								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#line-style-1"  >
-								</use>
+								<use xlink:href="#line-style"></use>
 							</svg>
 							<span class="icon-supply"></span>
 						</div>
-						<div class="desc-content">
+						<div class="desc-content" data-aos="zoom-in">
 							<h4>Прямая поставка</h4>
 							<p> (оборудования, спецтехники
 								и автомобиля от производителя) </p>
@@ -585,19 +790,17 @@
 						<div class="drib">
 							<svg class="drib-circle">
 							    <circle class="circle-1" r="48%" cx="50%" cy="50%"/>
-							    <circle class="circle-2" r="30%" cx="50%" cy="50%" />
-							    <span><polygon points="0,100 25,75 0,50"/></span>
+							    <circle class="circle-2" r="15%" cx="50%" cy="50%" />
 							</svg>
 							<svg class="drib-poligon drib-poligon-style">
 							   <polygon points="0,0 25,25 0,50"/>
 							</svg>
 							<svg class="drib-line">
-								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#line-style-1"  >
-								</use>
+								<use xlink:href="#line-style"></use>
 							</svg>
 							<span class="icon-dollar"></span>
 						</div>
-						<div class="desc-content">
+						<div class="desc-content" data-aos="zoom-in">
 							<h4>Без первоначальной предоплаты</h4>
 						</div>
 					</figure>
@@ -606,19 +809,17 @@
 						<div class="drib drib-style-1">
 							<svg class="drib-circle">
 							    <circle class="circle-1" r="48%" cx="50%" cy="50%"/>
-							    <circle class="circle-2" r="30%" cx="50%" cy="50%" />
-							    <span><polygon points="0,100 25,75 0,50"/></span>
+							    <circle class="circle-2" r="15%" cx="50%" cy="50%" />
 							</svg>
 							<svg class="drib-poligon drib-poligon-style">
 							   <polygon points="0,0 25,25 0,50"/>
 							</svg>
 							<svg class="drib-line">
-								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#line-style-1"  >
-								</use>
+								<use xlink:href="#line-style"></use>
 							</svg>
 							<span class="icon-calendar"></span>
 						</div>
-						<div class="desc-content">
+						<div class="desc-content" data-aos="zoom-in">
 							<h4>От 1 года до 3 лет</h4>
 						</div>
 					</figure>
@@ -627,6 +828,179 @@
 
 			</div>
 		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+		<div class="row short-services">
+			<div class="conteiner">
+				<div class="short-services-content" data-aos="fade" data-durations="300" data-aos-offset="500">
+
+
+
+					<div class="sun">
+
+						<svg class="sun-circle">
+					    <circle class="circle-1" r="50%" cx="50%" cy="50%"/></circle>
+					    <path class="path-1" d="M 71.5 -15 a 200 200 100 0 1 158 0"></path>
+					    <path class="path-2" d="M 71.5 -15 a 200 200 100 0 1 158 0"></path>
+					    <path class="path-3" d="M 71.5 -15 a 200 200 100 0 1 158 0"></path>
+					    <path class="path-4" d="M 71.5 -15 a 200 200 100 0 1 158 0"></path>
+					    <path class="path-5" d="M 71.5 -15 a 200 200 100 0 1 158 0"></path>
+					    <path class="path-6" d="M 71.5 -15 a 200 200 100 0 1 158 0"></path>
+						</svg>
+
+						<div class="sun-petals">
+
+
+							<div class="sun-petal style-1">
+
+								<svg id="petal-circle" class="petal-circle">
+										<a href="">
+								    <circle class="circle-1" r="30%" cx="50%" cy="50%"/>
+								    <circle class="circle-2" r="15%" cx="50%" cy="50%" />
+								    <circle class="circle-3" r="12.5%" cx="50%" cy="50%" />
+								    <circle class="circle-4" r="15%" cx="50%" cy="50%" />
+									</svg>
+									<svg class="petal-polygon">
+									   <polygon points="0,0 20,35 40,0"/>
+									</svg>
+
+									<b>Валютный лизинг</b>
+									<span class="icon-currency"></span>
+								</a>
+							</div>
+							
+							<div class="sun-petal style-2">
+									<a href="">
+									<svg class="petal-circle">
+								    <circle class="circle-1" r="30%" cx="50%" cy="50%"/>
+								    <circle class="circle-2" r="15%" cx="50%" cy="50%" />
+								    <circle class="circle-3" r="12.5%" cx="50%" cy="50%" />
+								    <circle class="circle-4" r="15%" cx="50%" cy="50%" />
+									</svg>
+									<svg class="petal-polygon">
+									   <polygon points="0,0 20,35 40,0"/>
+									</svg>
+									<b>Спецтехника в лизинг</b>
+									<span class="icon-specialeq"></span>
+								</a>
+							</div>
+							
+							<div class="sun-petal style-3">
+									<a href="">
+									<svg class="petal-circle">
+								    <circle class="circle-1" r="30%" cx="50%" cy="50%"/>
+								    <circle class="circle-2" r="15%" cx="50%" cy="50%" />
+								    <circle class="circle-3" r="12.5%" cx="50%" cy="50%" />
+								    <circle class="circle-4" r="15%" cx="50%" cy="50%" />
+									</svg>
+									<svg class="petal-polygon">
+									   <polygon points="0,0 20,35 40,0"/>
+									</svg>
+									<b>Возвратный лизинг</b>
+									<span class="icon-back"></span>
+								</a>
+							</div>
+							
+							<div class="sun-petal style-4">
+									<a href="">
+									<svg class="petal-circle">
+								    <circle class="circle-1" r="30%" cx="50%" cy="50%"/>
+								    <circle class="circle-2" r="15%" cx="50%" cy="50%" />
+								    <circle class="circle-3" r="12.5%" cx="50%" cy="50%" />
+								    <circle class="circle-4" r="15%" cx="50%" cy="50%" />
+									</svg>
+									<svg class="petal-polygon">
+									   <polygon points="0,0 20,35 40,0"/>
+									</svg>
+									<b>Оборудование в лизинг</b>
+									<span class="icon-equipment"></span>
+								</a>
+							</div>
+							
+							<div class="sun-petal style-5">
+									<a href="">
+									<svg class="petal-circle">
+								    <circle class="circle-1" r="30%" cx="50%" cy="50%"/>
+								    <circle class="circle-2" r="15%" cx="50%" cy="50%" />
+								    <circle class="circle-3" r="12.5%" cx="50%" cy="50%" />
+								    <circle class="circle-4" r="15%" cx="50%" cy="50%" />
+									</svg>
+									<svg class="petal-polygon">
+									   <polygon points="0,0 20,35 40,0"/>
+									</svg>
+									<b>Легковые автомобили в лизинг</b>
+									<span class="icon-car"></span>
+								</a>
+							</div>
+							
+							<div class="sun-petal style-6">
+									<a href="">
+									<svg class="petal-circle">
+								    <circle class="circle-1" r="30%" cx="50%" cy="50%"/>
+								    <circle class="circle-2" r="15%" cx="50%" cy="50%" />
+								    <circle class="circle-3" r="12.5%" cx="50%" cy="50%" />
+								    <circle class="circle-4" r="15%" cx="50%" cy="50%" />
+									</svg>
+									<svg class="petal-polygon">
+									   <polygon points="0,0 20,35 40,0"/>
+									</svg>
+									<b>Недвижимость в лизинг</b>
+									<span class="icon-home"></span>
+								</a>
+							</div>
+							
+
+
+						</div>
+
+						<span class="circle-in">
+							<img src="img/logo-black.png"/>
+							<div class="desc-content">
+								<h4>Спектр</h4>
+								<p>Лизинговых улуг</p>
+							</div>
+						</span>
+
+					</div>
+
+
+
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -703,14 +1077,274 @@
 
 
 
+ 
+
+		<div class="row soc-map-content">
+			<div class="container">
+
+				<div class="p-v-60 clearfix">
+
+						<div class="gm-content col-md-8">
+
+
+
+							<div id="map"></div>
+										<script>
+
+										var i = {
+														
+														gm_title : 								'Мы',
+														gm_icon: 									"img/icons/map-marker.png",
+
+														gm_marker_position_lat:  	41.293000,
+														gm_marker_position_lng:  	69.219502,
+
+														gm_zoom: 									13,
+
+														gm_position_lat: 			 		41.298539,
+														gm_position_lng: 				 	69.219502
+												}
+
+								   	function initMap() {
+
+												var map = new google.maps.Map(document.getElementById('map'), {
+														zoom: i.gm_zoom,
+														center: {lat: i.gm_position_lat, lng: i.gm_position_lng},
+														disableDefaultUI: true,
+														styles:[
+																		  {
+																		    "elementType": "geometry",
+																		    "stylers": [
+																		      {
+																		        "color": "#212121"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "elementType": "labels.icon",
+																		    "stylers": [
+																		      {
+																		        "visibility": "off"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "elementType": "labels.text.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#757575"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "elementType": "labels.text.stroke",
+																		    "stylers": [
+																		      {
+																		        "color": "#212121"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "administrative",
+																		    "elementType": "geometry",
+																		    "stylers": [
+																		      {
+																		        "color": "#757575"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "administrative.country",
+																		    "elementType": "labels.text.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#9e9e9e"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "administrative.land_parcel",
+																		    "stylers": [
+																		      {
+																		        "visibility": "off"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "administrative.locality",
+																		    "elementType": "labels.text.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#bdbdbd"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "poi",
+																		    "elementType": "labels.text.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#757575"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "poi.park",
+																		    "elementType": "geometry",
+																		    "stylers": [
+																		      {
+																		        "color": "#181818"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "poi.park",
+																		    "elementType": "labels.text.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#616161"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "poi.park",
+																		    "elementType": "labels.text.stroke",
+																		    "stylers": [
+																		      {
+																		        "color": "#1b1b1b"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "road",
+																		    "elementType": "geometry.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#2c2c2c"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "road",
+																		    "elementType": "labels.text.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#8a8a8a"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "road.arterial",
+																		    "elementType": "geometry",
+																		    "stylers": [
+																		      {
+																		        "color": "#373737"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "road.highway",
+																		    "elementType": "geometry",
+																		    "stylers": [
+																		      {
+																		        "color": "#3c3c3c"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "road.highway.controlled_access",
+																		    "elementType": "geometry",
+																		    "stylers": [
+																		      {
+																		        "color": "#4e4e4e"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "road.local",
+																		    "elementType": "labels.text.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#616161"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "transit",
+																		    "elementType": "labels.text.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#757575"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "water",
+																		    "elementType": "geometry",
+																		    "stylers": [
+																		      {
+																		        "color": "#000000"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "water",
+																		    "elementType": "labels.text.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#3d3d3d"
+																		      }
+																		    ]
+																		  }
+																		]
+																												});
+												var marker = new google.maps.Marker({
+													position: {lat: i.gm_marker_position_lat, lng: i.gm_marker_position_lng},
+													map: map,
+													icon: i.gm_icon,
+													title: i.gm_title
+												});
+												var infoWindow = new google.maps.InfoWindow({
+													content: i.gm_content,
+													maxWidth: "400"
+												});
+
+											}//initMap end
+
+									  </script>
+										<script async defer
+											src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVUinUZqQAIM1NfbavWbOKtsc3l-XE_ag&callback=initMap">
+										</script>
+						</div>
+
+						<div class="fb-widget align-right-md align-center-sm">
+							<div class="fb-page" 
+									 data-href="https://www.facebook.com/facebook/" 
+									 data-tabs="false" 
+									 data-small-header="false" 
+									 data-adapt-container-width="true" 
+									 data-hide-cover="false" 
+									 data-show-facepile="true">
+
+								<blockquote cite="https://www.facebook.com/facebook/" class="fb-xfbml-parse-ignore">
+									<a href="https://www.facebook.com/facebook/">Facebook</a>
+								</blockquote>
+							</div>
+						</div>
+
+					</div>
+
+			</div>
+		</div>
 
 
 
 
-
-
-
-
+<!-- 					<div class="footer-feedback p-v-30">	
+						<a role="button" data-toggle="modal" data-target="#feedback-modal-1">
+							<span class="text-style-1">Обратная связь</span>
+						</a>
+					</div> -->
 
 
 
@@ -749,244 +1383,6 @@
 	<footer id="footer" class="container-fluid align-center-sm">
 		
 		<div class="container">
-				
-			<div class="footer-map-content p-v-30 clearfix">
-
-				<div class="col-md-7">
-
-
-
-					<div id="map"></div>
-								<script>
-
-								var i = {
-												
-												gm_title : 								'Мы',
-												gm_icon: 									"img/icons/map-marker.png",
-
-												gm_marker_position_lat:  	41.293000,
-												gm_marker_position_lng:  	69.219502,
-
-												gm_zoom: 									13,
-
-												gm_position_lat: 			 		41.298539,
-												gm_position_lng: 				 	69.219502
-										}
-
-						   	function initMap() {
-
-										var map = new google.maps.Map(document.getElementById('map'), {
-												zoom: i.gm_zoom,
-												center: {lat: i.gm_position_lat, lng: i.gm_position_lng},
-												disableDefaultUI: true,
-												styles:[
-																  {
-																    "elementType": "geometry",
-																    "stylers": [
-																      {
-																        "color": "#212121"
-																      }
-																    ]
-																  },
-																  {
-																    "elementType": "labels.icon",
-																    "stylers": [
-																      {
-																        "visibility": "off"
-																      }
-																    ]
-																  },
-																  {
-																    "elementType": "labels.text.fill",
-																    "stylers": [
-																      {
-																        "color": "#757575"
-																      }
-																    ]
-																  },
-																  {
-																    "elementType": "labels.text.stroke",
-																    "stylers": [
-																      {
-																        "color": "#212121"
-																      }
-																    ]
-																  },
-																  {
-																    "featureType": "administrative",
-																    "elementType": "geometry",
-																    "stylers": [
-																      {
-																        "color": "#757575"
-																      }
-																    ]
-																  },
-																  {
-																    "featureType": "administrative.country",
-																    "elementType": "labels.text.fill",
-																    "stylers": [
-																      {
-																        "color": "#9e9e9e"
-																      }
-																    ]
-																  },
-																  {
-																    "featureType": "administrative.land_parcel",
-																    "stylers": [
-																      {
-																        "visibility": "off"
-																      }
-																    ]
-																  },
-																  {
-																    "featureType": "administrative.locality",
-																    "elementType": "labels.text.fill",
-																    "stylers": [
-																      {
-																        "color": "#bdbdbd"
-																      }
-																    ]
-																  },
-																  {
-																    "featureType": "poi",
-																    "elementType": "labels.text.fill",
-																    "stylers": [
-																      {
-																        "color": "#757575"
-																      }
-																    ]
-																  },
-																  {
-																    "featureType": "poi.park",
-																    "elementType": "geometry",
-																    "stylers": [
-																      {
-																        "color": "#181818"
-																      }
-																    ]
-																  },
-																  {
-																    "featureType": "poi.park",
-																    "elementType": "labels.text.fill",
-																    "stylers": [
-																      {
-																        "color": "#616161"
-																      }
-																    ]
-																  },
-																  {
-																    "featureType": "poi.park",
-																    "elementType": "labels.text.stroke",
-																    "stylers": [
-																      {
-																        "color": "#1b1b1b"
-																      }
-																    ]
-																  },
-																  {
-																    "featureType": "road",
-																    "elementType": "geometry.fill",
-																    "stylers": [
-																      {
-																        "color": "#2c2c2c"
-																      }
-																    ]
-																  },
-																  {
-																    "featureType": "road",
-																    "elementType": "labels.text.fill",
-																    "stylers": [
-																      {
-																        "color": "#8a8a8a"
-																      }
-																    ]
-																  },
-																  {
-																    "featureType": "road.arterial",
-																    "elementType": "geometry",
-																    "stylers": [
-																      {
-																        "color": "#373737"
-																      }
-																    ]
-																  },
-																  {
-																    "featureType": "road.highway",
-																    "elementType": "geometry",
-																    "stylers": [
-																      {
-																        "color": "#3c3c3c"
-																      }
-																    ]
-																  },
-																  {
-																    "featureType": "road.highway.controlled_access",
-																    "elementType": "geometry",
-																    "stylers": [
-																      {
-																        "color": "#4e4e4e"
-																      }
-																    ]
-																  },
-																  {
-																    "featureType": "road.local",
-																    "elementType": "labels.text.fill",
-																    "stylers": [
-																      {
-																        "color": "#616161"
-																      }
-																    ]
-																  },
-																  {
-																    "featureType": "transit",
-																    "elementType": "labels.text.fill",
-																    "stylers": [
-																      {
-																        "color": "#757575"
-																      }
-																    ]
-																  },
-																  {
-																    "featureType": "water",
-																    "elementType": "geometry",
-																    "stylers": [
-																      {
-																        "color": "#000000"
-																      }
-																    ]
-																  },
-																  {
-																    "featureType": "water",
-																    "elementType": "labels.text.fill",
-																    "stylers": [
-																      {
-																        "color": "#3d3d3d"
-																      }
-																    ]
-																  }
-																]
-																										});
-										var marker = new google.maps.Marker({
-											position: {lat: i.gm_marker_position_lat, lng: i.gm_marker_position_lng},
-											map: map,
-											icon: i.gm_icon,
-											title: i.gm_title
-										});
-										var infoWindow = new google.maps.InfoWindow({
-											content: i.gm_content,
-											maxWidth: "400"
-										});
-
-									}//initMap end
-
-							  </script>
-								<script async defer
-									src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVUinUZqQAIM1NfbavWbOKtsc3l-XE_ag&callback=initMap">
-								</script>
-				</div>
-
-			</div>
-
 			<div class="footer-content clearfix">
 
 
@@ -1002,45 +1398,52 @@
 				<div class="footer-logo col-xs-12">
 					<img src="img/logo.png"/>
 				</div>
+			</div>
+		</div>
+
+
+		<div class="row footer-bottom">
+			<div class="container">
 
 				<div class="footer-contacts col-xs-12">
-
-					<div class="footer-copy hidden-xs hidden-md">
+					<div class="footer-copy hidden-xs hidden-sm">
 						<p>
 							<a href="https://www.life-style.uz" title="Создание и продвижение сайтов в Ташкенте">
-									Создание сайтов
+								Создание сайтов
 							</a> 
 							<em><font color="#00b3ce">Life</font></em>
 							<font color="ghostwhite">Style</font>
 						</p>
 					</div>
-
-					<span class="phone-style">
-						+998 71 230 09 90
-					</span>
-					<span class="phone-style">
-						+998 97 409 09 90
-					</span>
-					<span class="phone-style">
-						+998 71 908 09 90
-					</span>
-
+					<div class="phone-content align-right-md-impt">
+						<span>
+							+998 71 230 09 90
+						</span>
+						<span>
+							+998 97 409 09 90
+						</span>
+						<span>
+							+998 71 908 09 90
+						</span>
+					</div>
 					<address>
 						Адрес: г. Ташкент, Яккасарайски р-н,<br />
 						ул. Бабура 77<br />
 						E-mail: info@afl.uz
 					</address>
 
-				</div>
 
+				</div>
 			</div>
+		</div>
 
 		
 
 
-		</div>
+		
 	</footer>
 	
+
 
 
 
@@ -1057,6 +1460,19 @@
 		<script src="js/scripts.min.js"></script>
 		<script src="js/main.js"></script>
 		
+
+		<!-- WIDGETS -->
+<!-- 		
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.11';
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+ -->
+
 		<!-- jQuery REVOLUTION Slider  -->
 		<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 		<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
@@ -1068,7 +1484,7 @@
 			REVOLUTION Slider
 		*/
 			  $(function() {
-			  	
+			  	if( $('.rev-slider').length )
 			    $('.rev-slider').revolution({
 						delay:9000,
 						startwidth: $( window ).width(),
