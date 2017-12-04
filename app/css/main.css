@@ -16680,305 +16680,305 @@ input.hamburger {
       -ms-transform: translate(0, 0);
       transform: translate(0, 0); }
       input.hamburger:checked ~ .drawer-list li:nth-child(1) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 0.08s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 0.08s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 0.08s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.08s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.08s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 0.08s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(2) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 0.16s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 0.16s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 0.16s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.16s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.16s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 0.16s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(3) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 0.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 0.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 0.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.24s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 0.24s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(4) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 0.32s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 0.32s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 0.32s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.32s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.32s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 0.32s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(5) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 0.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 0.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 0.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.4s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 0.4s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(6) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 0.48s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 0.48s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 0.48s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.48s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.48s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 0.48s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(7) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 0.56s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 0.56s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 0.56s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.56s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.56s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 0.56s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(8) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 0.64s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 0.64s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 0.64s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.64s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.64s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 0.64s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(9) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 0.72s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 0.72s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 0.72s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.72s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.72s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 0.72s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(10) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 0.8s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 0.8s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 0.8s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.8s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.8s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 0.8s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(11) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 0.88s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 0.88s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 0.88s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.88s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.88s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 0.88s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(12) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 0.96s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 0.96s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 0.96s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.96s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 0.96s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 0.96s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(13) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 1.04s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 1.04s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 1.04s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.04s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.04s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 1.04s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(14) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 1.12s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 1.12s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 1.12s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.12s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.12s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 1.12s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(15) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 1.2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 1.2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 1.2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.2s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 1.2s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(16) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 1.28s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 1.28s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 1.28s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.28s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.28s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 1.28s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(17) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 1.36s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 1.36s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 1.36s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.36s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.36s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 1.36s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(18) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 1.44s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 1.44s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 1.44s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.44s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.44s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 1.44s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(19) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 1.52s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 1.52s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 1.52s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.52s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.52s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 1.52s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(20) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 1.6s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 1.6s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 1.6s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.6s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.6s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 1.6s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(21) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 1.68s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 1.68s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 1.68s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.68s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.68s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 1.68s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(22) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 1.76s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 1.76s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 1.76s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.76s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.76s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 1.76s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(23) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 1.84s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 1.84s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 1.84s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.84s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.84s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 1.84s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(24) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 1.92s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 1.92s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 1.92s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.92s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 1.92s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 1.92s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(25) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 2s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(26) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 2.08s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 2.08s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 2.08s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.08s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.08s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 2.08s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(27) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 2.16s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 2.16s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 2.16s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.16s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.16s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 2.16s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(28) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 2.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 2.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 2.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.24s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 2.24s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(29) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 2.32s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 2.32s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 2.32s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.32s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.32s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 2.32s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(30) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 2.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 2.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 2.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.4s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 2.4s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(31) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 2.48s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 2.48s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 2.48s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.48s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.48s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 2.48s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(32) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 2.56s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 2.56s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 2.56s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.56s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.56s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 2.56s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(33) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 2.64s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 2.64s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 2.64s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.64s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.64s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 2.64s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(34) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 2.72s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 2.72s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 2.72s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.72s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.72s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 2.72s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(35) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 2.8s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 2.8s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 2.8s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.8s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.8s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 2.8s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(36) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 2.88s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 2.88s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 2.88s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.88s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.88s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 2.88s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(37) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 2.96s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 2.96s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 2.96s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.96s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 2.96s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 2.96s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(38) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 3.04s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 3.04s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 3.04s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.04s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.04s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 3.04s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(39) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 3.12s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 3.12s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 3.12s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.12s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.12s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 3.12s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(40) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 3.2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 3.2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 3.2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.2s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 3.2s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(41) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 3.28s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 3.28s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 3.28s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.28s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.28s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 3.28s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(42) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 3.36s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 3.36s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 3.36s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.36s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.36s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 3.36s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(43) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 3.44s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 3.44s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 3.44s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.44s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.44s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 3.44s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(44) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 3.52s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 3.52s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 3.52s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.52s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.52s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 3.52s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(45) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 3.6s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 3.6s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 3.6s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.6s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.6s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 3.6s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(46) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 3.68s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 3.68s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 3.68s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.68s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.68s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 3.68s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(47) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 3.76s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 3.76s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 3.76s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.76s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.76s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 3.76s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(48) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 3.84s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 3.84s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 3.84s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.84s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.84s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 3.84s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(49) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 3.92s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 3.92s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 3.92s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.92s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 3.92s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 3.92s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li:nth-child(50) {
-        -webkit-transition: -webkit-transform 0.4s ease-in 0s;
-        transition: -webkit-transform 0.4s ease-in 0s;
-        -o-transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s;
-        transition: transform 0.4s ease-in 0s, -webkit-transform 0.4s ease-in 0s; }
+        -webkit-transition: -webkit-transform 1s 4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: -webkit-transform 1s 4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        -o-transition: transform 1s 4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+        transition: transform 1s 4s cubic-bezier(0.29, 1.4, 0.44, 0.96), -webkit-transform 1s 4s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
       input.hamburger:checked ~ .drawer-list li a {
         padding-right: 15px; }
   input.hamburger:checked ~ label > i {
@@ -17519,7 +17519,7 @@ button:hover, button:focus {
 .bg-color-4 {
   background-color: #e31f24; }
 
-.claf, .btn-anima::before, .btn-default::before, .btn-anima:hover::before, .btn-default:hover::before, .btn-anima-2::before, .btn-opacity::before, .btn-anima-2:hover::before, .btn-opacity:hover::before, .link-anima::before, .link-hover a::before, .link-anima:hover::before, .link-hover a:hover::before, .nav-menu:not(.min) .menu-list > li:before, .nav-menu:not(.min) .menu-list > li:after, .short-advantage:before {
+.claf, .btn-anima::before, .btn-default::before, .btn-anima:hover::before, .btn-default:hover::before, .btn-anima-2::before, .btn-opacity::before, .btn-anima-2:hover::before, .btn-opacity:hover::before, .link-anima::before, .link-hover a::before, .link-anima:hover::before, .link-hover a:hover::before, .nav-menu:not(.min) .menu-list > li:before, .nav-menu:not(.min) .menu-list > li:after, .nav-menu:not(.min) [class*="sub-menu"] a:before, .short-advantage:before {
   content: "";
   position: absolute;
   left: 0;
@@ -17924,9 +17924,9 @@ button:hover, button:focus {
     opacity: 0;
     font-weight: normal;
     font-size: 0.9em;
-    -webkit-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in; }
+    -webkit-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out; }
     .nav-menu:not(.min) [class*="sub-menu"] i {
       -webkit-transition: all 0.2s ease-in;
       -o-transition: all 0.2s ease-in;
@@ -17940,13 +17940,12 @@ button:hover, button:focus {
       -ms-transform: matrix(-1, 0, 0, 1, 30, 0);
       transform: matrix(-1, 0, 0, 1, 30, 0); }
     .nav-menu:not(.min) [class*="sub-menu"] li {
+      background-color: rgba(55, 52, 53, 0.9);
       border-left: 1px solid transparent;
       border-right: 1px solid transparent;
       -webkit-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
-      -webkit-border-radius: 0;
-      border-radius: 0;
       position: relative;
       padding: 0 10px;
       text-align: left;
@@ -17960,18 +17959,13 @@ button:hover, button:focus {
         color: #00b3ce; }
     .nav-menu:not(.min) [class*="sub-menu"] a {
       color: #00b3ce;
-      padding: 5px 10px; }
+      padding: 10px 10px; }
     .nav-menu:not(.min) [class*="sub-menu"] a:hover:before {
       -webkit-transform: scaleX(1);
       -ms-transform: scaleX(1);
       transform: scaleX(1);
-      visibility: visible;
-      -webkit-border-radius: 10px;
-      border-radius: 10px; }
+      visibility: visible; }
     .nav-menu:not(.min) [class*="sub-menu"] a:before {
-      content: "";
-      width: 100%;
-      height: 100%;
       border-bottom: 1px solid;
       position: absolute;
       left: 0;
@@ -17986,19 +17980,23 @@ button:hover, button:focus {
       visibility: hidden; }
   .nav-menu:not(.min) .sub-menu-1 {
     padding-bottom: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
     -webkit-perspective: 500px;
     perspective: 500px;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    -webkit-transform: matrix(1, 0, 0, 1, 0, -20);
-    -ms-transform: matrix(1, 0, 0, 1, 0, -20);
-    transform: matrix(1, 0, 0, 1, 0, -20);
+    -webkit-transform: matrix(1, 0, 0, 1, -10, 0);
+    -ms-transform: matrix(1, 0, 0, 1, -10, 0);
+    transform: matrix(1, 0, 0, 1, -10, 0);
     -webkit-transform-origin: 40% 0;
     -ms-transform-origin: 40% 0;
     transform-origin: 40% 0;
     z-index: 1; }
     .nav-menu:not(.min) .sub-menu-1:first-child {
       padding-top: 5px; }
+    .nav-menu:not(.min) .sub-menu-1 li:last-child {
+      padding-bottom: 10px; }
     .nav-menu:not(.min) .sub-menu-1 li:hover .sub-menu-2, .nav-menu:not(.min) .sub-menu-1 li:focus .sub-menu-2 {
       -webkit-transform: inherit;
       -ms-transform: inherit;
@@ -18718,6 +18716,16 @@ main {
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 179, 206, 0.6);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 179, 206, 0.6); }
 
+.short-advantage-items figure:hover .drib-circle .circle-1 {
+  stroke-width: 5px; }
+
+.short-advantage-items figure:hover .drib-poligon {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  left: 73%;
+  top: 58%; }
+
 .drib {
   position: relative;
   display: block;
@@ -18746,6 +18754,9 @@ main {
   stroke: #474747; }
 
 .drib-poligon {
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   position: absolute;
   display: block;
   width: 25px;
@@ -18753,7 +18764,10 @@ main {
   top: 50%;
   left: 50%;
   margin-top: -25px;
-  margin-left: -12.5px; }
+  margin-left: -12.5px;
+  -webkit-transform-origin: -100%;
+  -ms-transform-origin: -100%;
+  transform-origin: -100%; }
 
 .drib-poligon-style {
   fill: #474747;
@@ -19370,7 +19384,7 @@ main {
 @-webkit-keyframes servAnimateIcon {
   from {
     opacity: 0; }
-  80% {
+  90% {
     opacity: 0; }
   to {
     opacity: 1; } }
@@ -19378,7 +19392,7 @@ main {
 @keyframes servAnimateIcon {
   from {
     opacity: 0; }
-  80% {
+  90% {
     opacity: 0; }
   to {
     opacity: 1; } }
@@ -19462,8 +19476,8 @@ main {
     animation: servAnimatePolygon 3s linear; }
 
 .short-services-content.aos-animate [class*="icon"]:before, .short-services-content.aos-animate b {
-  -webkit-animation: servAnimateIcon 3s linear;
-  animation: servAnimateIcon 3s linear; }
+  -webkit-animation: servAnimateIcon 4s linear;
+  animation: servAnimateIcon 4s linear; }
 
 .short-services-content.aos-animate .sun-petal.style-0 {
   -webkit-animation: servAnimateSunPetal-0 3s linear;
@@ -19700,7 +19714,7 @@ main {
   #footer .footer-contacts span {
     padding: 10px 15px;
     margin: 15px auto;
-    width: 40%;
+    width: 70%;
     display: block; }
   #footer .input {
     max-width: -webkit-fit-content;
