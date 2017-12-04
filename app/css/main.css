@@ -11783,9 +11783,10 @@ button.close {
   .carousel-indicators {
     bottom: 20px; } }
 
-.clearfix:before, .nav-menu:not(.min) .menu-list:before,
+.clearfix:before, .nav-menu:not(.min) .menu-list:before, .bg-waves:before,
 .clearfix:after,
 .nav-menu:not(.min) .menu-list:after,
+.bg-waves:after,
 .dl-horizontal dd:before,
 .dl-horizontal dd:after,
 .container:before,
@@ -11819,7 +11820,7 @@ button.close {
   content: " ";
   display: table; }
 
-.clearfix:after, .nav-menu:not(.min) .menu-list:after,
+.clearfix:after, .nav-menu:not(.min) .menu-list:after, .bg-waves:after,
 .dl-horizontal dd:after,
 .container:after,
 .container-fluid:after,
@@ -18925,12 +18926,24 @@ main {
     text-align: center;
     display: inherit; }
 
-.short-services .short-services-content {
-  display: table-cell;
-  height: 800px;
-  vertical-align: middle;
-  text-align: center;
-  width: 1%; }
+.bg-waves {
+  opacity: 0.05;
+  background: url("../img/waves.png") no-repeat center center;
+  height: 100%;
+  width: 100%;
+  position: absolute; }
+
+.short-services {
+  position: relative; }
+  .short-services .short-services-content {
+    display: table-cell;
+    height: 800px;
+    vertical-align: middle;
+    text-align: center;
+    width: 1%; }
+  @media only screen and (max-width: 767px) {
+    .short-services .short-services-content {
+      height: 450px; } }
 
 .svg-max, .drib-circle, .sun-petals, .petal-circle {
   width: 100%;
@@ -18980,6 +18993,27 @@ main {
     bottom: 0;
     position: absolute;
     width: 100%; }
+  @media only screen and (max-width: 767px) {
+    .sun {
+      -webkit-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+      transform: scale(0.7);
+      font-size: 1.25em; } }
+  @media only screen and (max-width: 550px) {
+    .sun {
+      -webkit-transform: scale(0.6);
+      -ms-transform: scale(0.6);
+      transform: scale(0.6); } }
+  @media only screen and (max-width: 450px) {
+    .sun {
+      -webkit-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+      transform: scale(0.5); } }
+  @media only screen and (max-width: 350px) {
+    .sun {
+      -webkit-transform: scale(0.4);
+      -ms-transform: scale(0.4);
+      transform: scale(0.4); } }
 
 .sun-petals {
   position: absolute;
@@ -19003,14 +19037,49 @@ main {
   .sun-petal [class*="circle"] {
     fill: none; }
   .sun-petal span:before {
-    -webkit-box-shadow: inset 0px 8px 14px -6px black;
-    box-shadow: inset 0px 8px 14px -6px black; }
+    -webkit-box-shadow: 4px 4px 20px 0px black;
+    box-shadow: 4px 4px 20px 0px black;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  .sun-petal circle, .sun-petal .petal-polygon {
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; }
   .sun-petal b {
     width: 230px;
     position: absolute;
     -webkit-transform-origin: center center;
     -ms-transform-origin: center center;
     transform-origin: center center; }
+  .sun-petal .petal-polygon {
+    -webkit-transform-origin: center 28px;
+    -ms-transform-origin: center 28px;
+    transform-origin: center 28px; }
+  .sun-petal:hover .circle-1, .sun-petal:hover .circle-2, .sun-petal:hover .petal-polygon {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px); }
+  .sun-petal:hover [class*="icon"]:before {
+    margin-top: -40px; }
+  .sun-petal:hover .circle-1 {
+    stroke-width: 20%; }
+  .sun-petal:hover .circle-3 {
+    stroke-width: 20px; }
+  .sun-petal:hover .circle-4 {
+    stroke-dasharray: 72;
+    stroke-dashoffset: 160;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; }
+  .sun-petal:hover [class*="icon"] {
+    color: white; }
+  .sun-petal.style-1:hover .circle-2, .sun-petal.style-4:hover .circle-2 {
+    stroke: #00b3ce; }
+  .sun-petal.style-2:hover .circle-2, .sun-petal.style-5:hover .circle-2 {
+    stroke: #AEAEAE; }
+  .sun-petal.style-3:hover .circle-2, .sun-petal.style-6:hover .circle-2 {
+    stroke: #474747; }
   .sun-petal .circle-1, .sun-petal .circle-2 {
     stroke-width: 30px; }
   .sun-petal .circle-3, .sun-petal .circle-4 {
@@ -19026,7 +19095,9 @@ main {
     stroke-width: 12px; }
   .sun-petal .circle-4 {
     stroke-width: 5px;
-    fill: none; }
+    fill: none;
+    stroke-dasharray: 161;
+    stroke-dashoffset: 0; }
   .sun-petal.style-0 {
     -webkit-transform: rotate(-60deg) translateY(-160%) translateX(75%);
     -ms-transform: rotate(-60deg) translateY(-160%) translateX(75%);
@@ -19235,7 +19306,7 @@ main {
     stroke-width: 30px;
     stroke-dasharray: 100; }
   to {
-    stroke-width: 33px;
+    stroke-width: 31px;
     stroke-dasharray: 226;
     stroke-dashoffset: 0; } }
 
@@ -19248,7 +19319,7 @@ main {
     stroke-width: 30px;
     stroke-dasharray: 100; }
   to {
-    stroke-width: 33px;
+    stroke-width: 31px;
     stroke-dasharray: 226;
     stroke-dashoffset: 0; } }
 
@@ -19373,61 +19444,54 @@ main {
     transform: rotate(240deg) translateY(-160%) translateX(75%); } }
 
 .short-services-content.aos-animate [class*="path"] {
-  -webkit-animation: servAnimatePath 4s linear 0.25s;
-  animation: servAnimatePath 4s linear 0.25s; }
+  -webkit-animation: servAnimatePath 3s linear 0.25s;
+  animation: servAnimatePath 3s linear 0.25s; }
 
 .short-services-content.aos-animate .petal-circle .circle-4 {
-  -webkit-animation: servAnimateCirlce-4 4.5s linear;
-  animation: servAnimateCirlce-4 4.5s linear; }
+  -webkit-animation: servAnimateCirlce-4 3.5s linear;
+  animation: servAnimateCirlce-4 3.5s linear; }
 
 .short-services-content.aos-animate .petal-circle .circle-1 {
-  -webkit-animation: servAnimateCirlce-1 4s linear;
-  animation: servAnimateCirlce-1 4s linear; }
+  -webkit-animation: servAnimateCirlce-1 3.5s linear;
+  animation: servAnimateCirlce-1 3.5s linear; }
 
 .short-services-content.aos-animate .petal-polygon {
   overflow: hidden; }
   .short-services-content.aos-animate .petal-polygon polygon {
-    -webkit-animation: servAnimatePolygon 4s linear;
-    animation: servAnimatePolygon 4s linear; }
+    -webkit-animation: servAnimatePolygon 3s linear;
+    animation: servAnimatePolygon 3s linear; }
 
-.short-services-content.aos-animate [class*="icon"]:before {
-  -webkit-animation: servAnimateIcon 4s linear;
-  animation: servAnimateIcon 4s linear; }
+.short-services-content.aos-animate [class*="icon"]:before, .short-services-content.aos-animate b {
+  -webkit-animation: servAnimateIcon 3s linear;
+  animation: servAnimateIcon 3s linear; }
 
 .short-services-content.aos-animate .sun-petal.style-0 {
-  -webkit-animation: servAnimateSunPetal-0 4s linear;
-  animation: servAnimateSunPetal-0 4s linear; }
+  -webkit-animation: servAnimateSunPetal-0 3s linear;
+  animation: servAnimateSunPetal-0 3s linear; }
 
 .short-services-content.aos-animate .sun-petal.style-1 {
-  -webkit-animation: servAnimateSunPetal-1 4s linear;
-  animation: servAnimateSunPetal-1 4s linear; }
+  -webkit-animation: servAnimateSunPetal-1 3s linear;
+  animation: servAnimateSunPetal-1 3s linear; }
 
 .short-services-content.aos-animate .sun-petal.style-2 {
-  -webkit-animation: servAnimateSunPetal-2 4s linear;
-  animation: servAnimateSunPetal-2 4s linear; }
+  -webkit-animation: servAnimateSunPetal-2 3s linear;
+  animation: servAnimateSunPetal-2 3s linear; }
 
 .short-services-content.aos-animate .sun-petal.style-3 {
-  -webkit-animation: servAnimateSunPetal-3 4s linear;
-  animation: servAnimateSunPetal-3 4s linear; }
+  -webkit-animation: servAnimateSunPetal-3 3s linear;
+  animation: servAnimateSunPetal-3 3s linear; }
 
 .short-services-content.aos-animate .sun-petal.style-4 {
-  -webkit-animation: servAnimateSunPetal-4 4s linear;
-  animation: servAnimateSunPetal-4 4s linear; }
+  -webkit-animation: servAnimateSunPetal-4 3s linear;
+  animation: servAnimateSunPetal-4 3s linear; }
 
 .short-services-content.aos-animate .sun-petal.style-5 {
-  -webkit-animation: servAnimateSunPetal-5 4s linear;
-  animation: servAnimateSunPetal-5 4s linear; }
+  -webkit-animation: servAnimateSunPetal-5 3s linear;
+  animation: servAnimateSunPetal-5 3s linear; }
 
 .short-services-content.aos-animate .sun-petal.style-6 {
-  -webkit-animation: servAnimateSunPetal-6 4s linear;
-  animation: servAnimateSunPetal-6 4s linear; }
-
-.sun-petals b {
-  opacity: 0; }
-
-.sun-petals .circle-4 {
-  stroke-dasharray: 113;
-  stroke-dashoffset: 0; }
+  -webkit-animation: servAnimateSunPetal-6 3s linear;
+  animation: servAnimateSunPetal-6 3s linear; }
 
 .soc-map-content {
   background-color: #373435; }
@@ -19632,6 +19696,11 @@ main {
     text-align: center;
     padding: 0 2%; }
   #footer .footer-content {
+    display: block; }
+  #footer .footer-contacts span {
+    padding: 10px 15px;
+    margin: 15px auto;
+    width: 40%;
     display: block; }
   #footer .input {
     max-width: -webkit-fit-content;

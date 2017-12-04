@@ -62,7 +62,14 @@
 		.footer-content{
 			display: block;
 		}
-
+		.footer-contacts{
+			span{
+				padding: 10px 15px;
+				margin: 15px auto;
+				width: 40%;
+				display: block;
+			}
+		}
 		.input{
 			max-width: fit-content;
 		}
