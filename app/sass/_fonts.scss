@@ -17,6 +17,34 @@ $path: "../fonts";
 
 
 
+
+
+/* poiret-one-regular - latin */
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  src: url($path+"/poiret-one-v5-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Poiret One"), local("PoiretOne-Regular"), url($path+"/poiret-one-v5-latin-regular.eot?#iefix") format("embedded-opentype"), url($path+"/poiret-one-v5-latin-regular.woff2") format("woff2"), url($path+"/poiret-one-v5-latin-regular.woff") format("woff"), url($path+"/poiret-one-v5-latin-regular.ttf") format("truetype"), url($path+"/poiret-one-v5-latin-regular.svg#PoiretOne") format("svg");
+  /* Legacy iOS */ }
+
+/* permanent-marker-regular - latin */
+@font-face {
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+  src: url($path+"/permanent-marker-v7-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Permanent Marker Regular"), local("PermanentMarker-Regular"), url($path+"/permanent-marker-v7-latin-regular.eot?#iefix") format("embedded-opentype"), url($path+"/permanent-marker-v7-latin-regular.woff2") format("woff2"), url($path+"/permanent-marker-v7-latin-regular.woff") format("woff"), url($path+"/permanent-marker-v7-latin-regular.ttf") format("truetype"), url($path+"/permanent-marker-v7-latin-regular.svg#PermanentMarker") format("svg");
+  /* Legacy iOS */ }
+
+
+
+
+
+
+
 /* open-sans-300 - latin_cyrillic */
 @font-face {
   font-family: 'Open Sans';

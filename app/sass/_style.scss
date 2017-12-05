@@ -61,6 +61,18 @@ $color_gray_4: #474747;
 	vertical-align: middle;
 
 }
+@mixin table-cellingAdap() {
+
+	@media only screen and ( max-width:991px ){
+		display: block;
+		height: initial;
+		width: 100%;
+	}
+
+}
+
+
+
 
 /*
 									 --- BOOTSTRAP ---
@@ -637,25 +649,6 @@ button:hover, button:focus{
 
 //LISTING
 
-.list-style-2{
-
-	ul{
-		padding-left: 15px;
-		position: relative;
-		margin-top: 15px;
-		li{
-			padding: 0 15px;
-			padding-top: 15px;
-			font-style: oblique;
-			font-weight: 600;
-			list-style: none;
-			list-style-position: outside;
-			list-style-image: url('../img/icons/list-icon.png');
-		}
-	}
-
-}
-
 
 [class*='list-style']{
 	ul{
@@ -685,6 +678,22 @@ button:hover, button:focus{
 }
 
 
+
+.list-style-2{
+
+	ul{
+		padding-left: 15px;
+		position: relative;
+		margin-top: 15px;
+		li{
+			padding: 0 15px;
+			font-weight: 500;
+			list-style-position: inside;
+			list-style-image: url('../img/icons/list-icon.png');
+		}
+	}
+
+}
 
 
 
@@ -738,7 +747,7 @@ $header-height: 80px;
 	width: 22%;
   //text-align: left;
   img{
-		width: 144px;
+		width: 130px;
 	}
 	&:hover, &:focus{
   	
@@ -852,7 +861,7 @@ $header-height: 80px;
 		    	height: 5%;
 		    	transform: matrix(1, 0, 0, 1, 0, 0);
 		    	//box-shadow: 0 -20px 80px 10px $color_1;
-		    	animation: menulist 4s ease-in-out infinite;
+		    	//animation: menulist 4s ease-in-out infinite;
 		    }
 
 
@@ -1319,18 +1328,21 @@ $header-height: 80px;
 	background-position: 0 0;
 	background-repeat: repeat-y;
 	background-size: cover;
-	
+	h1{
+		color: white;
+	}
 }
 .banner-content{
-	@include table-celling( 250px );
+	@include table-celling( 400px );
 	position: relative;
+	width: 1%;
 	.breadcrumb{
 		padding: 0;
 	}
 }
 .banner-shadow{
 
-	background: linear-gradient(to left, $color_1 ,rgba($color_4, 0.3) );
+	//background: linear-gradient(to left, $color_1 ,rgba($color_4, 0.3) );
 	height: 100%;
 	position: absolute;
 	display: block;
@@ -1666,6 +1678,7 @@ main{
 
 .intro-car-choice{
 	background-color: rgba(black, 0.6);
+	margin-top: 50px;
 	&, & > *{
 		border-radius: 3px;
 	}
@@ -1673,10 +1686,12 @@ main{
 		display: inline-flex;
 		background-color: rgba(white, 0.2);
 		margin: 10px;
+
 		overflow: hidden;
-		&:nth-child(even){
-			background-color: rgba(white, 1);
-			color: black;
+		transition: all 0.3s ease-out;
+		&:hover{
+			background-color: rgba($color_1, 0.6);
+			color: white;
 			.route-icon{
 				background-color: rgba(black, 0.2);
 			}
@@ -2329,7 +2344,7 @@ main{
 	}
 	.circle-in{
 		$width: 250px;
-		$height: 150px;
+		$height: 160px;
 		width: $width;
 		height: $height;
 		position: absolute;
@@ -2337,6 +2352,9 @@ main{
 		left: 50%;
 		margin-top: +-($height / 2);
 		margin-left: +-($width / 2);
+		img{
+			width: 160px;
+		}
 	}
 	h4{
 		font-size: 1.2em;
@@ -2726,6 +2744,139 @@ main{
 
 
 
+.ff-permanent{
+	font-family: 'Permanent Marker';
+}
+.ff-poiret{
+	font-family: 'Poiret One';
+}
+.bg-lines{
+  background-image: url(../img/other/lines.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position-y: 0;
+}
+.bg-batman{
+	@extend .bg-cover;
+	@extend .clearfix;
+	height: 100%;
+	background-color: rgba(black, 0.5);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+//-------------ABOUT
+
+.about{
+	p{
+		color: black;
+	}
+}
+
+.about-first{
+	color: black;
+	ul{
+		li{
+			margin: 15px 0;
+		}
+	}
+	[class*="sec"]{
+		@include table-celling(350px);
+		@include table-cellingAdap();
+		width: 50%;
+	}
+	.sec-1{
+		padding-left: 15px;
+		padding-right: 15px;
+		text-align: right;
+	}
+	.sec-1, .sec-2{
+		overflow: hidden;
+	}
+
+	@media only screen and ( min-width:991px ){
+		.sec-1{
+			padding-left: 30px;
+			padding-right: 30px;
+			text-align: right;
+			border-right: 1px solid rgba($color_1, 0.5);
+		}
+		.sec-2{
+			border-left: 1px solid rgba($color_1, 0.5);	
+		}
+	}
+}
+
+
+
+@keyframes borderWidth {
+  from {
+		border-width: 10px;
+		border-color: white;
+  }
+
+}
+.borderWidth {
+  animation-name: borderWidth;
+}
+
+
+
+.about-second{
+	@extend .bg-cover;
+	position: relative;
+	overflow: hidden;
+}
+
+.about-second-content{
+	@include table-celling(350px);
+	@include table-cellingAdap();
+	width: 1%;
+	h1{
+		font-size: 4em;
+		text-shadow: 0 0 3px black;
+		color: white;
+		text-align: center;
+	}
+}
+
+.about-third{
+
+}
+.about-third-content{
+	//padding: 0 10%;
+	.sec-1, .sec-2{
+
+		@include table-celling(300px);
+		@include table-cellingAdap();
+		overflow: hidden;
+	}
+	.sec-1{
+		position: relative;
+		//width: 60%;
+	}
+	.sec-2{
+		width: 40%;
+		text-align: center;
+		.fb-page{
+			max-width: 320px;
+		}
+	}
+	@media only screen and (min-width: 991px){
+			.sec-1{
+				padding-left: 15%;
+			}
+	}
+}
+
+
+
+
+
+
+
+
 
 
 // INDEX-SOC-MAP
@@ -3011,6 +3162,9 @@ main{
 .footer-logo{
 	text-align: center;
 	padding: 30px 0;
+	img{
+		width: 150px;
+	}
 }
 .footer-content{
 }

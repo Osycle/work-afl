@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		
+	  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+   	<link rel="stylesheet" href="css/main.css">
+		<!-- REVOLUTION BANNER CSS SETTINGS -->
+		<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" />
+
+    <title>Title</title>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+<body>
+
+	<div id="page">
+
+
+
+
+
+
+
+	<noscript>
+		<p>Ваш браузер не поддерживает скрипты!<br/> 
+			 Пожалуйста подключите в настройках браузера Javascript</p>
+	</noscript> 
+
+
+
+	<!-- HEADER -->
+	<header id="header" class="header-scroll">
+		<!-- HEADER TOP -->
+
+		<div class="skin-header-top hidden-sm hidden-xs">
+			<div class="container">
+
+				<!-- LOGOTYPE -->
+	      <div class="logo">
+	      	<a  href="index.html" ><img src="img/logo.png"/></a>
+	      </div>
+
+				<!-- HEADER NAVBAR -->
+				<div class="header-navbar">
+				 	<nav class="main-navbar">
+		       	<div class="nav-menu">
+			       	<div class="nav-header">
+
+			          <ul class="menu-list">
+									<li><a href="about.html">О компании</a></li>
+									<li><a href="leasing-about.html">Всё о лизинге</a></li>
+									<li><a href="#short-services">Лизинговые услуги</a>
+										<ul class="sub-menu-1">
+											<li><a href="">Валютный лизинг</a></li>
+											<li><a href="">Спецтехника в лизинг</a></li>
+											<li><a href="">Возвратный лизинг</a></li>
+											<li><a href="">Оборудование в лизинг</a></li>
+											<li><a href="">Легковые автомобили в лизинг</a></li>
+											<li><a href="">Недвижимость в лизинг</a></li>
+										</ul>
+									</li>
+									<li><a href="contacts.html">Контакты</a></li>
+							  </ul>
+
+			      	</div>
+			      </div>
+				  </nav>
+				</div>
+
+				<div class="header-contacts">
+
+					<span class="img-content">
+						<img  class="imgicon-phone" src="img/icons/phone.png"/>
+					</span>
+					<div class="phone-content">
+						+998 71 230 09 90<br>
+						+998 97 409 09 90<br>
+						+998 90 908 09 90
+					</div>
+					<span class="img-content">
+						<a href="">
+							<img  class="imgicon-telegram" src="img/icons/telegram.png"/>
+						</a>
+					</span>
+				</div>
+
+			  </div><!-- ./HEADER NAVBAR -->
+			</div><!-- ./CONTAINER -->
+		</div><!-- ./HEADER TOP -->
+
+
+		
+	</header>
+
+
+
+	<!-- MIN - MENU -->
+  <div class="min-menu hidden-md hidden-lg">
+	  <input id="hamburger" class="hamburger" type="checkbox"/>
+	  <label class="hamburger" for="hamburger">
+	    <i></i>
+	  </label>
+	  <section class="drawer-list">
+			<ul>
+				<li><a href="about.html">О компании</a></li>
+				<li><a href="leasing-about.html">Всё о лизинге</a></li>
+				<li><a>Лизинговые услуги</a>
+					<ul class="sub-menu-1">
+						<li><a href="">Валютный лизинг</a></li>
+						<li><a href="">Спецтехника в лизинг</a></li>
+						<li><a href="">Возвратный лизинг</a></li>
+						<li><a href="">Оборудование в лизинг</a></li>
+						<li><a href="">Легковые автомобили в лизинг</a></li>
+						<li><a href="">Недвижимость в лизинг</a></li>
+					</ul>
+				</li>
+				<li><a href="contacts.html">Контакты</a></li>
+		  </ul>
+	   </section>
+	</div>
+
+
+
+
+
+
+	<div class="preloader">
+		<div class="loader">
+			<span class="img-content">
+				<svg>
+					<circle class="logo-circle-1"/>
+				</svg>
+				<img src="img/logo.png"/>
+			</span>
+			<span class="percent">0 %</span>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+	<!-- FEEDBACK MODAL-->
+	<div class="feedback-modal modal fade animated" id="feedback-modal-1" tabindex="-1" role="dialog" aria-labelledby="feedback">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+
+	    	<button type="button" class="btn" data-dismiss="modal">
+	    		<span class="icon-bar"></span>
+	    		<span class="icon-bar"></span>
+	    	</button>
+
+	      <div class="modal-body">
+
+
+					<div class="col-md-12 success-info">
+						<div id="success-message"></div>
+						<div id="fail-message"></div>
+					</div>
+					<h3>Связаться с нами</h3>
+					<form id="feedback-main" method="post" action="" class="contact-form">
+
+
+
+						<!-- NAME -->
+						<span class="input input--nariko input-name">
+							<input class="input__field input__field--nariko" 
+										 form="feedback-main"
+										 type="text" 
+										 id="input-1" 
+										 name="name"
+										 autocomplete="off" 
+										 required="required"/>
+
+							<label class="input__label input__label--nariko" for="input-1">
+								<span class="input__label-content input__label-content--nariko">Имя</span>
+							</label>
+						</span>
+						<br>
+
+						<!-- EMAIL -->
+						<span class="input input--nariko input-email">
+
+							<input class="input__field input__field--nariko" 
+										 form="feedback-main"
+										 type="email" 
+										 id="input-2" 
+										 name="email"
+										 autocomplete="off" 
+										 required="required"/>
+
+							<label class="input__label input__label--nariko" for="input-2">
+								<span class="input__label-content input__label-content--nariko">Электронная почта</span>
+							</label>
+
+						</span>
+
+						<br>
+						<!-- TEL -->
+						<span class="input input--nariko input-phone">
+
+							<input class="input__field input__field--nariko" 
+										 form="feedback-main"
+										 type="tel" 
+										 id="input-3" 
+										 name="tel"
+										 autocomplete="off" 
+										 required="required"/>
+
+							<label class="input__label input__label--nariko" for="input-3">
+								<span class="input__label-content input__label-content--nariko">Номер телефона</span>
+							</label>
+
+						</span>
+						<br>
+						<!-- MESSAGE -->
+						<span class="textarea">
+							<label class="" for="textarea-4">
+								<span class="">Сообщение</span>
+							</label>
+							<textarea class="" 
+										 style="resize: none;"
+										 id="textarea-4"
+										 form="feedback-main"
+										 type="text" 
+										 name="message"
+										 autocomplete="off" 
+										 required="required"></textarea>
+
+
+
+						</span>
+
+						<div class="form-footer">
+			      	<button type="submit" class="align-right btn-default submit" form="feedback-main">
+			      		<b>Отправить</b>
+			      	</button>
+			      </div>
+
+
+					</form>
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- MAIN -->
+	<main class="container-fluid">
+
+
+
+
+		<!-- BANNER -->
+		<div id="banner" class="row" style="background-image: url('img/banners/1.jpg');">
+
+		<div class="banner-shadow wow fadeIn" data-wow-dalay="0.6s">
+			</div>
+				<div class="container">
+
+					<div class="banner-content">
+
+						<h1 class="wow fadeIn" data-wow-delay="0.5s">Галерея</h1>
+
+<!-- 						<ol class="breadcrumb wow fadeIn padd-hor-0 marg-bottom-0 marg-top-15" data-wow-delay="1s">
+						  <li><a href="index.html">Главная</a></li>
+						  <li class="active"><a href="">Галерея</a></li>
+						</ol> -->
+
+					</div>
+
+				</div> <!-- ./CONTEINER -->
+		</div><!-- ./BANNER -->
+
+
+
+
+
+		<div class="row about align-center-sm m-v-60">
+			<div class="container">
+
+
+
+					<div class="p-v-60 m-v-60 align-center">
+
+						<h1>
+							<font size="7" face="cursive" color="#d5ac1d">
+								<sub>4</sub>0<sup>4</sup>
+							</font>
+						</h1>
+
+						<h3>Страница не найдена</h3>
+						<p>
+							<strong>Вероятные причины:</strong><br>
+							Была допущена ошибка при наборе адреса.<br>
+							Вы нажали на устаревшую ссылку.
+						</p>
+						<p>
+							<a href="index.html"><u>Перейти на главную</u></a>
+						</p>
+					</div>
+
+
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</main><!-- ./MAIN -->
+
+
+
+
+
+
+
+
+	<!-- FOOTER -->
+	<footer id="footer" class="container-fluid align-center-sm">
+		
+		<div class="container">
+			<div class="footer-content clearfix">
+
+
+				<div class="footer-menu col-xs-12 hidden-xs hidden-sm">
+					<ul>
+						<li><a href="about.html">О компании</a></li>
+						<li><a href="leasing-about.html">Всё о лизинге</a></li>
+						<li><a href="#short-services">Лизинговые услуги</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+				  </ul>
+				</div>
+
+				<div class="footer-logo col-xs-12">
+					<img src="img/logo.png"/>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row footer-bottom">
+			<div class="container">
+
+				<div class="footer-contacts col-xs-12">
+					<div class="footer-copy hidden-xs hidden-sm">
+						<p>
+							<a href="https://www.life-style.uz" title="Создание и продвижение сайтов в Ташкенте">
+								Создание сайтов
+							</a> 
+							<em><font color="#00b3ce">Life</font></em>
+							<font color="ghostwhite">Style</font>
+						</p>
+					</div>
+					<div class="phone-content align-right-md-impt">
+						<span>
+							+998 71 230 09 90
+						</span>
+						<span>
+							+998 97 409 09 90
+						</span>
+						<span>
+							+998 71 908 09 90
+						</span>
+					</div>
+					<address>
+						Адрес: г. Ташкент, Яккасарайски р-н,<br />
+						ул. Бабура 77<br />
+						E-mail: info@afl.uz
+					</address>
+
+
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- SCRIPTS -->
+		<script src="js/scripts.min.js"></script>
+		<script src="js/main.js"></script>
+		
+
+		<!-- WIDGETS -->
+		
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.11';
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+
+</div> 
+</body>
+</html>

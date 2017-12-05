@@ -68,9 +68,9 @@
 .m-auto{
 	margin: auto;
 }
-/* [class*="m-h"], [class*="m-v"]{
+.o-hidden{
 	overflow: hidden;	
-} */
+} 
 
 //--------------------Parag-MARGIN
 @for $i from 0 through 12 {

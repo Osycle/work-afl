@@ -15,8 +15,9 @@ $(function(){
 			transitionEffect: "zoom-in-out"
 		});
 
-
+	
 	//WOW
+	contentAnimation();
 	new WOW({
 		offset: 30
 	}).init();
@@ -187,6 +188,39 @@ $(function(){
 	  e.relatedTarget // previous active tab
 	  console.log( e.target, e.relatedTarget )
 	})
+
+
+
+
+
+
+
+
+
+
+
+	function contentAnimation(){
+
+		if( $(".about-content") ){
+
+			var about_1 = $(".about-first");
+
+			$( about_1 ).find( "li" ).map(function( i, el ){
+				$(el).addClass("wow fadeInLeft").attr("data-wow-delay",  (0.1 * i)+"s" );
+			})
+			$(about_1).find(".sec-1", ".sec-2").find("p").addClass("wow fadeInRight");
+			$(about_1).find(".sec-1", ".sec-2").addClass("wow borderWidth");
+			
+		}
+	}
+
+
+
+
+
+
+
+
 
 
 
