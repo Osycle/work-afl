@@ -65,7 +65,7 @@ $color_gray_4: #474747;
 
 	@media only screen and ( max-width:991px ){
 		display: block;
-		height: initial;
+		height: auto;
 		width: 100%;
 	}
 
@@ -692,6 +692,11 @@ button:hover, button:focus{
 			list-style-image: url('../img/icons/list-icon.png');
 		}
 	}
+	&.outside{
+		li{
+			list-style-position: outside;
+		}
+	}
 
 }
 
@@ -746,6 +751,9 @@ $header-height: 80px;
 .logo {
 	width: 22%;
   //text-align: left;
+  @media only ( min-width:991px ) and ( max-width:1200px ){
+  	    width: 15%;
+  }
   img{
 		width: 130px;
 	}
@@ -906,7 +914,7 @@ $header-height: 80px;
 			}
 		}
 		li{
-			background-color: rgba( $color_gray_1 , 0.9);
+			background-color: rgba( $color_gray_1 , 0.6);
 			border-left: 1px solid transparent;
 			border-right: 1px solid transparent;
 			transition: all 0.3s ease-in-out;
@@ -1104,11 +1112,11 @@ $header-height: 80px;
 
 
 .modal-content{
-	background: black;
+	background: rgba( black, 0.6 );
 	color: white;
 }
 .modal-body{
-	margin-top: 30px;
+	margin-top: 15px;
 	h1, h2{
 		line-height: 20px;
 		margin: 0 !important;
@@ -1252,6 +1260,16 @@ $header-height: 80px;
 
 
 // PRELODER
+@keyframes preloaderAnimateLogo{
+	from{
+		stroke: $color_1;
+    stroke-width: 0;
+	}
+	to{
+		stroke: $color_1;
+    stroke-width: 10px;
+	}
+}
 .preloader{
 
   position: fixed;
@@ -1282,16 +1300,17 @@ $header-height: 80px;
 		}
 		.percent{
 			font-size: 33px;
-			margin-top: 12vh;
+			margin-top: 15vh;
 			padding-left: 10px;
 		}
 		svg{
-			width: 450px;
-			height: 450px;
+			width: 400px;
+			height: 400px;
 			left: 50%;
 			top: 50%;
-			margin-top: -225px;
-			margin-left: -225px;
+			margin-top: -200px;
+			margin-left: -200px;
+			shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd;
 			circle{
 				transition: all 0.225s ease-in-out;
 				stroke-dashoffset: 0;
@@ -1302,6 +1321,33 @@ $header-height: 80px;
 				r: 200;
 				cx: 225;
 				cy: 225;
+			}
+			#gmain{
+				transform: scale(0.6);
+				polygon{
+					//animation: preloaderAnimateLogo ease-out 5s infinite;
+			    stroke-width: 5px;
+			    stroke: $color_1;
+			    stroke-dasharray: 1500;
+			    stroke-dashoffset: 1500;
+			    fill-opacity: 0.1;
+			    transition: stroke-dasharray 0.8s ease-in-out, fill-opacity 0.2s ease-out;
+			    &:nth-child(1){
+			    	fill: url(#logo-grd1);
+			    }
+			    &:nth-child(2){
+			    	fill: url(#logo-grd2);
+			    }
+			    &:nth-child(3){
+			    	fill: url(#logo-grd3);
+			    }
+			    &:nth-child(4){
+			    	fill: #00697F;
+			    }
+
+
+
+				}
 			}
 			position: absolute;
 		}
@@ -1329,20 +1375,29 @@ $header-height: 80px;
 	background-repeat: repeat-y;
 	background-size: cover;
 	h1{
-		color: white;
+    color: white;
+    font-size: 2em;
+    text-shadow: 0 0 5px black;
+    font-weight: 300;
+    text-transform: none;
+    border-bottom: 2px solid $color_1;
 	}
 }
 .banner-content{
 	@include table-celling( 400px );
 	position: relative;
-	width: 1%;
+	width: 50%;
 	.breadcrumb{
 		padding: 0;
+	}
+	@media only screen and (max-width: 991px){
+		width: 1%;
 	}
 }
 .banner-shadow{
 
 	//background: linear-gradient(to left, $color_1 ,rgba($color_4, 0.3) );
+	background-color: rgba( black, 0.4 );
 	height: 100%;
 	position: absolute;
 	display: block;
@@ -1381,7 +1436,23 @@ $header-height: 80px;
 }
 
 
-
+.services-modal{
+	h3{
+		color: $color_1;
+		text-align: center;
+	}
+	li{
+		list-style-position: outside !important;
+	}
+	a{
+		padding: 5px 0;
+		display: block;
+		color: white;
+		&:hover{
+			color: $color_1;
+		}
+	}
+}
 
 
 
@@ -1525,11 +1596,6 @@ main{
 }
 
 
-// ---- test
-
-.preloader{
-	display: none;
-}
 
 
 
@@ -2789,7 +2855,6 @@ main{
 	.sec-1{
 		padding-left: 15px;
 		padding-right: 15px;
-		text-align: right;
 	}
 	.sec-1, .sec-2{
 		overflow: hidden;
@@ -2849,7 +2914,7 @@ main{
 	.sec-1, .sec-2{
 
 		@include table-celling(300px);
-		@include table-cellingAdap();
+		
 		overflow: hidden;
 	}
 	.sec-1{
@@ -2862,6 +2927,7 @@ main{
 		.fb-page{
 			max-width: 320px;
 		}
+		@include table-cellingAdap();
 	}
 	@media only screen and (min-width: 991px){
 			.sec-1{

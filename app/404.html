@@ -90,7 +90,7 @@
 						+998 90 908 09 90
 					</div>
 					<span class="img-content">
-						<a href="">
+						<a href="http://t.me/autofinanceleasing/">
 							<img  class="imgicon-telegram" src="img/icons/telegram.png"/>
 						</a>
 					</span>
@@ -140,13 +140,31 @@
 		<div class="loader">
 			<span class="img-content">
 				<svg>
-					<circle class="logo-circle-1"/>
+					<defs>
+					  <linearGradient id="logo-grd1" gradientUnits="userSpaceOnUse" x1="333.637" y1="322.61" x2="333.637" y2="394.296">
+					  	<stop offset="0" style="stop-opacity:1; stop-color:#00586B"/>
+					  	<stop offset="1" style="stop-opacity:1; stop-color:#00A6C8"/>
+					  </linearGradient>
+					  <linearGradient id="logo-grd2" gradientUnits="userSpaceOnUse" xlink:href="#logo-grd1" x1="282.324" y1="77.0964" x2="138.88" y2="332.561"></linearGradient>
+					  <linearGradient id="logo-grd3" gradientUnits="userSpaceOnUse" x1="442.255" y1="123.031" x2="569.793" y2="305.174">
+					  	<stop offset="0" style="stop-opacity:1; stop-color:#00586B"/>
+					  	<stop offset="0.568627" style="stop-opacity:1; stop-color:#007F99"/>
+					  	<stop offset="1" style="stop-opacity:1; stop-color:#00A6C8"/>
+					  </linearGradient>
+					</defs>
+					<g id="gmain">
+					  <polygon points="448,410 220,410 281,307 386,307 "/>
+					  <polygon points="175,410 0,410 246,0 421,0 "/>
+					  <polygon points="492,410 667,410 432,19 345,164 "/>
+					  <polygon points="363,269 348,245 319,245 304,269 "/>
+					</g>
 				</svg>
-				<img src="img/logo.png"/>
+
 			</span>
-			<span class="percent">0 %</span>
+			<span class="percent" style="display: none;">0 %</span>
 		</div>
 	</div>
+
 
 
 
@@ -278,6 +296,44 @@
 
 
 
+	<!-- SERVICE MODAL-->
+	<div class="services-modal modal fade animated" id="services-modal" tabindex="-1" role="dialog" aria-labelledby="feedback">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+
+	    	<button type="button" class="btn" data-dismiss="modal">
+	    		<span class="icon-bar"></span>
+	    		<span class="icon-bar"></span>
+	    	</button>
+
+	      <div class="modal-body list-style-2">
+
+
+					<h3>Лизинговые услуги</h3>
+
+					<ul class="">
+						<li><a href="leasing-article.html">Валютный лизинг</a></li>
+						<li><a href="leasing-article.html">Спецтехника в лизинг</a></li>
+						<li><a href="leasing-article.html">Возвратный лизинг</a></li>
+						<li><a href="leasing-article.html">Оборудование в лизинг</a></li>
+						<li><a href="leasing-article.html">Легковые автомобили в лизинг</a></li>
+						<li><a href="leasing-article.html">Недвижимость в лизинг</a></li>
+					</ul>
+
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -309,43 +365,35 @@
 
 
 		<!-- BANNER -->
-		<div id="banner" class="row" style="background-image: url('img/banners/1.jpg');">
+		<div id="banner" class="row" style="background-image: url('img/other/about-1.jpg');">
+			<div class="banner-shadow wow fadeIn" data-wow-dalay="0.6s"></div>
+			<div class="container">
 
-		<div class="banner-shadow wow fadeIn" data-wow-dalay="0.6s">
-			</div>
-				<div class="container">
+				<div class="banner-content">
 
-					<div class="banner-content">
+					<h1 class="wow fadeIn" data-wow-delay="0.5s">404</h1>
+<!-- 
+					<ol class="breadcrumb wow fadeIn padd-hor-0 marg-bottom-0 marg-top-15" data-wow-delay="1s">
+					  <li><a href="index.html"></a></li>
+					  <li class="active"><a href=""></a></li>
+					</ol> -->
 
-						<h1 class="wow fadeIn" data-wow-delay="0.5s">Галерея</h1>
+				</div>
 
-<!-- 						<ol class="breadcrumb wow fadeIn padd-hor-0 marg-bottom-0 marg-top-15" data-wow-delay="1s">
-						  <li><a href="index.html">Главная</a></li>
-						  <li class="active"><a href="">Галерея</a></li>
-						</ol> -->
-
-					</div>
-
-				</div> <!-- ./CONTEINER -->
+			</div> <!-- ./CONTEINER -->
 		</div><!-- ./BANNER -->
 
 
 
 
 
-		<div class="row about align-center-sm m-v-60">
+		<div class="row about align-center-sm p-v-60 bg-lines">
 			<div class="container">
 
 
 
 					<div class="p-v-60 m-v-60 align-center">
-
-						<h1>
-							<font size="7" face="cursive" color="#d5ac1d">
-								<sub>4</sub>0<sup>4</sup>
-							</font>
-						</h1>
-
+						<h1 class="ff-poiret"><font size="9">404</font></h1>
 						<h3>Страница не найдена</h3>
 						<p>
 							<strong>Вероятные причины:</strong><br>
@@ -385,6 +433,7 @@
 
 
 
+
 	<!-- FOOTER -->
 	<footer id="footer" class="container-fluid align-center-sm">
 		
@@ -396,10 +445,17 @@
 					<ul>
 						<li><a href="about.html">О компании</a></li>
 						<li><a href="leasing-about.html">Всё о лизинге</a></li>
-						<li><a href="#short-services">Лизинговые услуги</a></li>
+						<li><a role="button" data-toggle="modal" data-target="#services-modal">Лизинговые услуги</a></li>
 						<li><a href="contacts.html">Контакты</a></li>
 				  </ul>
 				</div>
+
+
+
+
+
+
+
 
 				<div class="footer-logo col-xs-12">
 					<img src="img/logo.png"/>

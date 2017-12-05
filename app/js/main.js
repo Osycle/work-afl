@@ -162,6 +162,12 @@ $(function(){
 				image_clone.src = 			images[i].src;
 
 	}
+	if( isIe ){
+
+		$(preloadPercent).show();
+			$(".preloader").find(".img-content").hide();
+		
+	}
 	function image_loaded (){
 		imagesLoadedCount++;
 
@@ -171,13 +177,15 @@ $(function(){
 		setTimeout( function(){
 			$(preloadPercent).text(  per +  "%"); 
 		}, 220)
-
-		$(".logo-circle-1").eq(0).css("stroke-dasharray", ser).css("stroke-width", 3);
+		
+		$("#gmain polygon").css("stroke-dasharray", 1500+15*per )
+		//.css("fill-opacity", per/100);
 
 		if ( imagesLoadedCount >= imagesTotalCount )
 
 			setTimeout( function (){
-				//$(".preloader").slideToggle();
+				$(".preloader").fadeOut();
+				//$("#gmain polygon").css("stroke-width", 0);
 				$( "body" ).css("overflow-y", "auto");
 			}, 600)
 
@@ -243,6 +251,7 @@ $(function(){
 
 var isWebkit = /Webkit/i.test(navigator.userAgent),
 		isChrome = /Chrome/i.test(navigator.userAgent),
+		isIe = /.NET/i.test(navigator.userAgent),
 		isMobile = !!("ontouchstart" in window),
 		isAndroid = /Android/i.test(navigator.userAgent);
 

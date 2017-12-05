@@ -17789,6 +17789,9 @@ button:hover, button:focus {
     list-style-position: inside;
     list-style-image: url("../img/icons/list-icon.png"); }
 
+.list-style-2.outside li {
+  list-style-position: outside; }
+
 /*
 										 --- HEADER ---
 */
@@ -17817,6 +17820,9 @@ button:hover, button:focus {
 
 .logo {
   width: 22%; }
+  @media (min-width: 991px) and (max-width: 1200px) {
+    .logo {
+      width: 15%; } }
   .logo img {
     width: 130px; }
   .logo > a:focus {
@@ -17956,7 +17962,7 @@ button:hover, button:focus {
       -ms-transform: matrix(-1, 0, 0, 1, 30, 0);
       transform: matrix(-1, 0, 0, 1, 30, 0); }
     .nav-menu:not(.min) [class*="sub-menu"] li {
-      background-color: rgba(55, 52, 53, 0.9);
+      background-color: rgba(55, 52, 53, 0.6);
       border-left: 1px solid transparent;
       border-right: 1px solid transparent;
       -webkit-transition: all 0.3s ease-in-out;
@@ -18094,11 +18100,11 @@ button:hover, button:focus {
       transform: rotate(135deg) translate(20px, 24px); }
 
 .modal-content {
-  background: black;
+  background: rgba(0, 0, 0, 0.6);
   color: white; }
 
 .modal-body {
-  margin-top: 30px; }
+  margin-top: 15px; }
   .modal-body h1, .modal-body h2 {
     line-height: 20px;
     margin: 0 !important; }
@@ -18189,6 +18195,22 @@ button:hover, button:focus {
 .feedback-modal .modal-body {
   padding: 0 30px; }
 
+@-webkit-keyframes preloaderAnimateLogo {
+  from {
+    stroke: #00b3ce;
+    stroke-width: 0; }
+  to {
+    stroke: #00b3ce;
+    stroke-width: 10px; } }
+
+@keyframes preloaderAnimateLogo {
+  from {
+    stroke: #00b3ce;
+    stroke-width: 0; }
+  to {
+    stroke: #00b3ce;
+    stroke-width: 10px; } }
+
 .preloader {
   position: fixed;
   width: 100%;
@@ -18224,15 +18246,20 @@ button:hover, button:focus {
       padding-bottom: 35px; }
     .preloader .loader .percent {
       font-size: 33px;
-      margin-top: 12vh;
+      margin-top: 15vh;
       padding-left: 10px; }
     .preloader .loader svg {
-      width: 450px;
-      height: 450px;
+      width: 400px;
+      height: 400px;
       left: 50%;
       top: 50%;
-      margin-top: -225px;
-      margin-left: -225px;
+      margin-top: -200px;
+      margin-left: -200px;
+      shape-rendering: geometricPrecision;
+      text-rendering: geometricPrecision;
+      image-rendering: optimizeQuality;
+      fill-rule: evenodd;
+      clip-rule: evenodd;
       position: absolute; }
       .preloader .loader svg circle {
         -webkit-transition: all 0.225s ease-in-out;
@@ -18246,6 +18273,27 @@ button:hover, button:focus {
         r: 200;
         cx: 225;
         cy: 225; }
+      .preloader .loader svg #gmain {
+        -webkit-transform: scale(0.6);
+        -ms-transform: scale(0.6);
+        transform: scale(0.6); }
+        .preloader .loader svg #gmain polygon {
+          stroke-width: 5px;
+          stroke: #00b3ce;
+          stroke-dasharray: 1500;
+          stroke-dashoffset: 1500;
+          fill-opacity: 0.1;
+          -webkit-transition: stroke-dasharray 0.8s ease-in-out, fill-opacity 0.2s ease-out;
+          -o-transition: stroke-dasharray 0.8s ease-in-out, fill-opacity 0.2s ease-out;
+          transition: stroke-dasharray 0.8s ease-in-out, fill-opacity 0.2s ease-out; }
+          .preloader .loader svg #gmain polygon:nth-child(1) {
+            fill: url(#logo-grd1); }
+          .preloader .loader svg #gmain polygon:nth-child(2) {
+            fill: url(#logo-grd2); }
+          .preloader .loader svg #gmain polygon:nth-child(3) {
+            fill: url(#logo-grd3); }
+          .preloader .loader svg #gmain polygon:nth-child(4) {
+            fill: #00697F; }
 
 #banner {
   -webkit-transition: all 3s ease-out;
@@ -18258,18 +18306,27 @@ button:hover, button:focus {
   -webkit-background-size: cover;
   background-size: cover; }
   #banner h1 {
-    color: white; }
+    color: white;
+    font-size: 2em;
+    text-shadow: 0 0 5px black;
+    font-weight: 300;
+    text-transform: none;
+    border-bottom: 2px solid #00b3ce; }
 
 .banner-content {
   display: table-cell;
   height: 400px;
   vertical-align: middle;
   position: relative;
-  width: 1%; }
+  width: 50%; }
   .banner-content .breadcrumb {
     padding: 0; }
+  @media only screen and (max-width: 991px) {
+    .banner-content {
+      width: 1%; } }
 
 .banner-shadow {
+  background-color: rgba(0, 0, 0, 0.4);
   height: 100%;
   position: absolute;
   display: block;
@@ -18295,6 +18352,20 @@ button:hover, button:focus {
     font-family: FontAwesome;
     content: "\f0da";
     margin: 0  15px; }
+
+.services-modal h3 {
+  color: #00b3ce;
+  text-align: center; }
+
+.services-modal li {
+  list-style-position: outside !important; }
+
+.services-modal a {
+  padding: 5px 0;
+  display: block;
+  color: white; }
+  .services-modal a:hover {
+    color: #00b3ce; }
 
 /*
 										 --- CONTENT ---
@@ -18427,9 +18498,6 @@ main {
 .icomoon {
   font-size: 2em;
   vertical-align: middle; }
-
-.preloader {
-  display: none; }
 
 .index-slider {
   z-index: 1;
@@ -19563,12 +19631,11 @@ main {
     @media only screen and (max-width: 991px) {
       .about-first [class*="sec"] {
         display: block;
-        height: initial;
+        height: auto;
         width: 100%; } }
   .about-first .sec-1 {
     padding-left: 15px;
-    padding-right: 15px;
-    text-align: right; }
+    padding-right: 15px; }
   .about-first .sec-1, .about-first .sec-2 {
     overflow: hidden; }
   @media only screen and (min-width: 991px) {
@@ -19606,7 +19673,7 @@ main {
   @media only screen and (max-width: 991px) {
     .about-second-content {
       display: block;
-      height: initial;
+      height: auto;
       width: 100%; } }
   .about-second-content h1 {
     font-size: 4em;
@@ -19619,11 +19686,6 @@ main {
   height: 300px;
   vertical-align: middle;
   overflow: hidden; }
-  @media only screen and (max-width: 991px) {
-    .about-third-content .sec-1, .about-third-content .sec-2 {
-      display: block;
-      height: initial;
-      width: 100%; } }
 
 .about-third-content .sec-1 {
   position: relative; }
@@ -19633,6 +19695,11 @@ main {
   text-align: center; }
   .about-third-content .sec-2 .fb-page {
     max-width: 320px; }
+  @media only screen and (max-width: 991px) {
+    .about-third-content .sec-2 {
+      display: block;
+      height: auto;
+      width: 100%; } }
 
 @media only screen and (min-width: 991px) {
   .about-third-content .sec-1 {
