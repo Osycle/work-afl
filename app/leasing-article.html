@@ -139,7 +139,7 @@
 	<div class="preloader">
 		<div class="loader">
 			<span class="img-content">
-				<svg>
+				<svg id="logo-svg">
 					<g id="gmain">
 					  <polygon points="448,410 220,410 281,307 386,307 "/>
 					  <polygon points="175,410 0,410 246,0 421,0 "/>
@@ -147,9 +147,8 @@
 					  <polygon points="363,269 348,245 319,245 304,269 "/>
 					</g>
 				</svg>
-
 			</span>
-			<!-- <span class="percent">0 %</span> -->
+			<span class="percent" style="display: none;">0 %</span>
 		</div>
 	</div>
 
@@ -298,7 +297,7 @@
 
 					<h3>Лизинговые услуги</h3>
 
-					<ul class="">
+					<ul>
 						<li><a href="leasing-article.html">Валютный лизинг</a></li>
 						<li><a href="leasing-article.html">Спецтехника в лизинг</a></li>
 						<li><a href="leasing-article.html">Возвратный лизинг</a></li>
@@ -343,13 +342,13 @@
 
 
 		<!-- BANNER -->
-		<div id="banner" class="row" style="background-image: url('img/other/contacts-1.jpg');">
+		<div id="banner" class="row" style="background-image: url('img/other/about-1.jpg');">
 			<div class="banner-shadow wow fadeIn" data-wow-dalay="0.6s"></div>
 				<div class="container">
 
 					<div class="banner-content">
 
-						<h1 class="wow fadeInUp" data-wow-delay="0.5s">Контакты</h1>
+						<h1 class="wow fadeIn" data-wow-delay="0.5s">Легковые автомобили в лизинг</h1>
 <!-- 
 						<ol class="breadcrumb wow fadeIn padd-hor-0 marg-bottom-0 marg-top-15" data-wow-delay="1s">
 						  <li><a href="index.html"></a></li>
@@ -367,39 +366,70 @@
 
 
 
+ <div class="leasing-article">
 
-
-
-	<div class="contacts">
-
-
-
-		
-
-		<div class="row map-content bg-lines">
+		<div class="row bg-lines">
 			<div class="container">
-				<div class="p-v-60 clearfix">
+				<h1>Иномарки в лизинг</h1>
 
-						<div class="contacts-info list-animate col-md-4 col-md-offset-1" data-ls-animate="fadeInRight">
-							<ul>
-								<li>
-									<i class="fa fa-phone"></i>
-										<span>+998 71 230 09 90<br>
-													+998 97 409 09 90<br>
-													+998 71 908 09 90
-										</span>
-								</li>
-								<li>
-									<i class="fa fa-envelope"></i><span>E-mail: info@afl.uz</span>
-								</li>
-								<li>
-									<i class="fa fa-map-marker"></i><span>Адрес: г. Ташкент, Яккасарайски р-н, ул. Бабура 77</span>
-								</li>
-							</ul>
+
+
+
+					<div class="leasing-article-content">
+
+
+						<div class="carousel col-md-5">
+							<!-- CAROUSEL MAIN-->
+							<div class="carousel-main">
+								<div class="carousel-cell">
+									<a href="img/between/car-1.jpg">
+										<img src="img/between/car-1.jpg" />
+									</a>
+								</div>
+								<div class="carousel-cell">
+									<a href="img/between/car-2.jpg">
+										<img src="img/between/car-2.jpg" />
+									</a>
+								</div>
+							</div>
+
+							<!-- CAROUSEL NAV-->
+							<div class="carousel-nav">
+
+								<div class="carousel-cell">
+									<img role="button" src="img/between/car-1.jpg" />
+								</div>
+								<div class="carousel-cell">
+									<img role="button" src="img/between/car-2.jpg" />
+								</div>
+								
+							</div>
 						</div>
 
-						<div class="gm-content col-md-7">
+	
+						
+					</div><!-- ./PRODUCT-CONTENT -->
 
+
+
+
+
+
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+
+		<div class="row soc-map-content">
+			<div class="container">
+
+				<div class="p-v-60 clearfix">
+
+						<div class="gm-content col-md-8">
 
 
 
@@ -425,8 +455,193 @@
 												var map = new google.maps.Map(document.getElementById('map'), {
 														zoom: i.gm_zoom,
 														center: {lat: i.gm_position_lat, lng: i.gm_position_lng},
-														disableDefaultUI: true
-					
+														disableDefaultUI: true,
+														styles:[
+																		  {
+																		    "elementType": "geometry",
+																		    "stylers": [
+																		      {
+																		        "color": "#212121"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "elementType": "labels.icon",
+																		    "stylers": [
+																		      {
+																		        "visibility": "off"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "elementType": "labels.text.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#757575"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "elementType": "labels.text.stroke",
+																		    "stylers": [
+																		      {
+																		        "color": "#212121"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "administrative",
+																		    "elementType": "geometry",
+																		    "stylers": [
+																		      {
+																		        "color": "#757575"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "administrative.country",
+																		    "elementType": "labels.text.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#9e9e9e"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "administrative.land_parcel",
+																		    "stylers": [
+																		      {
+																		        "visibility": "off"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "administrative.locality",
+																		    "elementType": "labels.text.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#bdbdbd"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "poi",
+																		    "elementType": "labels.text.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#757575"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "poi.park",
+																		    "elementType": "geometry",
+																		    "stylers": [
+																		      {
+																		        "color": "#181818"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "poi.park",
+																		    "elementType": "labels.text.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#616161"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "poi.park",
+																		    "elementType": "labels.text.stroke",
+																		    "stylers": [
+																		      {
+																		        "color": "#1b1b1b"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "road",
+																		    "elementType": "geometry.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#2c2c2c"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "road",
+																		    "elementType": "labels.text.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#8a8a8a"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "road.arterial",
+																		    "elementType": "geometry",
+																		    "stylers": [
+																		      {
+																		        "color": "#373737"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "road.highway",
+																		    "elementType": "geometry",
+																		    "stylers": [
+																		      {
+																		        "color": "#3c3c3c"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "road.highway.controlled_access",
+																		    "elementType": "geometry",
+																		    "stylers": [
+																		      {
+																		        "color": "#4e4e4e"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "road.local",
+																		    "elementType": "labels.text.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#616161"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "transit",
+																		    "elementType": "labels.text.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#757575"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "water",
+																		    "elementType": "geometry",
+																		    "stylers": [
+																		      {
+																		        "color": "#000000"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "water",
+																		    "elementType": "labels.text.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#3d3d3d"
+																		      }
+																		    ]
+																		  }
+																		]
 																												});
 												var marker = new google.maps.Marker({
 													position: {lat: i.gm_marker_position_lat, lng: i.gm_marker_position_lng},
@@ -445,28 +660,27 @@
 										<script async defer
 											src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVUinUZqQAIM1NfbavWbOKtsc3l-XE_ag&callback=initMap">
 										</script>
+						</div>
 
+						<div class="fb-widget align-right-md align-center-sm">
+							<div class="fb-page" 
+									 data-href="https://www.facebook.com/autofinanceleasing" 
+									 data-tabs="false" 
+									 data-small-header="false" 
+									 data-adapt-container-width="true" 
+									 data-hide-cover="false" 
+									 data-show-facepile="true">
+
+								<blockquote cite="https://www.facebook.com/facebook/" class="fb-xfbml-parse-ignore">
+									<a href="https://www.facebook.com/facebook/">Facebook</a>
+								</blockquote>
+							</div>
 						</div>
 
 				</div>
 
 			</div>
 		</div>
-
-
-
-
-	</div>
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -498,12 +712,6 @@
 						<li><a href="contacts.html">Контакты</a></li>
 				  </ul>
 				</div>
-
-
-
-
-
-
 
 
 				<div class="footer-logo col-xs-12">

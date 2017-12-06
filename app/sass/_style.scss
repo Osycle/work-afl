@@ -1331,7 +1331,7 @@ $header-height: 80px;
 			    stroke-dasharray: 1500;
 			    stroke-dashoffset: 1500;
 			    fill-opacity: 0.1;
-			    transition: stroke-dasharray 0.3s linear, fill-opacity 0.2s ease-out;
+			    transition: stroke-dasharray 0.2s linear, fill-opacity 0.2s ease-out;
 			    &:nth-child(1){
 			    	fill: url(#logo-grd1);
 			    }
@@ -1378,19 +1378,21 @@ $header-height: 80px;
     color: white;
     font-size: 2em;
     text-shadow: 0 0 5px black;
-    font-weight: 300;
+    //font-weight: 300;
     text-transform: none;
-    border-bottom: 2px solid $color_1;
+    border-bottom: 1px solid $color_1;
 	}
 }
 .banner-content{
 	@include table-celling( 400px );
 	position: relative;
-	width: 50%;
+	width: 90%;
+	//padding-left: 20%;
 	.breadcrumb{
 		padding: 0;
 	}
 	@media only screen and (max-width: 991px){
+		padding-left: initial;
 		width: 1%;
 	}
 }
@@ -1605,6 +1607,7 @@ main{
 .index-slider{
 	  z-index: 1;
     position: relative;
+    overflow: hidden;
 }
 //INDEX SLIDER
 .fullscreen-container {
@@ -2816,10 +2819,10 @@ main{
 	font-family: 'Poiret One';
 }
 .bg-lines{
-  background-image: url(../img/other/lines.svg);
+  background-image: url(../img/other/lines.jpg);
   background-repeat: no-repeat;
   background-size: 70%;
-  background-position-y: 0;
+  background-position-x: -15%;
 }
 .bg-batman{
 	@extend .bg-cover;
@@ -2951,6 +2954,11 @@ main{
 		@include table-celling(290px);
 		width: 35%;
 	}
+	@media (max-width:1199px){
+		.fb-page{
+			max-width: 280px;
+		}
+	}
 	#map{
 		display: block;
 		height: 290px;
@@ -3036,7 +3044,7 @@ main{
   	display: inline-block;
   	line-height: 25px;
   	vertical-align: middle;
-  	width: 85%;
+  	width: 80%;
 	}
 	li {
 		display: block;
@@ -3158,9 +3166,9 @@ main{
 	    stroke: $color_1;
 	    stroke-dasharray: 1500;
 	    stroke-dashoffset: 0;
-	    fill-opacity: 1;
+	    fill-opacity: 0.5;
 	    fill: red;
-	    transition: stroke-dasharray 0.3s linear, fill-opacity 0.2s ease-out;
+	    transition: stroke-dasharray 0.3s ease-out, fill-opacity 0.2s ease-out;
 	    &:nth-child(1){
 	    	fill: url(#logo-icon-grd1);
 	    }
@@ -3469,16 +3477,13 @@ main{
 	align-items: center;
 }
 
-.services{
 
-}
-
-.services-content{
+.between-items-content{
 
 	@extend .flex-box;
-
+	//color: black;
 }
-.services-item{
+.between-item{
 	margin: 15px;
 	width: 150px;
 	height: 200px;
@@ -3507,9 +3512,9 @@ main{
 		font-size: 0.9em;
 	}
 	a{
-		text-transform: uppercase;
+		//text-transform: uppercase;
 		font-weight: 600;
-		font-size: 1.2em;
+		font-size: 1.5em;
 		text-align: center;
 		padding: 0 15px;
 		justify-content: center;
@@ -3517,7 +3522,8 @@ main{
 		display: flex;
 		height: 100%;
 		transition: all 0.3s ease-in;
-		background-color: rgba(white, 1);
+		background-color: rgba(black, 0.5);
+
 		&:focus{
 			color: inherit;
 			text-decoration: none;
@@ -3559,6 +3565,7 @@ main{
 		text-decoration: none;
 		color: transparent;
 		background-color: rgba(white, 0.0);
+
 		&:before, &:after{
 			
 			width: 100%;
@@ -3568,25 +3575,27 @@ main{
 		}
 		&:before{
 			content: attr(data-context-header);
-			border-left-color: $color_2;
-			border-right-color: $color_2;
- 			transition: border-color 0s ease-out 0.0s, 
- 									 width 0.25s ease-out 0.0s,
+			border-left-color: $color_1;
+			border-right-color: $color_1;
+ 			transition: border-color 0s linear 0.0s, 
+ 									 width 0.25s linear 0.0s,
  									 color 0.3s ease-in 0.25s,
- 									 height 0.25s ease-out 0.2s;
- 			background-color: rgba($color_3, 0.5);
+ 									 height 0.25s linear 0.2s;
+ 			background-color: rgba($color_2, 0.5);
 		}
 		&:after{
 			//overflow: overlay;
-			background-color: rgba($color_2, 0.5);
+			background-color: rgba($color_1, 0.5);
 			content: attr(data-context-desc);
-			border-top-color: $color_2;
-			border-bottom-color: $color_2;
- 			transition: border-color 0s ease-out 0.0s, 
- 									 width 0.25s ease-out 0.0s,
- 									 overflow 0s ease-out 5s,
- 									 color 0.3s ease-in 0.25s,
- 									 height 0.25s ease-out 0.2s;
+			border-top-color: $color_1;
+			border-bottom-color: $color_1;
+			font-size: 1.1em;
+    	//font-weight: 600;
+ 			transition: border-color 0s linear 0.0s, 
+ 									 width 0.25s linear 0.0s,
+ 									 overflow 0s linear 0s,
+ 									 color 0.3s linear 0.20s,
+ 									 height 0.25s linear 0.0s;
 		}
 		.context-caption{
 			visibility: visible;
@@ -3599,6 +3608,90 @@ main{
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.leasing-article-content{
+
+	.carousel {
+	  background: #FAFAFA;
+	  margin-bottom: 40px;
+	}
+
+	.carousel-cell {
+	  width: 100%;
+	  //height: 200px;
+	  margin-right: 10px;
+	  background: #8C8;
+	  counter-increment: carousel-cell;
+	  max-width: initial;
+	}
+	.carousel-main{
+		.carousel-cell{
+			width: 100%; /* full width */
+		  //height: 160px; /* height of carousel */
+		  opacity: 0;
+		  img{
+		  	width: 100%;
+		  }
+		  transition: opacity 0.8s ease-in-out;
+		  &.is-selected{
+		  	opacity: 1;
+		  }
+		}
+	}
+	.carousel-nav{
+
+		.carousel-cell{
+			height: 80px;
+			width: 100px;
+		  margin-right: 10px;
+
+			&.is-nav-selected{
+				background: #ED2;
+			}
+		}
+
+	}
+}
+
+
+
 
 
 

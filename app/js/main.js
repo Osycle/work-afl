@@ -7,8 +7,8 @@ $(function(){
 
 
 	// FANCYBOX
-	if( $("[data-fancybox='gallery']").length != 0 )
-		$("[data-fancybox='gallery']").fancybox({
+	if( $("[data-fancybox='product']").length != 0 )
+		$("[data-fancybox='product']").fancybox({
 			afterShow : function( instance, current ) {
 			},
 			animationEffect : "fade",
@@ -58,7 +58,27 @@ $(function(){
 		cellAlign: 'center'
 	});
 
-
+	$('.leasing-article-content .carousel-main').flickity({
+		imagesLoaded: true,
+		prevNextButtons: false,
+		cellAlign: 'center',
+		draggable: !(checkView(992)),
+		contain: true,
+		baseClass : '.product-fancybox',
+		pageDots: false
+	});
+	$('.leasing-article-content .carousel-nav').flickity({
+		imagesLoaded: true,
+	  asNavFor: '.leasing-article-content .carousel-main',
+	  prevNextButtons: false,
+	  draggable: !false,
+	  adaptiveHeight: true,
+	  baseClass : '.productfancybox',
+	  slideClass : '.productfancybox',
+	  contain: true,
+	  pageDots: false
+	});
+	
 
 	//FORM
 	(function() {
@@ -172,14 +192,13 @@ $(function(){
 		imagesLoadedCount++;
 
 		var per = ( ( 100 / imagesTotalCount ) * imagesLoadedCount ) << 0 ;
-		var ser = ( ( 400 * Math.PI / imagesTotalCount ) * imagesLoadedCount ) << 0 ;
 
 		setTimeout( function(){
 			$(preloadPercent).text(  per +  "%"); 
 		}, 220)
 		
 		$("#gmain polygon").css("stroke-dasharray", 1500+15*per )
-		//.css("fill-opacity", 1);
+		//.css("fill-opacity", per/300);
 
 		if ( imagesLoadedCount >= imagesTotalCount )
 
@@ -187,7 +206,7 @@ $(function(){
 				$(".preloader").fadeOut();
 				$("#gmain polygon").css("stroke-width", 0)
 				$( "body" ).css("overflow-y", "auto");
-			}, 600)
+			}, 1000)
 
 	}
 

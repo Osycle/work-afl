@@ -58,8 +58,8 @@ gulp.task('scripts', () =>
 			'app/js/skrollr.min.js',
 			'app/js/jquery.fancybox.js',
 			'app/js/classie.js',
-			'app/js/konva.min.js',
-			'app/js/KonvaPlugin.js',
+			//'app/js/konva.min.js',
+			//'app/js/KonvaPlugin.js',
 			'app/js/wow.js',
 			'app/js/flickity.js'
 		])
