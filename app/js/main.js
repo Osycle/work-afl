@@ -179,13 +179,13 @@ $(function(){
 		}, 220)
 		
 		$("#gmain polygon").css("stroke-dasharray", 1500+15*per )
-		//.css("fill-opacity", per/100);
+		//.css("fill-opacity", 1);
 
 		if ( imagesLoadedCount >= imagesTotalCount )
 
 			setTimeout( function (){
 				$(".preloader").fadeOut();
-				//$("#gmain polygon").css("stroke-width", 0);
+				$("#gmain polygon").css("stroke-width", 0)
 				$( "body" ).css("overflow-y", "auto");
 			}, 600)
 
@@ -220,7 +220,16 @@ $(function(){
 			$(about_1).find(".sec-1", ".sec-2").addClass("wow borderWidth");
 			
 		}
+		if( $(".list-animate") ){
+			var la = $(".list-animate");
+			var aStyle = la.attr("data-ls-animate");
+			la.find("li").addClass("wow "+aStyle).map(function(i, el){
+				$(el).attr("data-wow-delay",  (0.20 * i)+"s" );;
+			})
+			
+		}
 	}
+
 
 
 

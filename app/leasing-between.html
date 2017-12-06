@@ -139,7 +139,7 @@
 	<div class="preloader">
 		<div class="loader">
 			<span class="img-content">
-				<svg>
+				<svg id="logo-svg">
 					<defs>
 					  <linearGradient id="logo-grd1" gradientUnits="userSpaceOnUse" x1="333.637" y1="322.61" x2="333.637" y2="394.296">
 					  	<stop offset="0" style="stop-opacity:1; stop-color:#00586B"/>
@@ -361,7 +361,7 @@
 
 					<div class="banner-content">
 
-						<h1 class="wow fadeIn" data-wow-delay="0.5s">О компании</h1>
+						<h1 class="wow fadeIn" data-wow-delay="0.5s">Спецтехника в лизинг</h1>
 <!-- 
 						<ol class="breadcrumb wow fadeIn padd-hor-0 marg-bottom-0 marg-top-15" data-wow-delay="1s">
 						  <li><a href="index.html"></a></li>
@@ -377,68 +377,323 @@
 
 
 
-	<div class="about">
-
-		<div class="row about-first m-v-60">
-			<div class="container">
+<!-- 	<div class="leasing-between">
 
 
-				<div class="list-style-2 col-xs-12">
 
-					<div class="sec-1 align-right-md">
-						<p><strong>OOO "Auto Finance Leasing"</strong> 
-						  - является динамично развивающейся универсальной лизинговой компанией 
-							деятельность которой ориентирована на финансирования:
-						</p>
-					</div>
+		<div class="between-items row bg-lines">
 
-					<div class="sec-2">
-						<ul>
-							<li>Дорожная и строительная спецтехника</li>
-							<li>Комерческая недвижимость</li>
-							<li>Все виды производственного оборудования</li>
-							<li>Легковые автомобили</li>
-							<li>Возвратный лизинг</li>
-						</ul>
-					</div>
+			<div class="between-item col-md-4">
 
-
+				<div class="img-content">
+					<img src="img/between/equipment-1.jpg"/>
 				</div>
 
-
 			</div>
+
+
+
 		</div>
 
 
 
-		<div class="row about-second" style="background-image: url('img/other/about-2.jpg');">
-			<div class="bg-batman"></div>
+
+	</div>
+ -->
+
+
+
+		<div class="row services">
 			<div class="container">
-				<div class="about-second-content">
-					<!-- <h1 class="ff-permanent">Auto Finance Leasing</h1> -->
 
-				</div>
-			</div>
-		</div>
+				<div class="m-v-60">
 
-
-
-	 	<div class="row about-third bg-lines p-v-60">
-	 		<div class="container">
-
-	 			<div class="about-third-content">
-		 			<div class="sec-1 o-hidden align-right-md">
-	 					<div class="wow fadeInRight">
-							<p><strong>OOO "Auto Finance Leasing"</strong> 
-							  - является динамично развивающейся универсальной лизинговой компанией 
-								деятельность которой ориентирована на финансирования
-							</p>
+					<h1>Легковые автомобили в лизинг</h1>
+					<div class="services-content">
+						
+						<div class="box bg-color-white services-item wow animation" style="background-image: url(img/between/car-1.jpg);">
+							<a href="services-in.html"
+								data-context-desc="Легковые автомобили в лизинг">
+								Иномарки
+								<span class="context-caption">Легковые автомобили в лизинг</span>
+							</a>
 						</div>
+
+						<div class="box bg-color-white services-item wow animation" style="background-image: url(img/between/car-2.jpg);">
+							<a href="services-in.html" 
+								data-context-desc="Б\У">
+								Б\У
+								<span class="context-caption">Б\У</span>
+							</a>
+						</div>
+
+						<div class="box bg-color-white services-item wow animation" style="background-image: url(img/between/car-3.jpg);">
+							<a href="services-in.html" 
+								data-context-desc="Отечественные">
+								Отечественные
+								<span class="context-caption">Отечественные</span>
+							</a>
+						</div>
+						
+
+
 					</div>
+			</div>	
 
-					<div class="sec-2 wow fadeIn">
 
-						<div class="fb-widget align-center-sm">
+
+
+
+
+
+
+			</div>
+		</div>
+
+
+
+
+
+
+		<div class="row soc-map-content">
+			<div class="container">
+
+				<div class="p-v-60 clearfix">
+
+						<div class="gm-content col-md-8">
+
+
+
+							<div id="map"></div>
+										<script>
+
+										var i = {
+														
+														gm_title : 								'Мы',
+														gm_icon: 									"img/icons/map-marker.png",
+
+														gm_marker_position_lat:  	41.293000,
+														gm_marker_position_lng:  	69.219502,
+
+														gm_zoom: 									13,
+
+														gm_position_lat: 			 		41.298539,
+														gm_position_lng: 				 	69.219502
+												}
+
+								   	function initMap() {
+
+												var map = new google.maps.Map(document.getElementById('map'), {
+														zoom: i.gm_zoom,
+														center: {lat: i.gm_position_lat, lng: i.gm_position_lng},
+														disableDefaultUI: true,
+														styles:[
+																		  {
+																		    "elementType": "geometry",
+																		    "stylers": [
+																		      {
+																		        "color": "#212121"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "elementType": "labels.icon",
+																		    "stylers": [
+																		      {
+																		        "visibility": "off"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "elementType": "labels.text.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#757575"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "elementType": "labels.text.stroke",
+																		    "stylers": [
+																		      {
+																		        "color": "#212121"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "administrative",
+																		    "elementType": "geometry",
+																		    "stylers": [
+																		      {
+																		        "color": "#757575"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "administrative.country",
+																		    "elementType": "labels.text.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#9e9e9e"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "administrative.land_parcel",
+																		    "stylers": [
+																		      {
+																		        "visibility": "off"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "administrative.locality",
+																		    "elementType": "labels.text.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#bdbdbd"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "poi",
+																		    "elementType": "labels.text.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#757575"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "poi.park",
+																		    "elementType": "geometry",
+																		    "stylers": [
+																		      {
+																		        "color": "#181818"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "poi.park",
+																		    "elementType": "labels.text.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#616161"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "poi.park",
+																		    "elementType": "labels.text.stroke",
+																		    "stylers": [
+																		      {
+																		        "color": "#1b1b1b"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "road",
+																		    "elementType": "geometry.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#2c2c2c"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "road",
+																		    "elementType": "labels.text.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#8a8a8a"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "road.arterial",
+																		    "elementType": "geometry",
+																		    "stylers": [
+																		      {
+																		        "color": "#373737"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "road.highway",
+																		    "elementType": "geometry",
+																		    "stylers": [
+																		      {
+																		        "color": "#3c3c3c"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "road.highway.controlled_access",
+																		    "elementType": "geometry",
+																		    "stylers": [
+																		      {
+																		        "color": "#4e4e4e"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "road.local",
+																		    "elementType": "labels.text.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#616161"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "transit",
+																		    "elementType": "labels.text.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#757575"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "water",
+																		    "elementType": "geometry",
+																		    "stylers": [
+																		      {
+																		        "color": "#000000"
+																		      }
+																		    ]
+																		  },
+																		  {
+																		    "featureType": "water",
+																		    "elementType": "labels.text.fill",
+																		    "stylers": [
+																		      {
+																		        "color": "#3d3d3d"
+																		      }
+																		    ]
+																		  }
+																		]
+																												});
+												var marker = new google.maps.Marker({
+													position: {lat: i.gm_marker_position_lat, lng: i.gm_marker_position_lng},
+													map: map,
+													icon: i.gm_icon,
+													title: i.gm_title
+												});
+												var infoWindow = new google.maps.InfoWindow({
+													content: i.gm_content,
+													maxWidth: "400"
+												});
+
+											}//initMap end
+
+									  </script>
+										<script async defer
+											src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVUinUZqQAIM1NfbavWbOKtsc3l-XE_ag&callback=initMap">
+										</script>
+						</div>
+
+						<div class="fb-widget align-right-md align-center-sm">
 							<div class="fb-page" 
 									 data-href="https://www.facebook.com/autofinanceleasing" 
 									 data-tabs="false" 
@@ -453,27 +708,10 @@
 							</div>
 						</div>
 
-					</div>
+				</div>
 
-	 			</div>
-
-	 		</div>
-	 	</div>
-
-
-
-
-	</div>
-
-
-
-
-
-
-
-
-
-
+			</div>
+		</div>
 
 
 
