@@ -19079,9 +19079,9 @@ button:hover, button:focus {
           stroke-dasharray: 1500;
           stroke-dashoffset: 1500;
           fill-opacity: 0.1;
-          -webkit-transition: stroke-dasharray 0.2s linear, fill-opacity 0.2s ease-out;
-          -o-transition: stroke-dasharray 0.2s linear, fill-opacity 0.2s ease-out;
-          transition: stroke-dasharray 0.2s linear, fill-opacity 0.2s ease-out; }
+          -webkit-transition: stroke-dasharray 0.7s ease-out, fill-opacity 0.2s ease-out;
+          -o-transition: stroke-dasharray 0.7s ease-out, fill-opacity 0.2s ease-out;
+          transition: stroke-dasharray 0.7s ease-out, fill-opacity 0.2s ease-out; }
           .preloader .loader svg #gmain polygon:nth-child(1) {
             fill: url(#logo-grd1); }
           .preloader .loader svg #gmain polygon:nth-child(2) {
@@ -19168,7 +19168,7 @@ button:hover, button:focus {
 */
 h1 {
   position: relative;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1.875em;
   text-transform: uppercase;
   padding-bottom: 10px;
@@ -19782,20 +19782,20 @@ main {
     transform: scale(1); } }
 
 .short-advantage-items.aos-animate figure .circle-1 {
-  -webkit-animation: advanAnimate-3 4s ease-in-out;
-  animation: advanAnimate-3 4s ease-in-out; }
+  -webkit-animation: advanAnimate-3 3s ease-in-out;
+  animation: advanAnimate-3 3s ease-in-out; }
 
 .short-advantage-items.aos-animate figure .circle-2 {
-  -webkit-animation: advanAnimate-2 4s ease-in-out;
-  animation: advanAnimate-2 4s ease-in-out; }
+  -webkit-animation: advanAnimate-2 3s ease-in-out;
+  animation: advanAnimate-2 3s ease-in-out; }
 
 .short-advantage-items.aos-animate figure span:before {
-  -webkit-animation: advanAnimate-4 4s ease-in-out;
-  animation: advanAnimate-4 4s ease-in-out; }
+  -webkit-animation: advanAnimate-4 3s ease-in-out;
+  animation: advanAnimate-4 3s ease-in-out; }
 
 .short-advantage-items.aos-animate figure polygon {
-  -webkit-animation: advanAnimate-1 4s ease-in-out;
-  animation: advanAnimate-1 4s ease-in-out; }
+  -webkit-animation: advanAnimate-1 3s ease-in-out;
+  animation: advanAnimate-1 3s ease-in-out; }
 
 .short-advantage-items svg {
   display: block; }
@@ -20179,23 +20179,27 @@ main {
 
 @-webkit-keyframes servAnimatePath {
   from {
-    stroke-dasharray: 163;
-    stroke-dashoffset: 163; }
-  50% { }
+    stroke-dashoffset: -326;
+    stroke-dasharray: 326; }
+  70% {
+    stroke-dashoffset: -326;
+    stroke-dasharray: 326; }
   to {
     stroke-width: 10px;
-    stroke-dasharray: 163;
-    stroke-dashoffset: 0; } }
+    stroke-dashoffset: 0;
+    stroke-dasharray: 326; } }
 
 @keyframes servAnimatePath {
   from {
-    stroke-dasharray: 163;
-    stroke-dashoffset: 163; }
-  50% { }
+    stroke-dashoffset: -326;
+    stroke-dasharray: 326; }
+  70% {
+    stroke-dashoffset: -326;
+    stroke-dasharray: 326; }
   to {
     stroke-width: 10px;
-    stroke-dasharray: 163;
-    stroke-dashoffset: 0; } }
+    stroke-dashoffset: 0;
+    stroke-dasharray: 326; } }
 
 @-webkit-keyframes servAnimateCirlce-1 {
   from {
@@ -20344,54 +20348,54 @@ main {
     transform: rotate(240deg) translateY(-160%) translateX(75%); } }
 
 .short-services-content.aos-animate [class*="path"] {
-  -webkit-animation: servAnimatePath 3s linear 0.25s;
-  animation: servAnimatePath 3s linear 0.25s; }
+  -webkit-animation: servAnimatePath 2.5s linear 0s;
+  animation: servAnimatePath 2.5s linear 0s; }
 
 .short-services-content.aos-animate .petal-circle .circle-4 {
-  -webkit-animation: servAnimateCirlce-4 3.5s linear;
-  animation: servAnimateCirlce-4 3.5s linear; }
+  -webkit-animation: servAnimateCirlce-4 2s linear;
+  animation: servAnimateCirlce-4 2s linear; }
 
 .short-services-content.aos-animate .petal-circle .circle-1 {
-  -webkit-animation: servAnimateCirlce-1 3.5s linear;
-  animation: servAnimateCirlce-1 3.5s linear; }
+  -webkit-animation: servAnimateCirlce-1 1.5s linear;
+  animation: servAnimateCirlce-1 1.5s linear; }
 
 .short-services-content.aos-animate .petal-polygon {
   overflow: hidden; }
   .short-services-content.aos-animate .petal-polygon polygon {
-    -webkit-animation: servAnimatePolygon 3s linear;
-    animation: servAnimatePolygon 3s linear; }
+    -webkit-animation: servAnimatePolygon 2.5s linear;
+    animation: servAnimatePolygon 2.5s linear; }
 
 .short-services-content.aos-animate [class*="icon"]:before, .short-services-content.aos-animate b {
-  -webkit-animation: servAnimateIcon 4s linear;
-  animation: servAnimateIcon 4s linear; }
+  -webkit-animation: servAnimateIcon 2.5s linear;
+  animation: servAnimateIcon 2.5s linear; }
 
 .short-services-content.aos-animate .sun-petal.style-0 {
-  -webkit-animation: servAnimateSunPetal-0 3s linear;
-  animation: servAnimateSunPetal-0 3s linear; }
+  -webkit-animation: servAnimateSunPetal-0 1.5s linear;
+  animation: servAnimateSunPetal-0 1.5s linear; }
 
 .short-services-content.aos-animate .sun-petal.style-1 {
-  -webkit-animation: servAnimateSunPetal-1 3s linear;
-  animation: servAnimateSunPetal-1 3s linear; }
+  -webkit-animation: servAnimateSunPetal-1 1.5s linear;
+  animation: servAnimateSunPetal-1 1.5s linear; }
 
 .short-services-content.aos-animate .sun-petal.style-2 {
-  -webkit-animation: servAnimateSunPetal-2 3s linear;
-  animation: servAnimateSunPetal-2 3s linear; }
+  -webkit-animation: servAnimateSunPetal-2 1.5s linear;
+  animation: servAnimateSunPetal-2 1.5s linear; }
 
 .short-services-content.aos-animate .sun-petal.style-3 {
-  -webkit-animation: servAnimateSunPetal-3 3s linear;
-  animation: servAnimateSunPetal-3 3s linear; }
+  -webkit-animation: servAnimateSunPetal-3 1.5s linear;
+  animation: servAnimateSunPetal-3 1.5s linear; }
 
 .short-services-content.aos-animate .sun-petal.style-4 {
-  -webkit-animation: servAnimateSunPetal-4 3s linear;
-  animation: servAnimateSunPetal-4 3s linear; }
+  -webkit-animation: servAnimateSunPetal-4 1.5s linear;
+  animation: servAnimateSunPetal-4 1.5s linear; }
 
 .short-services-content.aos-animate .sun-petal.style-5 {
-  -webkit-animation: servAnimateSunPetal-5 3s linear;
-  animation: servAnimateSunPetal-5 3s linear; }
+  -webkit-animation: servAnimateSunPetal-5 1.5s linear;
+  animation: servAnimateSunPetal-5 1.5s linear; }
 
 .short-services-content.aos-animate .sun-petal.style-6 {
-  -webkit-animation: servAnimateSunPetal-6 3s linear;
-  animation: servAnimateSunPetal-6 3s linear; }
+  -webkit-animation: servAnimateSunPetal-6 1.5s linear;
+  animation: servAnimateSunPetal-6 1.5s linear; }
 
 .ff-permanent {
   font-family: 'Permanent Marker'; }
@@ -20806,14 +20810,14 @@ main {
     fill: #474747; }
 
 .spec-img {
-  width: 30%; }
+  width: 360px; }
   @media (max-width: 1199px) {
     .spec-img {
       width: 34%; } }
 
 .spec-desc {
   padding: 30px 0;
-  padding-right: 15%; }
+  width: 70%; }
   @media (max-width: 991px) {
     .spec-desc {
       padding-right: 0;
@@ -21027,35 +21031,51 @@ main {
       transition: transform 0.225s linear,  opacity 0.3s linear,  -webkit-transform 0.225s linear;
       opacity: 1; }
 
-.leasing-article-content .carousel {
-  background: #FAFAFA;
-  margin-bottom: 40px; }
+.table {
+  color: black; }
 
-.leasing-article-content .carousel-cell {
-  width: 100%;
-  margin-right: 10px;
-  background: #8C8;
-  counter-increment: carousel-cell;
-  max-width: initial; }
+.leasing-article {
+  color: black; }
+  .leasing-article .short-services h1 {
+    border-bottom: 2px solid #00b3ce; }
 
-.leasing-article-content .carousel-main .carousel-cell {
-  width: 100%;
-  /* full width */
-  opacity: 0;
-  -webkit-transition: opacity 0.8s ease-in-out;
-  -o-transition: opacity 0.8s ease-in-out;
-  transition: opacity 0.8s ease-in-out; }
-  .leasing-article-content .carousel-main .carousel-cell img {
-    width: 100%; }
-  .leasing-article-content .carousel-main .carousel-cell.is-selected {
-    opacity: 1; }
+.leasing-article-content {
+  color: black; }
+  .leasing-article-content h3 {
+    margin-top: 20px;
+    color: #a5a5a5; }
+  .leasing-article-content .carousel {
+    padding: 10px; }
+  .leasing-article-content .carousel-cell {
+    width: 100%;
+    margin-right: 10px;
+    counter-increment: carousel-cell;
+    max-width: initial; }
+  .leasing-article-content .carousel-main .carousel-cell {
+    width: 100%;
+    /* full width */
+    opacity: 0;
+    -webkit-transition: opacity 0.8s ease-in-out;
+    -o-transition: opacity 0.8s ease-in-out;
+    transition: opacity 0.8s ease-in-out; }
+    .leasing-article-content .carousel-main .carousel-cell img {
+      width: 100%; }
+    .leasing-article-content .carousel-main .carousel-cell.is-selected {
+      opacity: 1; }
+  .leasing-article-content .carousel-nav {
+    margin-top: 5px; }
+    .leasing-article-content .carousel-nav .carousel-cell {
+      height: 80px;
+      width: 100px;
+      margin-right: 10px; }
+  .leasing-article-content .desc-content .table {
+    margin: 30px 0; }
+  .leasing-article-content .desc-content .table-content {
+    padding: 0 30px; }
 
-.leasing-article-content .carousel-nav .carousel-cell {
-  height: 80px;
-  width: 100px;
-  margin-right: 10px; }
-  .leasing-article-content .carousel-nav .carousel-cell.is-nav-selected {
-    background: #ED2; }
+.article-item {
+  margin: 30px 0;
+  border: 1px solid #E5E5E5; }
 
 /*
 										 --- FOOTER ---

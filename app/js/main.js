@@ -7,8 +7,8 @@ $(function(){
 
 
 	// FANCYBOX
-	if( $("[data-fancybox='product']").length != 0 )
-		$("[data-fancybox='product']").fancybox({
+	if( $("[data-fancybox='article-l-items']").length != 0 )
+		$("[data-fancybox='article-l-items']").fancybox({
 			afterShow : function( instance, current ) {
 			},
 			animationEffect : "fade",
