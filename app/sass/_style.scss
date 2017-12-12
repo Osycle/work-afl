@@ -511,7 +511,7 @@ button:hover, button:focus{
 
 
 .btn-style{
-	display: block;
+	display: inline-block;
 	@extend .btn-res;	
 	white-space: nowrap;
 	text-transform: uppercase;
@@ -540,8 +540,12 @@ button:hover, button:focus{
 	color: white;
 	&:hover{
 		color: inherit;
+		a{
+			color: inherit;
+		}
 	}
 }
+
 .btn-opacity{
 	@extend .btn-style;
 	@extend .btn-anima-2;
@@ -2048,7 +2052,16 @@ main{
 		}
 	}
 	.img-content{
+		img{
+			@media (min-width: 991px){
+				display: inline-block;
+				position: absolute;
+				left: 0;
+			}
+		}
+		[class*="btn"]{
 
+		}
 	}
 }
 
@@ -3210,8 +3223,13 @@ main{
 
 
 
-
-
+    
+@keyframes specPetal {
+  to {
+    //stroke-dasharray: 90;
+    //stroke-dashoffset: 90;
+  }
+}
 .spec-petal{
 	position: relative;
   display: block;
@@ -3224,6 +3242,18 @@ main{
  
   [class*="circle"]{
   	fill: none;
+  	animation:specPetal 1s ease-in-out infinite;
+  }
+  .circle{
+
+  }
+  &:hover{
+  	.circle-1{
+  		stroke-width: 20px;
+  	}
+  	.circle-4{
+  		stroke-dasharray: 22.8px;
+  	}
   }
   [class*='icon']{
 		font-size: 5em;

@@ -18479,7 +18479,7 @@ button:hover, button:focus {
     background-color: #00b3ce; }
 
 .btn-style, .btn-default, .btn-opacity {
-  display: block;
+  display: inline-block;
   white-space: nowrap;
   text-transform: uppercase;
   font-family: "Open Sans"; }
@@ -18497,6 +18497,8 @@ button:hover, button:focus {
   color: white; }
   .btn-default:hover {
     color: inherit; }
+    .btn-default:hover a {
+      color: inherit; }
 
 .btn-opacity {
   display: inline-block;
@@ -19599,6 +19601,11 @@ main {
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 179, 206, 0.6);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 179, 206, 0.6); }
+  @media (min-width: 991px) {
+    .short-feedback .img-content img {
+      display: inline-block;
+      position: absolute;
+      left: 0; } }
 
 .short-advantage-items figure:hover .drib-circle .circle-1 {
   stroke-width: 5px; }
@@ -20685,6 +20692,12 @@ main {
   -ms-transform-origin: -100%;
   transform-origin: -100%; }
 
+@-webkit-keyframes specPetal {
+  to { } }
+
+@keyframes specPetal {
+  to { } }
+
 .spec-petal {
   position: relative;
   display: block;
@@ -20740,7 +20753,13 @@ main {
   	}
   } */ }
   .spec-petal [class*="circle"] {
-    fill: none; }
+    fill: none;
+    -webkit-animation: specPetal 1s ease-in-out infinite;
+    animation: specPetal 1s ease-in-out infinite; }
+  .spec-petal:hover .circle-1 {
+    stroke-width: 20px; }
+  .spec-petal:hover .circle-4 {
+    stroke-dasharray: 22.8px; }
   .spec-petal [class*='icon'] {
     font-size: 5em;
     font-size: 40px; }
