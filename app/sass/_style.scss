@@ -2052,15 +2052,26 @@ main{
 		}
 	}
 	.img-content{
-		img{
-			@media (min-width: 991px){
+		position: relative;
+		@media (min-width: 992px){
+		top: -50px;
+		text-align: center;
+			img{
 				display: inline-block;
-				position: absolute;
+				//position: absolute;
+
 				left: 0;
+				width: 355px;
 			}
 		}
 		[class*="btn"]{
-
+			margin-top: 35px;
+			a{
+				padding: 14.5px 25px;}
+				@media (max-width: 991px){
+			    width: 100%;
+    			text-align: center;
+				}
 		}
 	}
 }
