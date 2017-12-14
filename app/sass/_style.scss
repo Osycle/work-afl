@@ -2091,6 +2091,7 @@ main{
 
 //------------- SHORT-ADVANTAGE
 .short-advantage-items{
+	p{color: white;}
 	figure{
 
 		&:hover{
@@ -3694,7 +3695,16 @@ main{
 .leasing-article{
 	color: black;
 	.short-services{
-		h1{
+
+	}
+	h1{
+		@media (min-width: 992px){
+			display: inline-block;
+		}
+		&:before{
+			@extend .claf;
+			width: 30%;
+			right: 0;
 			border-bottom: 2px solid $color_1;
 		}
 	}
@@ -3787,7 +3797,14 @@ main{
 	}
 	.img-content{
 		text-align: center;
+		width: 300px;
+		height: 200px;
+		float: left;
+		img{
+			width: 100%;
+		}
 	}
+	
 }
 
 

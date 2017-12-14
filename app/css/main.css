@@ -18336,7 +18336,7 @@ button:hover, button:focus {
 .bg-color-4 {
   background-color: #e31f24; }
 
-.claf, .btn-anima::before, .btn-default::before, .btn-anima:hover::before, .btn-default:hover::before, .btn-anima-2::before, .btn-opacity::before, .btn-anima-2:hover::before, .btn-opacity:hover::before, .link-anima::before, .link-hover a::before, .link-anima:hover::before, .link-hover a:hover::before, .nav-menu:not(.min) .menu-list > li:before, .nav-menu:not(.min) .menu-list > li:after, .nav-menu:not(.min) [class*="sub-menu"] a:before, .short-advantage:before, .between-item a:before, .between-item a:after, .partners h1:before {
+.claf, .btn-anima::before, .btn-default::before, .btn-anima:hover::before, .btn-default:hover::before, .btn-anima-2::before, .btn-opacity::before, .btn-anima-2:hover::before, .btn-opacity:hover::before, .link-anima::before, .link-hover a::before, .link-anima:hover::before, .link-hover a:hover::before, .nav-menu:not(.min) .menu-list > li:before, .nav-menu:not(.min) .menu-list > li:after, .nav-menu:not(.min) [class*="sub-menu"] a:before, .short-advantage:before, .between-item a:before, .between-item a:after, .leasing-article h1:before, .partners h1:before {
   content: "";
   position: absolute;
   left: 0;
@@ -19620,6 +19620,9 @@ main {
         .short-feedback .img-content [class*="btn"] {
           width: 100%;
           text-align: center; } }
+
+.short-advantage-items p {
+  color: white; }
 
 .short-advantage-items figure:hover .drib-circle .circle-1 {
   stroke-width: 5px; }
@@ -21069,7 +21072,12 @@ main {
 
 .leasing-article {
   color: black; }
-  .leasing-article .short-services h1 {
+  @media (min-width: 992px) {
+    .leasing-article h1 {
+      display: inline-block; } }
+  .leasing-article h1:before {
+    width: 30%;
+    right: 0;
     border-bottom: 2px solid #00b3ce; }
 
 .leasing-article-content {
@@ -21120,7 +21128,12 @@ main {
   border-bottom: 2px solid #00b3ce; }
 
 .partners .img-content {
-  text-align: center; }
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  float: left; }
+  .partners .img-content img {
+    width: 100%; }
 
 /*
 										 --- FOOTER ---
