@@ -1516,6 +1516,7 @@ main{
 	
 	min-height: 600px;
 	p{
+		color: black;
 		line-height: 170%;
 	}
 
@@ -3771,7 +3772,23 @@ main{
 
 
 
-
+.partners{
+	//color: black;
+	h1{
+		@media (min-width: 992px){
+			display: inline-block;
+		}
+		&:before{
+			@extend .claf;
+			width: 30%;
+			right: 0;
+			border-bottom: 2px solid $color_1;
+		}
+	}
+	.img-content{
+		text-align: center;
+	}
+}
 
 
 
@@ -3892,13 +3909,14 @@ main{
 //FLICKITY
 .flickity-prev-next-button{
 	background: transparent;
+	border-radius: 0;
 	&:hover{
 		.arrow{
 			fill: $color_1;
 		}
 	}
 	.arrow{
-		fill: white;
+		fill: #d1d1d1;
 	}
 }
 

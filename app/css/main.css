@@ -18336,7 +18336,7 @@ button:hover, button:focus {
 .bg-color-4 {
   background-color: #e31f24; }
 
-.claf, .btn-anima::before, .btn-default::before, .btn-anima:hover::before, .btn-default:hover::before, .btn-anima-2::before, .btn-opacity::before, .btn-anima-2:hover::before, .btn-opacity:hover::before, .link-anima::before, .link-hover a::before, .link-anima:hover::before, .link-hover a:hover::before, .nav-menu:not(.min) .menu-list > li:before, .nav-menu:not(.min) .menu-list > li:after, .nav-menu:not(.min) [class*="sub-menu"] a:before, .short-advantage:before, .between-item a:before, .between-item a:after {
+.claf, .btn-anima::before, .btn-default::before, .btn-anima:hover::before, .btn-default:hover::before, .btn-anima-2::before, .btn-opacity::before, .btn-anima-2:hover::before, .btn-opacity:hover::before, .link-anima::before, .link-hover a::before, .link-anima:hover::before, .link-hover a:hover::before, .nav-menu:not(.min) .menu-list > li:before, .nav-menu:not(.min) .menu-list > li:after, .nav-menu:not(.min) [class*="sub-menu"] a:before, .short-advantage:before, .between-item a:before, .between-item a:after, .partners h1:before {
   content: "";
   position: absolute;
   left: 0;
@@ -19210,6 +19210,7 @@ main {
   position: relative;
   min-height: 600px; }
   main p {
+    color: black;
     line-height: 170%; }
 
 .link-hover a {
@@ -21109,6 +21110,18 @@ main {
   margin: 30px 0;
   border: 1px solid #E5E5E5; }
 
+@media (min-width: 992px) {
+  .partners h1 {
+    display: inline-block; } }
+
+.partners h1:before {
+  width: 30%;
+  right: 0;
+  border-bottom: 2px solid #00b3ce; }
+
+.partners .img-content {
+  text-align: center; }
+
 /*
 										 --- FOOTER ---
 */
@@ -21185,11 +21198,13 @@ main {
   background-color: #00b3ce; }
 
 .flickity-prev-next-button {
-  background: transparent; }
+  background: transparent;
+  -webkit-border-radius: 0;
+  border-radius: 0; }
   .flickity-prev-next-button:hover .arrow {
     fill: #00b3ce; }
   .flickity-prev-next-button .arrow {
-    fill: white; }
+    fill: #d1d1d1; }
 
 /*
 		_media.scss	

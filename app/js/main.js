@@ -43,18 +43,18 @@ $(function(){
   // Flikity Carousel
 
 	var carouselPartners = $('.carousel-partners .carousel-content').flickity({
-		arrowShape: { 
-		  x0: 10,
-		  x1: 65, y1: 50,
-		  x2: 65, y2: 0,
-		  x3: 55
-		},
-		prevNextButtons: false,
+			arrowShape: { 
+			  x0: 30,
+			  x1: 0, y1: 0,
+			  x2: 60, y2: 50,
+			  x3: 30
+			},
+		prevNextButtons: true,
 		adaptiveHeight: true,
 		initialIndex: 2,
 		//draggable: !checkView(991),
 		pageDots: false,
-		contain: true,
+		//contain: true,
 		cellAlign: 'center'
 	});
 
