@@ -10,7 +10,7 @@
 		width: 10*$i+%;
 	}
 }
-
+html{
 //-----------------------------PADD
 @for $i from 0 through 24 {
 	.p-h-#{5*$i} { 
@@ -38,6 +38,8 @@
 	.p-r-#{5*$i} { 
 		padding-right: 5*$i+px;}}
 
+
+}
 //------------------------MARG
 @for $i from 0 through 30 {
 	.m-h-#{5*$i} { 
